@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Casa Amparo 1948</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <!-- PANTALLA LOGIN -->
+    <div id="pantalla-login" class="pantalla-login">
+        <div class="login-card">
+            <h1>Casa Amparo 1948</h1>
+            <p class="login-subtitle">Control de Inventario</p>
+            <div class="login-form">
+                <label for="input-usuario">¿Quién eres?</label>
+                <select id="input-usuario" class="login-input">
+                    <option value="">Selecciona tu nombre...</option>
+                    <option value="Chema">Chema</option>
+                    <option value="Cocina">Cocina</option>
+                    <option value="Sala">Sala</option>
+                    <option value="Barra">Barra</option>
+                </select>
+                <button class="btn-login" onclick="entrar()">Entrar</button>
+            </div>
+            <div class="login-estado" id="login-estado"></div>
+        </div>
+    </div>
+
+    <!-- APP PRINCIPAL -->
+    <div id="app-principal" class="app-principal hidden">
+        <header>
+            <div class="header-content">
+                <h1>Casa Amparo 1948</h1>
+                <p class="subtitle" id="header-subtitle">Control de Inventario</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-header btn-modo" id="btn-modo" onclick="toggleModo()">
+                    Modo Admin
+                </button>
+                <button id="btn-resumen" class="btn-resumen" onclick="toggleResumen()">
+                    <span class="badge" id="badge-count">0</span>
+                    Resumen
+                </button>
+            </div>
+        </header>
+
+        <!-- VISTA INVENTARIO (equipo) -->
+        <div id="vista-inventario">
+            <nav id="tabs-nav" class="tabs-nav"></nav>
+            <main id="main-content" class="main-content"></main>
+        </div>
+
+        <!-- VISTA ADMIN -->
+        <div id="vista-admin" class="hidden">
+            <div class="admin-container">
+                <div class="admin-tabs">
+                    <button class="admin-tab active" onclick="switchAdminTab('pedidos')">Pedidos Sugeridos</button>
+                    <button class="admin-tab" onclick="switchAdminTab('historico')">Histórico</button>
+                </div>
+                <div id="admin-content" class="admin-content"></div>
+            </div>
+        </div>
+
+        <!-- PANEL RESUMEN -->
+        <aside id="panel-resumen" class="panel-resumen hidden">
+            <div class="panel-overlay" onclick="toggleResumen()"></div>
+            <div class="panel-body">
+                <div class="panel-header">
+                    <h2>Resumen Inventario</h2>
+                    <button class="btn-close" onclick="toggleResumen()">&times;</button>
+                </div>
+                <div id="resumen-content" class="resumen-content">
+                    <p class="empty-msg">No se ha registrado inventario</p>
+                </div>
+                <div class="panel-footer">
+                    <div class="panel-buttons">
+                        <button class="btn-limpiar" onclick="limpiarInventario()">Limpiar todo</button>
+                        <button class="btn-enviar" onclick="guardarEnSheet()">Guardar Inventario</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- LOADING OVERLAY -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <p id="loading-msg">Cargando productos...</p>
+    </div>
+
+    <script src="../../_BBDD/config.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>

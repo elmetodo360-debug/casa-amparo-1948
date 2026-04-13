@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Checklist Diario - Casa Amparo 1948</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #5C1A1B;
+  --primary-light: #7A2E2F;
+  --bg: #F5F0E8;
+  --bg-card: #FFFDF8;
+  --gold: #C9A94E;
+  --gold-light: #D4BA6A;
+  --text: #2D2A26;
+  --text-light: #6B6560;
+  --border: #E0D8CC;
+  --success: #4A7C59;
+  --shadow: 0 2px 8px rgba(92,26,27,0.08);
+}
+
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 90px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff;
+  padding: 20px 16px 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(92,26,27,0.25);
+}
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+.header .subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+.header-meta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+.header-meta span {
+  background: rgba(255,255,255,0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.day-badge {
+  background: var(--gold) !important;
+  color: var(--primary) !important;
+  font-weight: 700;
+}
+
+/* Global progress */
+.global-progress {
+  background: var(--bg-card);
+  margin: 12px 12px 0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+.global-progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.progress-bar-bg {
+  width: 100%;
+  height: 10px;
+  background: var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--success));
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* Franja sections */
+.franja {
+  margin: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--bg-card);
+}
+.franja-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.2s;
+}
+.franja-header:active { opacity: 0.9; }
+.franja-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+.franja-header h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.franja-header .emoji { font-size: 1.2rem; flex-shrink: 0; }
+.franja-progress {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.2);
+  padding: 3px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.franja-chevron {
+  color: #fff;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+.franja.collapsed .franja-chevron { transform: rotate(-90deg); }
+.franja-body {
+  max-height: 3000px;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 12px 12px;
+}
+.franja.collapsed .franja-body {
+  max-height: 0;
+  padding: 0 12px;
+}
+
+/* Franja colors */
+.franja-apertura .franja-header { background: linear-gradient(135deg, #5C1A1B, #7A2E2F); }
+.franja-mediodia .franja-header { background: linear-gradient(135deg, #C9A94E, #B8962D); }
+.franja-mediodia .franja-header h2 { color: var(--primary); }
+.franja-mediodia .franja-progress { color: var(--primary); }
+.franja-mediodia .franja-chevron { color: var(--primary); }
+.franja-tarde .franja-header { background: linear-gradient(135deg, #2E6B4F, #4A7C59); }
+.franja-noche .franja-header { background: linear-gradient(135deg, #3B3064, #564B7A); }
+.franja-cierre .franja-header { background: linear-gradient(135deg, #1A1A2E, #2D2D44); }
+
+/* Responsable input */
+.responsable-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 8px;
+  padding: 10px 12px;
+  background: #F9F6F0;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.responsable-row label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.responsable-row input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 0.95rem;
+  color: var(--text);
+  outline: none;
+  padding: 4px 0;
+  font-family: inherit;
+}
+.responsable-row input::placeholder { color: #B5AFA5; }
+
+/* Zone group */
+.zone-group {
+  margin-top: 8px;
+}
+.zone-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  padding: 6px 4px 4px;
+}
+
+/* Task item */
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 8px;
+  border-bottom: 1px solid #F0ECE4;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.15s;
+}
+.task-item:last-child { border-bottom: none; }
+.task-item:active { background: #F5F0E8; }
+.task-item.checked { opacity: 0.6; }
+.task-item.checked .task-text { text-decoration: line-through; }
+
+/* Custom checkbox */
+.custom-cb {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border: 2.5px solid var(--border);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin-top: 1px;
+}
+.task-item.checked .custom-cb {
+  background: var(--success);
+  border-color: var(--success);
+}
+.custom-cb svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+  stroke-width: 3;
+  fill: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.task-item.checked .custom-cb svg { opacity: 1; }
+
+.task-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding-top: 3px;
+  flex: 1;
+}
+
+/* Photo input */
+.photo-section {
+  margin: 12px 0 4px;
+  padding: 16px;
+  background: #FFF8E7;
+  border: 2px dashed var(--gold);
+  border-radius: 10px;
+  text-align: center;
+}
+.photo-section.has-photo {
+  border-style: solid;
+  background: #F0FAF0;
+  border-color: var(--success);
+}
+.photo-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.photo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--gold);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.photo-btn:active { opacity: 0.8; }
+.photo-preview {
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  display: none;
+}
+.photo-section.has-photo .photo-preview { display: block; }
+.photo-remove {
+  display: none;
+  margin-top: 8px;
+  background: none;
+  border: 1px solid #c00;
+  color: #c00;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.photo-section.has-photo .photo-remove { display: inline-block; }
+
+/* Notes section */
+.notes-section {
+  margin: 12px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.notes-section h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.notes-section textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  color: var(--text);
+  background: #FDFCF9;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.notes-section textarea:focus { border-color: var(--gold); }
+
+/* PDF button */
+.fab-pdf {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(92,26,27,0.35);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.15s, box-shadow 0.15s;
+  letter-spacing: 0.5px;
+}
+.fab-pdf:active {
+  transform: translateX(-50%) scale(0.96);
+  box-shadow: 0 2px 10px rgba(92,26,27,0.3);
+}
+.fab-pdf.generating {
+  pointer-events: none;
+  opacity: 0.7;
+}
+.fab-pdf svg { width: 20px; height: 20px; fill: currentColor; }
+
+/* Spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: none;
+}
+.fab-pdf.generating .spinner { display: block; }
+.fab-pdf.generating .pdf-icon { display: none; }
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--success);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 300;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Responsive tweaks */
+@media (min-width: 600px) {
+  body { max-width: 540px; margin: 0 auto; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <img src="logo.png" alt="Casa Amparo 1948" style="width:80px;height:80px;border-radius:12px;margin-bottom:8px;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
+  <h1>Casa Amparo 1948</h1>
+  <div class="subtitle">Checklist Diario de Sala</div>
+  <div class="header-meta">
+    <span id="dateDisplay"></span>
+    <span class="day-badge" id="dayType"></span>
+  </div>
+</header>
+
+<div class="global-progress">
+  <div class="global-progress-label">
+    <span>Progreso total</span>
+    <span id="globalCount">0 / 0</span>
+  </div>
+  <div class="progress-bar-bg">
+    <div class="progress-bar-fill" id="globalBar"></div>
+  </div>
+</div>
+
+<main id="appContent"></main>
+
+<section class="notes-section">
+  <h3>Notas / Incidencias</h3>
+  <textarea id="notesArea" placeholder="Escribe aqu&iacute; cualquier incidencia o nota del d&iacute;a..."></textarea>
+</section>
+
+<button class="fab-pdf" id="pdfBtn" onclick="generatePDF()">
+  <svg class="pdf-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
+  <div class="spinner"></div>
+  Descargar PDF
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ─── Data ───
+const FRANJAS = [
+  {
+    id: 'apertura', emoji: '\uD83D\uDD13', title: 'APERTURA', cssClass: 'franja-apertura',
+    zones: [
+      { zone: 'Iluminaci\u00f3n', tasks: [
+        { text: 'Encender luces generales del local', lv: true, sd: true },
+        { text: 'Encender l\u00e1mparas decorativas', lv: true, sd: true },
+        { text: 'Encender luz nevera de tercios', lv: true, sd: true },
+      ]},
+      { zone: 'Ambiente', tasks: [
+        { text: 'Poner m\u00fasica \u2014 Lista "Coff Chill Out"', lv: true, sd: true },
+        { text: 'Encender TVs y poner canal de deportes', lv: true, sd: true },
+      ]},
+      { zone: 'Equipos', tasks: [
+        { text: 'Encender vitrina de aperitivos', lv: true, sd: true },
+        { text: 'Encender vinotecas', lv: true, sd: true },
+        { text: 'Encender y preparar lavavajillas', lv: true, sd: true },
+        { text: 'Verificar caja registradora y dat\u00e1fono operativos', lv: true, sd: true },
+      ]},
+      { zone: 'Barra', tasks: [
+        { text: 'Cargar molinillos con caf\u00e9', lv: true, sd: true },
+        { text: 'Preparar leches (todos los tipos) en fr\u00edo', lv: true, sd: true },
+        { text: 'Cortar limones y naranjas', lv: true, sd: true },
+        { text: 'Preparar cubitera de vinos con hielo y agua', lv: true, sd: true },
+      ]},
+      { zone: 'Sala', tasks: [
+        { text: 'Pizarras abiertas \u2014 cara de DESAYUNOS', lv: true, sd: true },
+        { text: 'Boller\u00eda colocada encima de la vitrina', lv: true, sd: true },
+        { text: 'Azucareros en todas las mesas', lv: true, sd: true },
+        { text: 'Comprobar servilleteros llenos', lv: true, sd: true },
+      ]},
+      { zone: 'Aseos', tasks: [
+        { text: 'Verificar jab\u00f3n, papel y papelera vac\u00eda en aseos', lv: true, sd: true },
+      ]},
+    ]
+  },
+  {
+    id: 'mediodia', emoji: '\u2600\uFE0F', title: '12:00 \u2014 TRANSICI\u00d3N MEDIOD\u00cdA', cssClass: 'franja-mediodia',
+    zones: [
+      { zone: 'Vitrina', tasks: [
+        { text: 'Retirar boller\u00eda de la vitrina', lv: true, sd: true },
+        { text: 'Colocar aperitivos en la vitrina', lv: true, sd: true },
+      ]},
+      { zone: 'Sala', tasks: [
+        { text: 'Recoger azucareros de las mesas', lv: true, sd: true },
+        { text: 'Voltear pizarras \u2014 cara MEN\u00da DEL D\u00cdA', lv: true, sd: false },
+        { text: 'S\u00e1bados y Domingos: recoger pizarras', lv: false, sd: true },
+      ]},
+      { zone: 'Barra', tasks: [
+        { text: 'Reponer vasos y tazas limpios en barra', lv: true, sd: true },
+      ]},
+    ]
+  },
+  {
+    id: 'tarde', emoji: '\uD83D\uDD50', title: '17:00 \u2014 REPOSICI\u00d3N Y LIMPIEZA TARDE', cssClass: 'franja-tarde',
+    zones: [
+      { zone: 'Equipos', tasks: [
+        { text: 'Cambiar agua del lavavajillas', lv: true, sd: true },
+      ]},
+      { zone: 'Barra', tasks: [
+        { text: 'Cambiar hielo y agua de cubitera de vinos', lv: true, sd: true },
+        { text: 'Rellenar nevera de tercios', lv: true, sd: true },
+        { text: 'Rellenar refrescos', lv: true, sd: true },
+        { text: 'Reponer pajitas, posavasos y removedores', lv: true, sd: true },
+      ]},
+      { zone: 'Vitrina', tasks: [
+        { text: 'Volver a sacar la boller\u00eda a la vitrina', lv: true, sd: true },
+      ]},
+      { zone: 'Sala', tasks: [
+        { text: 'Repasar cubiertos (limpios y ordenados)', lv: true, sd: true },
+        { text: 'Brillar copas (sin marcas ni manchas)', lv: true, sd: true },
+      ]},
+      { zone: 'Limpieza', tasks: [
+        { text: 'Barrer sal\u00f3n, terraza y comedor', lv: true, sd: true },
+      ]},
+      { zone: 'Aseos', tasks: [
+        { text: 'Repasar aseos: jab\u00f3n, papel, papelera, suelo', lv: true, sd: true },
+      ]},
+    ]
+  },
+  {
+    id: 'noche', emoji: '\uD83C\uDF19', title: '20:00 \u2014 TRANSICI\u00d3N NOCHE', cssClass: 'franja-noche',
+    zones: [
+      { zone: 'Vitrina', tasks: [
+        { text: 'Retirar boller\u00eda de la vitrina', lv: true, sd: true },
+        { text: 'Reponer aperitivos en la vitrina si hace falta', lv: true, sd: true },
+      ]},
+      { zone: 'Barra', tasks: [
+        { text: 'Repasar limones/naranjas \u2014 cortar m\u00e1s si es necesario', lv: true, sd: true },
+        { text: 'Rellenar nevera de tercios si hace falta', lv: true, sd: true },
+      ]},
+      { zone: 'Ambiente', tasks: [
+        { text: 'Ajustar volumen m\u00fasica e iluminaci\u00f3n para ambiente nocturno', lv: true, sd: true },
+      ]},
+    ]
+  },
+  {
+    id: 'cierre', emoji: '\uD83D\uDD12', title: 'CIERRE', cssClass: 'franja-cierre',
+    zones: [
+      { zone: 'Barra', tasks: [
+        { text: 'Rellenar TODAS las c\u00e1maras (tercios, refrescos, cervezas)', lv: true, sd: true },
+        { text: 'Vaciar cubitera de vinos (hielo y agua)', lv: true, sd: true },
+        { text: 'Limpiar y secar barra completa', lv: true, sd: true },
+      ]},
+      { zone: 'Sala', tasks: [
+        { text: 'Azucareros colocados en todas las mesas', lv: true, sd: true },
+        { text: 'Servilleteros recargados en todas las mesas', lv: true, sd: true },
+      ]},
+      { zone: 'Limpieza', tasks: [
+        { text: 'Barrer y fregar sal\u00f3n, terraza y comedor', lv: true, sd: true },
+        { text: 'Vaciar papeleras y cubos de basura', lv: true, sd: true },
+      ]},
+      { zone: 'Equipos', tasks: [
+        { text: 'Apagar vitrina de aperitivos', lv: true, sd: true },
+        { text: 'Apagar luz nevera de tercios', lv: true, sd: true },
+        { text: 'Apagar vinotecas', lv: true, sd: true },
+        { text: 'Apagar lavavajillas (vaciar filtros si toca)', lv: true, sd: true },
+        { text: 'Apagar TVs', lv: true, sd: true },
+        { text: 'Apagar m\u00fasica', lv: true, sd: true },
+      ]},
+      { zone: 'Iluminaci\u00f3n', tasks: [
+        { text: 'Apagar l\u00e1mparas decorativas', lv: true, sd: true },
+        { text: 'Apagar luces generales', lv: true, sd: true },
+      ]},
+      { zone: 'Caja', tasks: [
+        { text: 'Cuadrar caja y cerrar dat\u00e1fono', lv: true, sd: true },
+      ]},
+      { zone: 'Seguridad', tasks: [
+        { text: 'Cerrar grifos, gas y verificar puertas/ventanas', lv: true, sd: true },
+        { text: 'Activar alarma y cerrar local', lv: true, sd: true },
+      ]},
+    ],
+    hasPhoto: true
+  },
+];
+
+// ─── State ───
+const now = new Date();
+const dayOfWeek = now.getDay(); // 0=Sun, 6=Sat
+const isWeekend = (dayOfWeek === 0 || dayOfWeek === 6);
+const dayKey = isWeekend ? 'sd' : 'lv';
+
+const dayNames = ['Domingo','Lunes','Martes','Mi\u00e9rcoles','Jueves','Viernes','S\u00e1bado'];
+const monthNames = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+
+const dateStr = `${dayNames[dayOfWeek]}, ${now.getDate()} de ${monthNames[now.getMonth()]} de ${now.getFullYear()}`;
+document.getElementById('dateDisplay').textContent = dateStr;
+document.getElementById('dayType').textContent = isWeekend ? 'S-D (Fin de semana)' : 'L-V (Entre semana)';
+
+let checkState = {}; // franjaId-zoneIdx-taskIdx -> bool
+let zPhotoData = null;
+
+// ─── Build UI ───
+function buildApp() {
+  const container = document.getElementById('appContent');
+  container.innerHTML = '';
+
+  FRANJAS.forEach(franja => {
+    // Filter tasks for current day type
+    const filteredZones = franja.zones.map(z => ({
+      zone: z.zone,
+      tasks: z.tasks.filter(t => t[dayKey])
+    })).filter(z => z.tasks.length > 0);
+
+    if (filteredZones.length === 0) return;
+
+    const totalTasks = filteredZones.reduce((s, z) => s + z.tasks.length, 0);
+
+    const section = document.createElement('section');
+    section.className = `franja ${franja.cssClass}`;
+    section.id = `franja-${franja.id}`;
+
+    // Header
+    section.innerHTML = `
+      <div class="franja-header" onclick="toggleFranja('${franja.id}')">
+        <div class="franja-header-left">
+          <span class="emoji">${franja.emoji}</span>
+          <h2>${franja.title}</h2>
+        </div>
+        <span class="franja-progress" id="progress-${franja.id}">0 / ${totalTasks}</span>
+        <span class="franja-chevron">\u25BC</span>
+      </div>
+      <div class="franja-body" id="body-${franja.id}"></div>
+    `;
+
+    const body = section.querySelector('.franja-body');
+
+    // Responsable input
+    body.innerHTML = `
+      <div class="responsable-row">
+        <label>Responsable:</label>
+        <input type="text" id="resp-${franja.id}" placeholder="Nombre del responsable" autocomplete="off">
+      </div>
+    `;
+
+    // Task zones
+    filteredZones.forEach((z, zIdx) => {
+      const zoneDiv = document.createElement('div');
+      zoneDiv.className = 'zone-group';
+      zoneDiv.innerHTML = `<div class="zone-label">${z.zone}</div>`;
+
+      z.tasks.forEach((task, tIdx) => {
+        const key = `${franja.id}-${zIdx}-${tIdx}`;
+        const item = document.createElement('div');
+        item.className = 'task-item';
+        item.dataset.key = key;
+        item.onclick = () => toggleTask(key, item);
+        item.innerHTML = `
+          <div class="custom-cb">
+            <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+          </div>
+          <span class="task-text">${task.text}</span>
+        `;
+        zoneDiv.appendChild(item);
+      });
+
+      body.appendChild(zoneDiv);
+    });
+
+    // Photo section for cierre
+    if (franja.hasPhoto) {
+      body.insertAdjacentHTML('beforeend', `
+        <div class="photo-section" id="photoSection">
+          <div class="photo-label">\uD83D\uDCF7 Foto del Informe Z</div>
+          <button class="photo-btn" onclick="document.getElementById('photoInput').click()">
+            \uD83D\uDCF7 Adjuntar foto Z
+          </button>
+          <input type="file" id="photoInput" accept="image/*" capture="environment" style="display:none" onchange="handlePhoto(this)">
+          <br>
+          <img class="photo-preview" id="photoPreview" alt="Vista previa Z">
+          <br>
+          <button class="photo-remove" onclick="removePhoto()">Eliminar foto</button>
+        </div>
+      `);
+    }
+
+    container.appendChild(section);
+  });
+
+  updateAllProgress();
+}
+
+// ─── Interactions ───
+function toggleFranja(id) {
+  document.getElementById(`franja-${id}`).classList.toggle('collapsed');
+}
+
+function toggleTask(key, el) {
+  checkState[key] = !checkState[key];
+  el.classList.toggle('checked', checkState[key]);
+  updateAllProgress();
+}
+
+function updateAllProgress() {
+  let globalChecked = 0, globalTotal = 0;
+
+  FRANJAS.forEach(franja => {
+    const filteredZones = franja.zones.map(z => ({
+      zone: z.zone,
+      tasks: z.tasks.filter(t => t[dayKey])
+    })).filter(z => z.tasks.length > 0);
+
+    let checked = 0, total = 0;
+    filteredZones.forEach((z, zIdx) => {
+      z.tasks.forEach((t, tIdx) => {
+        total++;
+        if (checkState[`${franja.id}-${zIdx}-${tIdx}`]) checked++;
+      });
+    });
+
+    const progEl = document.getElementById(`progress-${franja.id}`);
+    if (progEl) progEl.textContent = `${checked} / ${total}`;
+
+    globalChecked += checked;
+    globalTotal += total;
+  });
+
+  document.getElementById('globalCount').textContent = `${globalChecked} / ${globalTotal}`;
+  const pct = globalTotal ? (globalChecked / globalTotal * 100) : 0;
+  document.getElementById('globalBar').style.width = pct + '%';
+}
+
+function handlePhoto(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    zPhotoData = e.target.result;
+    document.getElementById('photoPreview').src = zPhotoData;
+    document.getElementById('photoSection').classList.add('has-photo');
+  };
+  reader.readAsDataURL(file);
+}
+
+function removePhoto() {
+  zPhotoData = null;
+  document.getElementById('photoInput').value = '';
+  document.getElementById('photoPreview').src = '';
+  document.getElementById('photoSection').classList.remove('has-photo');
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ─── PDF Generation ───
+async function generatePDF() {
+  const btn = document.getElementById('pdfBtn');
+  if (btn.classList.contains('generating')) return;
+  btn.classList.add('generating');
+
+  try {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF('p', 'mm', 'a4');
+    const pw = 210, ph = 297;
+    const ml = 15, mr = 15, mt = 15;
+    const cw = pw - ml - mr;
+    let y = mt;
+
+    const checkMark = '\u2713';
+    const crossMark = '\u2717';
+
+    // Helper: add page if needed
+    function ensureSpace(needed) {
+      if (y + needed > ph - 20) {
+        pdf.addPage();
+        y = mt;
+      }
+    }
+
+    // Title with logo
+    pdf.setFillColor(92, 26, 27);
+    pdf.rect(0, 0, pw, 38, 'F');
+    // Add logo to PDF
+    try {
+      const logoImg = document.querySelector('.header img');
+      if (logoImg) {
+        const logoCanvas = document.createElement('canvas');
+        logoCanvas.width = logoImg.naturalWidth;
+        logoCanvas.height = logoImg.naturalHeight;
+        logoCanvas.getContext('2d').drawImage(logoImg, 0, 0);
+        const logoData = logoCanvas.toDataURL('image/png');
+        pdf.addImage(logoData, 'PNG', 8, 3, 16, 16);
+      }
+    } catch(e) {}
+    pdf.setTextColor(255, 255, 255);
+    pdf.setFontSize(18);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Casa Amparo 1948', pw / 2, 14, { align: 'center' });
+    pdf.setFontSize(10);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('CHECKLIST DIARIO DE SALA', pw / 2, 22, { align: 'center' });
+    pdf.setFontSize(9);
+    pdf.text(dateStr + '  |  ' + (isWeekend ? 'S-D (Fin de semana)' : 'L-V (Entre semana)'), pw / 2, 30, { align: 'center' });
+
+    // Global progress
+    let globalChecked = 0, globalTotal = 0;
+    FRANJAS.forEach(franja => {
+      franja.zones.map(z => ({
+        zone: z.zone,
+        tasks: z.tasks.filter(t => t[dayKey])
+      })).filter(z => z.tasks.length > 0).forEach((z, zIdx) => {
+        z.tasks.forEach((t, tIdx) => {
+          globalTotal++;
+          if (checkState[`${franja.id}-${zIdx}-${tIdx}`]) globalChecked++;
+        });
+      });
+    });
+    pdf.setFontSize(9);
+    pdf.text(`Completado: ${globalChecked} / ${globalTotal} tareas (${globalTotal ? Math.round(globalChecked/globalTotal*100) : 0}%)`, pw / 2, 36, { align: 'center' });
+
+    y = 46;
+
+    // Franjas
+    const franjaColors = {
+      apertura: [92, 26, 27],
+      mediodia: [201, 169, 78],
+      tarde: [46, 107, 79],
+      noche: [59, 48, 100],
+      cierre: [26, 26, 46]
+    };
+
+    FRANJAS.forEach(franja => {
+      const filteredZones = franja.zones.map(z => ({
+        zone: z.zone,
+        tasks: z.tasks.filter(t => t[dayKey])
+      })).filter(z => z.tasks.length > 0);
+      if (filteredZones.length === 0) return;
+
+      let checked = 0, total = 0;
+      filteredZones.forEach((z, zIdx) => {
+        z.tasks.forEach((t, tIdx) => {
+          total++;
+          if (checkState[`${franja.id}-${zIdx}-${tIdx}`]) checked++;
+        });
+      });
+
+      ensureSpace(16);
+
+      // Franja header bar
+      const col = franjaColors[franja.id] || [92, 26, 27];
+      pdf.setFillColor(col[0], col[1], col[2]);
+      pdf.roundedRect(ml, y, cw, 8, 1.5, 1.5, 'F');
+      pdf.setTextColor(255, 255, 255);
+      if (franja.id === 'mediodia') pdf.setTextColor(92, 26, 27);
+      pdf.setFontSize(9);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text(`${franja.emoji}  ${franja.title}`, ml + 4, y + 5.5);
+      pdf.text(`${checked}/${total}`, ml + cw - 4, y + 5.5, { align: 'right' });
+      y += 10;
+
+      // Responsable
+      const respInput = document.getElementById(`resp-${franja.id}`);
+      const respName = respInput ? respInput.value.trim() : '';
+      ensureSpace(7);
+      pdf.setTextColor(92, 26, 27);
+      pdf.setFontSize(8);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('Responsable: ', ml + 2, y + 4);
+      pdf.setFont('helvetica', 'normal');
+      pdf.setTextColor(45, 42, 38);
+      pdf.text(respName || '(sin asignar)', ml + 28, y + 4);
+      y += 7;
+
+      // Tasks
+      filteredZones.forEach((z, zIdx) => {
+        ensureSpace(7);
+        pdf.setFontSize(7);
+        pdf.setFont('helvetica', 'bold');
+        pdf.setTextColor(107, 101, 96);
+        pdf.text(z.zone.toUpperCase(), ml + 3, y + 3);
+        y += 5;
+
+        z.tasks.forEach((task, tIdx) => {
+          ensureSpace(6);
+          const key = `${franja.id}-${zIdx}-${tIdx}`;
+          const done = !!checkState[key];
+
+          pdf.setFontSize(8);
+          if (done) {
+            pdf.setTextColor(74, 124, 89);
+            pdf.setFont('helvetica', 'bold');
+            pdf.text(checkMark, ml + 4, y + 3.5);
+          } else {
+            pdf.setTextColor(180, 60, 60);
+            pdf.setFont('helvetica', 'bold');
+            pdf.text(crossMark, ml + 4, y + 3.5);
+          }
+          pdf.setFont('helvetica', 'normal');
+          pdf.setTextColor(45, 42, 38);
+          if (done) pdf.setTextColor(140, 140, 140);
+          pdf.text(task.text, ml + 12, y + 3.5);
+          y += 5.5;
+        });
+      });
+
+      // Photo for cierre
+      if (franja.hasPhoto && zPhotoData) {
+        ensureSpace(60);
+        pdf.setFontSize(8);
+        pdf.setFont('helvetica', 'bold');
+        pdf.setTextColor(92, 26, 27);
+        pdf.text('Foto Informe Z:', ml + 3, y + 4);
+        y += 6;
+        try {
+          pdf.addImage(zPhotoData, 'JPEG', ml + 3, y, 50, 50);
+          y += 54;
+        } catch(e) {
+          pdf.setFontSize(7);
+          pdf.setTextColor(180, 60, 60);
+          pdf.text('(Error al insertar imagen)', ml + 3, y + 4);
+          y += 7;
+        }
+      }
+
+      y += 4;
+    });
+
+    // Notes
+    const notes = document.getElementById('notesArea').value.trim();
+    if (notes) {
+      ensureSpace(20);
+      pdf.setFillColor(245, 240, 232);
+      pdf.roundedRect(ml, y, cw, 8, 1.5, 1.5, 'F');
+      pdf.setTextColor(92, 26, 27);
+      pdf.setFontSize(9);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('Notas / Incidencias', ml + 4, y + 5.5);
+      y += 11;
+      pdf.setFont('helvetica', 'normal');
+      pdf.setTextColor(45, 42, 38);
+      pdf.setFontSize(8);
+      const lines = pdf.splitTextToSize(notes, cw - 8);
+      lines.forEach(line => {
+        ensureSpace(5);
+        pdf.text(line, ml + 4, y + 3);
+        y += 4.5;
+      });
+    }
+
+    // Footer
+    ensureSpace(12);
+    y += 6;
+    pdf.setDrawColor(200, 200, 200);
+    pdf.line(ml, y, ml + cw, y);
+    y += 5;
+    pdf.setFontSize(6.5);
+    pdf.setTextColor(160, 160, 160);
+    pdf.text(`Generado: ${new Date().toLocaleString('es-ES')}  |  Casa Amparo 1948 - Checklist Sala`, pw / 2, y, { align: 'center' });
+
+    const dateFile = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    pdf.save(`Checklist_Sala_${dateFile}.pdf`);
+    showToast('PDF descargado correctamente');
+  } catch (err) {
+    console.error('Error PDF:', err);
+    showToast('Error al generar el PDF');
+  } finally {
+    btn.classList.remove('generating');
+  }
+}
+
+// ─── Init ───
+buildApp();
+</script>
+</body>
+</html>

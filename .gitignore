@@ -1,0 +1,17 @@
+# Credenciales y tokens
+_BBDD/credentials.json
+_BBDD/token.json
+_BBDD/sheet_info.json
+_BBDD/*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs/tarifas originales (pesados)
+PEDIDOS/APP/docs/*.pdf
+PEDIDOS/APP/docs/*.xlsx
