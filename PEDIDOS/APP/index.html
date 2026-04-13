@@ -92,6 +92,16 @@
     </div>
 
     <script src="../../_BBDD/config.js"></script>
+    <script>
+        // Fallback: if config not loaded (GitHub Pages path issue), define it inline
+        if (typeof CONFIG_CASA_AMPARO === 'undefined') {
+            var CONFIG_CASA_AMPARO = {
+                API_URL: 'https://script.google.com/macros/s/AKfycbw5UjL8ky9m-fIotVEJBvBqI2kM5t-HEAUkvlY2xaSjT9ZniMeEC85WrMzigNw4xT6zzA/exec',
+                NOMBRE: 'Casa Amparo 1948',
+                VERSION: '1.0'
+            };
+        }
+    </script>
     <script src="src/app.js"></script>
 </body>
 </html>
