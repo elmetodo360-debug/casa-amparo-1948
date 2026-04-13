@@ -324,20 +324,33 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* ===== PRODUCT ROW ===== */
-.product-list {
+/* ===== PRODUCT TABLE ===== */
+.product-table {
     background: var(--color-card);
     border-radius: 0 0 var(--radius) var(--radius);
     box-shadow: var(--shadow);
     overflow: hidden;
 }
 
+.product-table-head {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    background: #f5f0eb;
+    border-bottom: 2px solid var(--color-border);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    gap: 6px;
+}
+
 .product-row {
     display: flex;
     align-items: center;
-    padding: 8px 14px;
+    padding: 7px 12px;
     border-bottom: 1px solid var(--color-border);
-    gap: 8px;
+    gap: 6px;
     transition: background 0.15s;
 }
 
@@ -348,50 +361,41 @@ header h1 {
 .product-row.stock-bajo { background: #fff3e0; }
 .product-row.stock-critico { background: #fce4ec; }
 
-.product-info { flex: 1; min-width: 0; }
+/* Columns */
+.col-producto { flex: 1; min-width: 0; }
+.col-num { width: 44px; text-align: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+.col-real { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
 
-.product-name { font-size: 0.82rem; font-weight: 500; line-height: 1.3; }
+.col-min { color: var(--color-warning); font-size: 0.85rem; }
 
-.product-meta { font-size: 0.7rem; color: var(--color-text-light); margin-top: 2px; }
+.col-pedido { color: var(--color-text-light); font-size: 0.85rem; }
+.col-pedido.pedido-activo {
+    color: white;
+    background: var(--color-danger);
+    border-radius: 6px;
+    padding: 2px 0;
+    font-size: 0.95rem;
+}
+
+.product-name { font-size: 0.8rem; font-weight: 500; line-height: 1.2; }
+
+.product-meta { font-size: 0.68rem; color: var(--color-text-light); margin-top: 1px; }
 
 .product-code {
     background: var(--color-border);
-    padding: 1px 5px;
+    padding: 1px 4px;
     border-radius: 3px;
     font-family: monospace;
-    font-size: 0.68rem;
+    font-size: 0.65rem;
 }
-
-.stock-min-label {
-    color: var(--color-warning);
-    font-weight: 600;
-}
-
-.product-price {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    white-space: nowrap;
-    min-width: 65px;
-    text-align: right;
-}
-
-.product-price .unit {
-    font-size: 0.68rem;
-    font-weight: 400;
-    color: var(--color-text-light);
-    display: block;
-}
-
-.qty-controls { display: flex; align-items: center; gap: 3px; }
 
 .qty-btn {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     border: 2px solid var(--color-border);
     background: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     display: flex;
@@ -399,6 +403,7 @@ header h1 {
     justify-content: center;
     color: var(--color-text);
     transition: all 0.15s;
+    flex-shrink: 0;
 }
 
 .qty-btn.plus { color: var(--color-success); border-color: #c8e6c9; }
@@ -407,12 +412,12 @@ header h1 {
 .qty-btn.minus:hover { background: #ffebee; border-color: var(--color-danger); }
 
 .qty-input {
-    width: 48px;
-    height: 32px;
+    width: 44px;
+    height: 28px;
     text-align: center;
     border: 2px solid var(--color-border);
     border-radius: 6px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--color-text);
     -moz-appearance: textfield;
@@ -779,12 +784,13 @@ header h1 {
     .panel-top-bar { flex-direction: column; gap: 8px; }
     .btn-pdf-proveedor { width: 100%; text-align: center; }
 
-    .product-row { padding: 6px 10px; gap: 6px; }
-    .product-name { font-size: 0.78rem; }
-    .product-price { font-size: 0.8rem; min-width: 55px; }
+    .product-table-head { padding: 5px 8px; font-size: 0.62rem; }
+    .product-row { padding: 5px 8px; gap: 4px; }
+    .product-name { font-size: 0.75rem; }
+    .col-num { width: 36px; font-size: 0.8rem; }
 
-    .qty-btn { width: 28px; height: 28px; font-size: 0.95rem; }
-    .qty-input { width: 42px; height: 28px; font-size: 0.85rem; }
+    .qty-btn { width: 26px; height: 26px; font-size: 0.9rem; }
+    .qty-input { width: 38px; height: 26px; font-size: 0.82rem; }
 
     .panel-body { max-width: 100%; }
 

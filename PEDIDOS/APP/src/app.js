@@ -167,40 +167,43 @@ function renderPanel(tabIndex) {
         html += `
             <div class="category-section" data-cat="${cat}">
                 <div class="category-header">${cat}</div>
-                <div class="product-list">
+                <div class="product-table">
+                    <div class="product-table-head">
+                        <span class="col-producto">Producto</span>
+                        <span class="col-num">Min.</span>
+                        <span class="col-real">Stock Real</span>
+                        <span class="col-num">Pedido</span>
+                    </div>
                     ${catItems.map(item => {
                         const idx = productos.indexOf(item);
                         const qty = inventario[idx] || 0;
                         const stockMin = item.stockMinimo || 0;
-                        const precio = item.precio;
-                        const precioStr = typeof precio === 'number' ? precio.toFixed(2).replace('.', ',') + ' \u20AC' : 'S/P';
+                        const pedidoSugerido = stockMin > 0 && qty < stockMin ? stockMin - qty : 0;
 
-                        // Status: green if stock >= min, orange if below, red if 0
                         let statusClass = '';
                         if (qty > 0 && qty >= stockMin) statusClass = 'stock-ok';
                         else if (qty > 0 && qty < stockMin) statusClass = 'stock-bajo';
                         else if (stockMin > 0 && qty === 0) statusClass = 'stock-critico';
 
                         return `
-                            <div class="product-row ${qty > 0 ? 'has-qty' : ''} ${statusClass}" id="row-${idx}">
-                                <div class="product-info">
+                            <div class="product-row ${statusClass}" id="row-${idx}">
+                                <div class="col-producto">
                                     <div class="product-name">${item.producto}</div>
                                     <div class="product-meta">
                                         ${item.codigo ? `<span class="product-code">${item.codigo}</span> ` : ''}
-                                        ${item.unidad || ''} &middot; IVA ${item.iva}
-                                        ${stockMin > 0 ? ` &middot; <span class="stock-min-label">Min: ${stockMin}</span>` : ''}
+                                        ${item.unidad || ''}
                                     </div>
                                 </div>
-                                <div class="product-price">
-                                    ${precioStr}
-                                    <span class="unit">/${item.unidad || 'ud'}</span>
-                                </div>
-                                <div class="qty-controls">
+                                <div class="col-num col-min">${stockMin}</div>
+                                <div class="col-real">
                                     <button class="qty-btn minus" onclick="changeQty(${idx}, -1)">&minus;</button>
                                     <input type="number" class="qty-input" id="qty-${idx}" value="${qty}" min="0"
                                         onchange="setQty(${idx}, this.value)"
                                         onfocus="this.select()">
                                     <button class="qty-btn plus" onclick="changeQty(${idx}, 1)">+</button>
+                                </div>
+                                <div class="col-num col-pedido ${pedidoSugerido > 0 ? 'pedido-activo' : ''}" id="pedido-${idx}">
+                                    ${pedidoSugerido > 0 ? pedidoSugerido : '-'}
                                 </div>
                             </div>
                         `;
@@ -258,15 +261,22 @@ function setQty(idx, val) {
         delete inventario[idx];
     }
 
-    // Update row styling
+    // Update row styling and pedido sugerido
     const row = document.getElementById(`row-${idx}`);
     if (row) {
         const stockMin = productos[idx].stockMinimo || 0;
-        row.classList.toggle('has-qty', val > 0);
+        const pedidoSugerido = stockMin > 0 && val < stockMin ? stockMin - val : 0;
+
         row.classList.remove('stock-ok', 'stock-bajo', 'stock-critico');
         if (val > 0 && val >= stockMin) row.classList.add('stock-ok');
         else if (val > 0 && val < stockMin) row.classList.add('stock-bajo');
         else if (stockMin > 0 && val === 0) row.classList.add('stock-critico');
+
+        const pedidoCell = document.getElementById(`pedido-${idx}`);
+        if (pedidoCell) {
+            pedidoCell.textContent = pedidoSugerido > 0 ? pedidoSugerido : '-';
+            pedidoCell.classList.toggle('pedido-activo', pedidoSugerido > 0);
+        }
     }
 
     saveInventario();
