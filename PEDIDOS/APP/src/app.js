@@ -444,7 +444,7 @@ function generarTextoProveedor(proveedor) {
     const itemsPedir = [];
     productos.forEach((p, idx) => {
         if (p.proveedor === proveedor && (pedidos[idx] || 0) > 0) {
-            itemsPedir.push({ ...p, cantidad: pedidos[idx] });
+            itemsPedir.push({ ...p, stock: inventario[idx] || 0, cantidad: pedidos[idx] });
         }
     });
 
@@ -461,8 +461,8 @@ function generarTextoProveedor(proveedor) {
 
     itemsPedir.forEach(item => {
         const unidad = item.unidad ? ` (${item.unidad})` : '';
-        const codigo = item.codigo ? ` [${item.codigo}]` : '';
-        texto += `${item.cantidad} x ${item.producto}${unidad}${codigo}\n`;
+        texto += `${item.producto}${unidad}\n`;
+        texto += `  Hay: ${item.stock} → Pedir: *${item.cantidad}*\n`;
     });
 
     texto += `———————————————\n`;

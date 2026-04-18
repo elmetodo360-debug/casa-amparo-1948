@@ -167,6 +167,17 @@ header h1 {
     border-color: var(--color-info);
 }
 
+.btn-limpiar-header {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.btn-limpiar-header:hover {
+    background: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
 .btn-resumen {
     background: var(--color-accent);
     color: white;
