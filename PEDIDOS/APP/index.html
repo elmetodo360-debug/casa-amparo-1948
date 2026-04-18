@@ -37,9 +37,6 @@
                 <p class="subtitle" id="header-subtitle">Control de Inventario</p>
             </div>
             <div class="header-actions">
-                <button class="btn-header btn-modo" id="btn-modo" onclick="toggleModo()">
-                    Modo Admin
-                </button>
                 <button id="btn-resumen" class="btn-resumen" onclick="toggleResumen()">
                     <span class="badge" id="badge-count">0</span>
                     Resumen
@@ -51,17 +48,6 @@
         <div id="vista-inventario">
             <nav id="tabs-nav" class="tabs-nav"></nav>
             <main id="main-content" class="main-content"></main>
-        </div>
-
-        <!-- VISTA ADMIN -->
-        <div id="vista-admin" class="hidden">
-            <div class="admin-container">
-                <div class="admin-tabs">
-                    <button class="admin-tab active" onclick="switchAdminTab('pedidos')">Pedidos Sugeridos</button>
-                    <button class="admin-tab" onclick="switchAdminTab('historico')">Histórico</button>
-                </div>
-                <div id="admin-content" class="admin-content"></div>
-            </div>
         </div>
 
         <!-- PANEL RESUMEN -->

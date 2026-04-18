@@ -4,8 +4,8 @@
 
 let productos = [];
 let inventario = {}; // { index: cantidad que HAY }
+let pedidos = {};    // { index: cantidad a PEDIR }
 let usuarioActual = '';
-let modoAdmin = false;
 let usandoAPI = false;
 
 // --- INIT ---
@@ -38,11 +38,6 @@ async function entrar() {
         document.getElementById('app-principal').classList.remove('hidden');
         document.getElementById('header-subtitle').textContent = `Inventario · ${usuarioActual}`;
 
-        // Only show admin button for Chema
-        if (usuarioActual !== 'Chema') {
-            document.getElementById('btn-modo').classList.add('hidden');
-        }
-
         loadInventario();
         renderTabs();
         renderPanel(0);
@@ -64,9 +59,7 @@ async function cargarProductos() {
     } else {
         // Fallback: local JSON
         const resp = await fetch('src/productos.json');
-        const raw = await resp.json();
-        // Add stockMinimo = 0 if not present
-        productos = raw.map(p => ({ ...p, stockMinimo: p.stockMinimo || 0 }));
+        productos = await resp.json();
     }
 }
 
@@ -92,7 +85,7 @@ function renderTabs() {
                     const count = items.length;
                     const filled = items.filter((p) => {
                         const idx = productos.indexOf(p);
-                        return inventario[idx] > 0;
+                        return inventario[idx] > 0 || pedidos[idx] > 0;
                     }).length;
                     const shortName = prov.replace(/\s*\(.*\)/, '');
                     return `<option value="${i}">${shortName} (${filled}/${count})</option>`;
@@ -170,23 +163,16 @@ function renderPanel(tabIndex) {
                 <div class="product-table">
                     <div class="product-table-head">
                         <span class="col-producto">Producto</span>
-                        <span class="col-num">Min.</span>
                         <span class="col-real">Stock Real</span>
-                        <span class="col-num">Pedido</span>
+                        <span class="col-real">Pedido</span>
                     </div>
                     ${catItems.map(item => {
                         const idx = productos.indexOf(item);
                         const qty = inventario[idx] || 0;
-                        const stockMin = item.stockMinimo || 0;
-                        const pedidoSugerido = stockMin > 0 && qty < stockMin ? stockMin - qty : 0;
-
-                        let statusClass = '';
-                        if (qty > 0 && qty >= stockMin) statusClass = 'stock-ok';
-                        else if (qty > 0 && qty < stockMin) statusClass = 'stock-bajo';
-                        else if (stockMin > 0 && qty === 0) statusClass = 'stock-critico';
+                        const ped = pedidos[idx] || 0;
 
                         return `
-                            <div class="product-row ${statusClass}" id="row-${idx}">
+                            <div class="product-row ${qty > 0 ? 'stock-ok' : ''}" id="row-${idx}">
                                 <div class="col-producto">
                                     <div class="product-name">${item.producto}</div>
                                     <div class="product-meta">
@@ -194,7 +180,6 @@ function renderPanel(tabIndex) {
                                         ${item.unidad || ''}
                                     </div>
                                 </div>
-                                <div class="col-num col-min">${stockMin}</div>
                                 <div class="col-real">
                                     <button class="qty-btn minus" onclick="changeQty(${idx}, -1)">&minus;</button>
                                     <input type="number" class="qty-input" id="qty-${idx}" value="${qty}" min="0"
@@ -202,8 +187,12 @@ function renderPanel(tabIndex) {
                                         onfocus="this.select()">
                                     <button class="qty-btn plus" onclick="changeQty(${idx}, 1)">+</button>
                                 </div>
-                                <div class="col-num col-pedido ${pedidoSugerido > 0 ? 'pedido-activo' : ''}" id="pedido-${idx}">
-                                    ${pedidoSugerido > 0 ? pedidoSugerido : '-'}
+                                <div class="col-real">
+                                    <button class="qty-btn minus" onclick="changePedido(${idx}, -1)">&minus;</button>
+                                    <input type="number" class="qty-input pedido-input" id="ped-${idx}" value="${ped}" min="0"
+                                        onchange="setPedido(${idx}, this.value)"
+                                        onfocus="this.select()">
+                                    <button class="qty-btn plus" onclick="changePedido(${idx}, 1)">+</button>
                                 </div>
                             </div>
                         `;
@@ -261,22 +250,38 @@ function setQty(idx, val) {
         delete inventario[idx];
     }
 
-    // Update row styling and pedido sugerido
     const row = document.getElementById(`row-${idx}`);
     if (row) {
-        const stockMin = productos[idx].stockMinimo || 0;
-        const pedidoSugerido = stockMin > 0 && val < stockMin ? stockMin - val : 0;
+        row.classList.toggle('stock-ok', val > 0);
+    }
 
-        row.classList.remove('stock-ok', 'stock-bajo', 'stock-critico');
-        if (val > 0 && val >= stockMin) row.classList.add('stock-ok');
-        else if (val > 0 && val < stockMin) row.classList.add('stock-bajo');
-        else if (stockMin > 0 && val === 0) row.classList.add('stock-critico');
+    saveInventario();
+    updateBadge();
+    updateTabCounts();
+}
 
-        const pedidoCell = document.getElementById(`pedido-${idx}`);
-        if (pedidoCell) {
-            pedidoCell.textContent = pedidoSugerido > 0 ? pedidoSugerido : '-';
-            pedidoCell.classList.toggle('pedido-activo', pedidoSugerido > 0);
-        }
+function changePedido(idx, delta) {
+    const input = document.getElementById(`ped-${idx}`);
+    let val = parseInt(input.value) || 0;
+    val = Math.max(0, val + delta);
+    input.value = val;
+    setPedido(idx, val);
+}
+
+function setPedido(idx, val) {
+    val = Math.max(0, parseInt(val) || 0);
+    const input = document.getElementById(`ped-${idx}`);
+    if (input) input.value = val;
+
+    if (val > 0) {
+        pedidos[idx] = val;
+    } else {
+        delete pedidos[idx];
+    }
+
+    const row = document.getElementById(`row-${idx}`);
+    if (row) {
+        row.classList.toggle('pedido-row', val > 0);
     }
 
     saveInventario();
@@ -295,7 +300,7 @@ function updateTabCounts() {
         const count = items.length;
         const filled = items.filter(p => {
             const idx = productos.indexOf(p);
-            return inventario[idx] > 0;
+            return inventario[idx] > 0 || pedidos[idx] > 0;
         }).length;
         const shortName = prov.replace(/\s*\(.*\)/, '');
         options[i].textContent = `${shortName} (${filled}/${count})`;
@@ -314,15 +319,20 @@ function toggleResumen() {
 
 function renderResumen() {
     const content = document.getElementById('resumen-content');
-    const indices = Object.keys(inventario).map(Number).filter(i => inventario[i] > 0);
 
-    if (indices.length === 0) {
+    // Collect all indices that have stock or pedido
+    const allIndices = new Set([
+        ...Object.keys(inventario).map(Number).filter(i => inventario[i] > 0),
+        ...Object.keys(pedidos).map(Number).filter(i => pedidos[i] > 0)
+    ]);
+
+    if (allIndices.size === 0) {
         content.innerHTML = '<p class="empty-msg">No se ha registrado inventario</p>';
         return;
     }
 
     const porProv = {};
-    indices.forEach(i => {
+    allIndices.forEach(i => {
         const p = productos[i];
         if (!porProv[p.proveedor]) porProv[p.proveedor] = [];
         porProv[p.proveedor].push(i);
@@ -331,7 +341,7 @@ function renderResumen() {
     let html = '';
     Object.keys(porProv).forEach(prov => {
         const provEscaped = prov.replace(/'/g, "\\'");
-        let needOrder = 0;
+        let totalPedir = 0;
 
         html += `<div class="resumen-proveedor">
             <div class="resumen-prov-header">
@@ -341,24 +351,22 @@ function renderResumen() {
 
         porProv[prov].forEach(i => {
             const p = productos[i];
-            const qty = inventario[i];
-            const stockMin = p.stockMinimo || 0;
-            const bajo = stockMin > 0 && qty < stockMin;
-            if (bajo) needOrder++;
+            const qty = inventario[i] || 0;
+            const ped = pedidos[i] || 0;
+            if (ped > 0) totalPedir++;
 
-            html += `<div class="resumen-item ${bajo ? 'resumen-item-bajo' : ''}">
+            html += `<div class="resumen-item ${ped > 0 ? 'resumen-item-bajo' : ''}">
                 <span class="resumen-item-name">${p.producto}</span>
                 <span class="resumen-item-qty">
                     Hay: <strong>${qty}</strong>
-                    ${stockMin > 0 ? ` / Min: ${stockMin}` : ''}
-                    ${bajo ? ' <span class="tag-pedir">PEDIR</span>' : ''}
+                    ${ped > 0 ? ` · Pedir: <strong>${ped}</strong> <span class="tag-pedir">PEDIR</span>` : ''}
                 </span>
             </div>`;
         });
 
         html += `<div class="resumen-subtotal">
             ${porProv[prov].length} registrados
-            ${needOrder > 0 ? ` · <span class="text-danger">${needOrder} por pedir</span>` : ' · Todo OK'}
+            ${totalPedir > 0 ? ` · <span class="text-danger">${totalPedir} por pedir</span>` : ''}
         </div></div>`;
     });
 
@@ -366,7 +374,11 @@ function renderResumen() {
 }
 
 function updateBadge() {
-    const count = Object.keys(inventario).filter(k => inventario[k] > 0).length;
+    const allIndices = new Set([
+        ...Object.keys(inventario).filter(k => inventario[k] > 0),
+        ...Object.keys(pedidos).filter(k => pedidos[k] > 0)
+    ]);
+    const count = allIndices.size;
     const badge = document.getElementById('badge-count');
     badge.textContent = count;
     badge.setAttribute('data-count', count);
@@ -375,9 +387,12 @@ function updateBadge() {
 // --- GUARDAR EN GOOGLE SHEETS ---
 
 async function guardarEnSheet() {
-    const indices = Object.keys(inventario).map(Number).filter(i => inventario[i] > 0);
+    const allIndices = new Set([
+        ...Object.keys(inventario).map(Number).filter(i => inventario[i] > 0),
+        ...Object.keys(pedidos).map(Number).filter(i => pedidos[i] > 0)
+    ]);
 
-    if (indices.length === 0) {
+    if (allIndices.size === 0) {
         showToast('No hay inventario para guardar');
         return;
     }
@@ -387,17 +402,17 @@ async function guardarEnSheet() {
         return;
     }
 
-    if (!confirm(`¿Guardar inventario? (${indices.length} productos registrados por ${usuarioActual})`)) return;
+    if (!confirm(`¿Guardar inventario? (${allIndices.size} productos registrados por ${usuarioActual})`)) return;
 
     showLoading('Guardando en Google Sheets...');
 
-    const items = indices.map(i => ({
+    const items = [...allIndices].map(i => ({
         proveedor: productos[i].proveedor,
         codigo: productos[i].codigo,
         producto: productos[i].producto,
         unidad: productos[i].unidad,
-        stockActual: inventario[i],
-        stockMinimo: productos[i].stockMinimo || 0
+        stockActual: inventario[i] || 0,
+        pedidoPropuesto: pedidos[i] || 0
     }));
 
     try {
@@ -421,199 +436,6 @@ async function guardarEnSheet() {
         showToast('Error al guardar: ' + err.message);
         console.error(err);
     }
-}
-
-// --- MODO ADMIN ---
-
-function toggleModo() {
-    modoAdmin = !modoAdmin;
-    const btn = document.getElementById('btn-modo');
-    const vistaInv = document.getElementById('vista-inventario');
-    const vistaAdmin = document.getElementById('vista-admin');
-
-    if (modoAdmin) {
-        btn.textContent = 'Modo Inventario';
-        btn.classList.add('active');
-        vistaInv.classList.add('hidden');
-        vistaAdmin.classList.remove('hidden');
-        cargarAdminPedidos();
-    } else {
-        btn.textContent = 'Modo Admin';
-        btn.classList.remove('active');
-        vistaInv.classList.remove('hidden');
-        vistaAdmin.classList.add('hidden');
-    }
-}
-
-function switchAdminTab(tab) {
-    document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
-    event.target.classList.add('active');
-
-    if (tab === 'pedidos') cargarAdminPedidos();
-    else if (tab === 'historico') cargarAdminHistorico();
-}
-
-async function cargarAdminPedidos() {
-    const content = document.getElementById('admin-content');
-
-    if (!usandoAPI) {
-        // Offline: calculate from local data
-        const pedidos = calcularPedidosLocales();
-        renderAdminPedidos(pedidos);
-        return;
-    }
-
-    content.innerHTML = '<p class="loading-text">Cargando pedidos sugeridos...</p>';
-
-    try {
-        const resp = await fetch(CONFIG_CASA_AMPARO.API_URL + '?action=getPedidosPendientes');
-        const data = await resp.json();
-        renderAdminPedidos(data.pedidos || []);
-    } catch (err) {
-        content.innerHTML = '<p class="error-text">Error: ' + err.message + '</p>';
-    }
-}
-
-function calcularPedidosLocales() {
-    const pedidos = [];
-    productos.forEach((p, idx) => {
-        const stockMin = p.stockMinimo || 0;
-        const stockActual = inventario[idx] || 0;
-        if (stockMin > 0 && stockActual < stockMin) {
-            pedidos.push({
-                proveedor: p.proveedor,
-                codigo: p.codigo,
-                producto: p.producto,
-                unidad: p.unidad,
-                stockActual: stockActual,
-                stockMinimo: stockMin,
-                cantidadPedir: stockMin - stockActual
-            });
-        }
-    });
-    return pedidos;
-}
-
-function renderAdminPedidos(pedidos) {
-    const content = document.getElementById('admin-content');
-
-    if (pedidos.length === 0) {
-        content.innerHTML = '<div class="admin-empty"><p>No hay pedidos pendientes. Todo el stock está por encima del mínimo.</p></div>';
-        return;
-    }
-
-    // Group by provider
-    const porProv = {};
-    pedidos.forEach(p => {
-        if (!porProv[p.proveedor]) porProv[p.proveedor] = [];
-        porProv[p.proveedor].push(p);
-    });
-
-    let html = `<div class="admin-summary">
-        <span>${pedidos.length} productos por pedir de ${Object.keys(porProv).length} proveedores</span>
-        <button class="btn-descargar-todos" onclick="descargarTodosPDFPedidos()">Descargar Todos PDF</button>
-    </div>`;
-
-    Object.keys(porProv).forEach(prov => {
-        const items = porProv[prov];
-        const provEscaped = prov.replace(/'/g, "\\'");
-
-        html += `
-        <div class="admin-proveedor">
-            <div class="admin-prov-header">
-                <span>${prov}</span>
-                <span class="admin-prov-count">${items.length} productos</span>
-                <button class="btn-pdf-mini" onclick="descargarPDFPedidoProveedor('${provEscaped}')">PDF Pedido</button>
-            </div>
-            <table class="admin-table">
-                <thead>
-                    <tr><th>Código</th><th>Producto</th><th>Hay</th><th>Mín</th><th>Pedir</th></tr>
-                </thead>
-                <tbody>
-                    ${items.map(item => `
-                        <tr>
-                            <td class="code">${item.codigo || '-'}</td>
-                            <td>${item.producto}</td>
-                            <td class="num stock-bajo-cell">${item.stockActual}</td>
-                            <td class="num">${item.stockMinimo}</td>
-                            <td class="num pedir-cell"><strong>${item.cantidadPedir}</strong></td>
-                        </tr>
-                    `).join('')}
-                </tbody>
-            </table>
-        </div>`;
-    });
-
-    content.innerHTML = html;
-}
-
-async function cargarAdminHistorico() {
-    const content = document.getElementById('admin-content');
-
-    if (!usandoAPI) {
-        content.innerHTML = '<div class="admin-empty"><p>El histórico requiere conexión con Google Sheets.<br>En modo offline solo se guardan datos localmente.</p></div>';
-        return;
-    }
-
-    content.innerHTML = '<p class="loading-text">Cargando histórico...</p>';
-
-    try {
-        const resp = await fetch(CONFIG_CASA_AMPARO.API_URL + '?action=getHistorico&dias=7');
-        const data = await resp.json();
-        renderAdminHistorico(data.registros || []);
-    } catch (err) {
-        content.innerHTML = '<p class="error-text">Error: ' + err.message + '</p>';
-    }
-}
-
-function renderAdminHistorico(registros) {
-    const content = document.getElementById('admin-content');
-
-    if (registros.length === 0) {
-        content.innerHTML = '<div class="admin-empty"><p>No hay registros en los últimos 7 días.</p></div>';
-        return;
-    }
-
-    // Group by date
-    const porFecha = {};
-    registros.forEach(r => {
-        const key = `${r.fecha} ${r.hora} - ${r.usuario}`;
-        if (!porFecha[key]) porFecha[key] = [];
-        porFecha[key].push(r);
-    });
-
-    let html = '';
-    Object.keys(porFecha).forEach(key => {
-        const items = porFecha[key];
-        const necesitan = items.filter(i => i.necesitaPedir === 'SÍ').length;
-
-        html += `
-        <div class="admin-proveedor">
-            <div class="admin-prov-header">
-                <span>${key}</span>
-                <span class="admin-prov-count">${items.length} productos · ${necesitan} por pedir</span>
-            </div>
-            <table class="admin-table">
-                <thead>
-                    <tr><th>Proveedor</th><th>Producto</th><th>Stock</th><th>Mín</th><th>Estado</th></tr>
-                </thead>
-                <tbody>
-                    ${items.slice(0, 50).map(item => `
-                        <tr class="${item.necesitaPedir === 'SÍ' ? 'row-pedir' : ''}">
-                            <td class="code">${item.proveedor}</td>
-                            <td>${item.producto}</td>
-                            <td class="num">${item.stockActual}</td>
-                            <td class="num">${item.stockMinimo}</td>
-                            <td class="num">${item.necesitaPedir === 'SÍ' ? '<span class="tag-pedir">PEDIR</span>' : 'OK'}</td>
-                        </tr>
-                    `).join('')}
-                    ${items.length > 50 ? `<tr><td colspan="5" class="text-center">... y ${items.length - 50} más</td></tr>` : ''}
-                </tbody>
-            </table>
-        </div>`;
-    });
-
-    content.innerHTML = html;
 }
 
 // --- PDF GENERATION ---
@@ -669,9 +491,7 @@ function generarPDFInventarioProveedor(proveedor) {
         }]);
         catItems.forEach(item => {
             const precioStr = typeof item.precio === 'number' ? item.precio.toFixed(2).replace('.', ',') + ' \u20AC' : 'S/P';
-            const stockMin = item.stockMinimo || 0;
-            const necesita = stockMin > 0 && item.stock < stockMin;
-            const pedir = necesita ? stockMin - item.stock : 0;
+            const ped = pedidos[item.idx] || 0;
 
             tableData.push([
                 item.codigo || '',
@@ -680,12 +500,12 @@ function generarPDFInventarioProveedor(proveedor) {
                 item.unidad || 'ud',
                 { content: item.stock.toString(), styles: {
                     fontStyle: 'bold', fontSize: 11, halign: 'center',
-                    fillColor: item.stock >= stockMin ? [232, 245, 233] : [255, 243, 224]
+                    fillColor: item.stock > 0 ? [232, 245, 233] : [255, 255, 255]
                 }},
-                { content: pedir > 0 ? pedir.toString() : '-', styles: {
+                { content: ped > 0 ? ped.toString() : '-', styles: {
                     fontStyle: 'bold', fontSize: 11, halign: 'center',
-                    textColor: pedir > 0 ? [198, 40, 40] : [150, 150, 150],
-                    fillColor: pedir > 0 ? [255, 235, 238] : [255, 255, 255]
+                    textColor: ped > 0 ? [198, 40, 40] : [150, 150, 150],
+                    fillColor: ped > 0 ? [255, 235, 238] : [255, 255, 255]
                 }}
             ]);
         });
@@ -717,7 +537,7 @@ function generarPDFInventarioProveedor(proveedor) {
 
     const finalY = doc.lastAutoTable.finalY + 10;
     const conStock = items.filter(i => i.stock > 0).length;
-    const porPedir = items.filter(i => (i.stockMinimo || 0) > 0 && i.stock < i.stockMinimo).length;
+    const porPedir = items.filter(i => (pedidos[i.idx] || 0) > 0).length;
 
     if (finalY < 270) {
         doc.setDrawColor(139, 69, 19);
@@ -736,18 +556,14 @@ function generarPDFPedidoProveedor(proveedor) {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
 
-    const pedidos = [];
+    const itemsPedir = [];
     productos.forEach((p, idx) => {
-        if (p.proveedor === proveedor) {
-            const stockMin = p.stockMinimo || 0;
-            const stockActual = inventario[idx] || 0;
-            if (stockMin > 0 && stockActual < stockMin) {
-                pedidos.push({ ...p, stockActual, cantidadPedir: stockMin - stockActual });
-            }
+        if (p.proveedor === proveedor && (pedidos[idx] || 0) > 0) {
+            itemsPedir.push({ ...p, cantidadPedir: pedidos[idx] });
         }
     });
 
-    if (pedidos.length === 0) {
+    if (itemsPedir.length === 0) {
         showToast(`${proveedor}: no hay productos por pedir`);
         return null;
     }
@@ -777,7 +593,7 @@ function generarPDFPedidoProveedor(proveedor) {
     doc.setLineWidth(0.5);
     doc.line(14, 48, 196, 48);
 
-    const tableData = pedidos.map(p => [
+    const tableData = itemsPedir.map(p => [
         p.codigo || '',
         p.producto,
         p.unidad || 'ud',
@@ -806,7 +622,7 @@ function generarPDFPedidoProveedor(proveedor) {
         doc.setTextColor(44, 24, 16);
         doc.setFontSize(10);
         doc.setFont('helvetica', 'bold');
-        doc.text(`Total: ${pedidos.length} productos`, 14, finalY);
+        doc.text(`Total: ${itemsPedir.length} productos`, 14, finalY);
         doc.setFontSize(8);
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(150);
@@ -839,9 +655,7 @@ function descargarTodosPDFPedidos() {
 
     proveedores.forEach((prov, i) => {
         const tiene = productos.some((p, idx) => {
-            const stockMin = p.stockMinimo || 0;
-            const stockActual = inventario[idx] || 0;
-            return p.proveedor === prov && stockMin > 0 && stockActual < stockMin;
+            return p.proveedor === prov && (pedidos[idx] || 0) > 0;
         });
 
         if (tiene) {
@@ -864,11 +678,12 @@ function descargarTodosPDFPedidos() {
 function limpiarInventario() {
     if (!confirm('¿Limpiar todo el inventario registrado?')) return;
     inventario = {};
+    pedidos = {};
     saveInventario();
     updateBadge();
     updateTabCounts();
-    const activeTab = document.querySelector('.tab-btn.active');
-    if (activeTab) renderPanel(parseInt(activeTab.dataset.tab));
+    const select = document.getElementById('select-proveedor');
+    if (select) renderPanel(parseInt(select.value) || 0);
     renderResumen();
     showToast('Inventario limpiado');
 }
@@ -877,6 +692,7 @@ function limpiarInventario() {
 
 function saveInventario() {
     localStorage.setItem('inventario_casa_amparo', JSON.stringify(inventario));
+    localStorage.setItem('pedidos_casa_amparo', JSON.stringify(pedidos));
 }
 
 function loadInventario() {
@@ -885,6 +701,12 @@ function loadInventario() {
         if (saved) inventario = JSON.parse(saved);
     } catch (e) {
         inventario = {};
+    }
+    try {
+        const saved = localStorage.getItem('pedidos_casa_amparo');
+        if (saved) pedidos = JSON.parse(saved);
+    } catch (e) {
+        pedidos = {};
     }
 }
 
