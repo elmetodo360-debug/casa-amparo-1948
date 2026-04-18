@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario - Casa Amparo 1948</title>
     <link rel="stylesheet" href="src/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 </head>
 <body>
     <!-- PANTALLA LOGIN -->
@@ -64,6 +62,7 @@
                 <div class="panel-footer">
                     <div class="panel-buttons">
                         <button class="btn-limpiar" onclick="limpiarInventario()">Limpiar todo</button>
+                        <button class="btn-copiar-todos" onclick="copiarTodosPedidos()">Copiar Todos los Pedidos</button>
                         <button class="btn-enviar" onclick="guardarEnSheet()">Guardar Inventario</button>
                     </div>
                 </div>

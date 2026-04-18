@@ -294,9 +294,9 @@ header h1 {
 
 .panel-top-bar .search-bar { flex: 1; padding: 0; margin: 0; }
 
-.btn-pdf-proveedor {
+.btn-copiar-proveedor {
     flex-shrink: 0;
-    background: var(--color-info);
+    background: #25d366;
     color: white;
     border: none;
     padding: 10px 16px;
@@ -308,7 +308,7 @@ header h1 {
     transition: background 0.2s;
 }
 
-.btn-pdf-proveedor:hover { background: #0d47a1; }
+.btn-copiar-proveedor:hover { background: #1da851; }
 
 /* ===== CATEGORY ===== */
 .category-section { margin-bottom: 16px; }
@@ -481,8 +481,8 @@ header h1 {
     text-transform: uppercase;
 }
 
-.btn-pdf-mini {
-    background: var(--color-info);
+.btn-copiar-mini {
+    background: #25d366;
     color: white;
     border: none;
     padding: 3px 10px;
@@ -492,7 +492,7 @@ header h1 {
     cursor: pointer;
 }
 
-.btn-pdf-mini:hover { background: #0d47a1; }
+.btn-copiar-mini:hover { background: #1da851; }
 
 .resumen-item {
     display: flex;
@@ -540,7 +540,21 @@ header h1 {
 
 .panel-footer { border-top: 2px solid var(--color-primary); padding: 14px 20px; }
 
-.panel-buttons { display: flex; gap: 10px; }
+.panel-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.btn-copiar-todos {
+    flex: 1 1 100%;
+    padding: 12px;
+    border: none;
+    background: #25d366;
+    color: white;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.btn-copiar-todos:hover { background: #1da851; }
 
 .btn-limpiar {
     flex: 1;
@@ -774,7 +788,7 @@ header h1 {
     .main-content { padding: 10px; }
 
     .panel-top-bar { flex-direction: column; gap: 8px; }
-    .btn-pdf-proveedor { width: 100%; text-align: center; }
+    .btn-copiar-proveedor { width: 100%; text-align: center; }
 
     .product-table-head { padding: 5px 8px; font-size: 0.62rem; }
     .product-row { padding: 5px 8px; gap: 4px; }

@@ -149,8 +149,8 @@ function renderPanel(tabIndex) {
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Buscar en ${prov}..." oninput="filterProducts(this.value)">
             </div>
-            <button class="btn-pdf-proveedor" onclick="descargarPDFProveedor('${provEscaped}')">
-                PDF ${prov.replace(/\s*\(.*\)/, '')}
+            <button class="btn-copiar-proveedor" onclick="copiarPedidoProveedor('${provEscaped}')">
+                Copiar Pedido
             </button>
         </div>
     `;
@@ -346,7 +346,7 @@ function renderResumen() {
         html += `<div class="resumen-proveedor">
             <div class="resumen-prov-header">
                 <span class="resumen-prov-name">${prov}</span>
-                <button class="btn-pdf-mini" onclick="descargarPDFProveedor('${provEscaped}')">PDF</button>
+                <button class="btn-copiar-mini" onclick="copiarPedidoProveedor('${provEscaped}')">Copiar</button>
             </div>`;
 
         porProv[prov].forEach(i => {
@@ -438,239 +438,88 @@ async function guardarEnSheet() {
     }
 }
 
-// --- PDF GENERATION ---
+// --- COPIAR PEDIDO PARA WHATSAPP ---
 
-function generarPDFInventarioProveedor(proveedor) {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
-    const items = [];
-    productos.forEach((p, idx) => {
-        if (p.proveedor === proveedor) {
-            items.push({ ...p, stock: inventario[idx] || 0, idx: idx });
-        }
-    });
-
-    const fecha = new Date().toLocaleDateString('es-ES', {
-        day: '2-digit', month: '2-digit', year: 'numeric',
-        hour: '2-digit', minute: '2-digit'
-    });
-
-    // Header
-    doc.setFillColor(44, 24, 16);
-    doc.rect(0, 0, 210, 35, 'F');
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(18);
-    doc.setFont('helvetica', 'bold');
-    doc.text('Casa Amparo 1948', 14, 15);
-    doc.setFontSize(11);
-    doc.setFont('helvetica', 'normal');
-    doc.text('Control de Inventario', 14, 23);
-    doc.setFontSize(9);
-    doc.text(`${fecha}  |  ${usuarioActual}`, 196, 15, { align: 'right' });
-
-    doc.setTextColor(139, 69, 19);
-    doc.setFontSize(14);
-    doc.setFont('helvetica', 'bold');
-    doc.text(`Proveedor: ${proveedor}`, 14, 45);
-    doc.setDrawColor(139, 69, 19);
-    doc.setLineWidth(0.5);
-    doc.line(14, 48, 196, 48);
-
-    const categorias = [];
-    items.forEach(item => {
-        if (!categorias.includes(item.categoria)) categorias.push(item.categoria);
-    });
-
-    const tableData = [];
-    categorias.forEach(cat => {
-        const catItems = items.filter(i => i.categoria === cat);
-        tableData.push([{
-            content: cat, colSpan: 6,
-            styles: { fillColor: [139, 69, 19], textColor: [255, 255, 255], fontStyle: 'bold', fontSize: 9, cellPadding: 4 }
-        }]);
-        catItems.forEach(item => {
-            const precioStr = typeof item.precio === 'number' ? item.precio.toFixed(2).replace('.', ',') + ' \u20AC' : 'S/P';
-            const ped = pedidos[item.idx] || 0;
-
-            tableData.push([
-                item.codigo || '',
-                item.producto,
-                precioStr,
-                item.unidad || 'ud',
-                { content: item.stock.toString(), styles: {
-                    fontStyle: 'bold', fontSize: 11, halign: 'center',
-                    fillColor: item.stock > 0 ? [232, 245, 233] : [255, 255, 255]
-                }},
-                { content: ped > 0 ? ped.toString() : '-', styles: {
-                    fontStyle: 'bold', fontSize: 11, halign: 'center',
-                    textColor: ped > 0 ? [198, 40, 40] : [150, 150, 150],
-                    fillColor: ped > 0 ? [255, 235, 238] : [255, 255, 255]
-                }}
-            ]);
-        });
-    });
-
-    doc.autoTable({
-        startY: 52,
-        head: [['Código', 'Producto', 'Precio', 'Unidad', 'Hay', 'Pedir']],
-        body: tableData,
-        theme: 'grid',
-        headStyles: { fillColor: [44, 24, 16], textColor: [255, 255, 255], fontSize: 9, fontStyle: 'bold', cellPadding: 4 },
-        columnStyles: {
-            0: { cellWidth: 24, fontSize: 8 },
-            1: { cellWidth: 'auto', fontSize: 8.5 },
-            2: { cellWidth: 22, halign: 'right', fontSize: 8 },
-            3: { cellWidth: 18, halign: 'center', fontSize: 8 },
-            4: { cellWidth: 16, halign: 'center', fontSize: 10 },
-            5: { cellWidth: 16, halign: 'center', fontSize: 10 }
-        },
-        styles: { cellPadding: 3, lineColor: [200, 200, 200], lineWidth: 0.25 },
-        alternateRowStyles: { fillColor: [250, 247, 243] },
-        margin: { left: 14, right: 14 },
-        didDrawPage: function(data) {
-            doc.setFontSize(8);
-            doc.setTextColor(150);
-            doc.text(`Casa Amparo 1948 - Inventario ${proveedor} - Pag. ${data.pageNumber}`, 105, 290, { align: 'center' });
-        }
-    });
-
-    const finalY = doc.lastAutoTable.finalY + 10;
-    const conStock = items.filter(i => i.stock > 0).length;
-    const porPedir = items.filter(i => (pedidos[i.idx] || 0) > 0).length;
-
-    if (finalY < 270) {
-        doc.setDrawColor(139, 69, 19);
-        doc.setLineWidth(0.5);
-        doc.line(14, finalY, 196, finalY);
-        doc.setTextColor(44, 24, 16);
-        doc.setFontSize(9);
-        doc.setFont('helvetica', 'bold');
-        doc.text(`${items.length} productos | Con stock: ${conStock} | Por pedir: ${porPedir}`, 14, finalY + 7);
-    }
-
-    return doc;
-}
-
-function generarPDFPedidoProveedor(proveedor) {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
+function generarTextoProveedor(proveedor) {
     const itemsPedir = [];
     productos.forEach((p, idx) => {
         if (p.proveedor === proveedor && (pedidos[idx] || 0) > 0) {
-            itemsPedir.push({ ...p, cantidadPedir: pedidos[idx] });
+            itemsPedir.push({ ...p, cantidad: pedidos[idx] });
         }
     });
 
-    if (itemsPedir.length === 0) {
-        showToast(`${proveedor}: no hay productos por pedir`);
-        return null;
-    }
+    if (itemsPedir.length === 0) return null;
 
     const fecha = new Date().toLocaleDateString('es-ES', {
         day: '2-digit', month: '2-digit', year: 'numeric'
     });
 
-    // Header
-    doc.setFillColor(44, 24, 16);
-    doc.rect(0, 0, 210, 35, 'F');
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(18);
-    doc.setFont('helvetica', 'bold');
-    doc.text('Casa Amparo 1948', 14, 15);
-    doc.setFontSize(13);
-    doc.text('PEDIDO', 14, 25);
-    doc.setFontSize(9);
-    doc.setFont('helvetica', 'normal');
-    doc.text(fecha, 196, 15, { align: 'right' });
+    let texto = `*PEDIDO - Casa Amparo 1948*\n`;
+    texto += `${fecha}\n\n`;
+    texto += `*${proveedor}*\n`;
+    texto += `———————————————\n`;
 
-    doc.setTextColor(139, 69, 19);
-    doc.setFontSize(14);
-    doc.setFont('helvetica', 'bold');
-    doc.text(`Para: ${proveedor}`, 14, 45);
-    doc.setDrawColor(139, 69, 19);
-    doc.setLineWidth(0.5);
-    doc.line(14, 48, 196, 48);
-
-    const tableData = itemsPedir.map(p => [
-        p.codigo || '',
-        p.producto,
-        p.unidad || 'ud',
-        { content: p.cantidadPedir.toString(), styles: { fontStyle: 'bold', fontSize: 12, halign: 'center' } }
-    ]);
-
-    doc.autoTable({
-        startY: 52,
-        head: [['Código', 'Producto', 'Unidad', 'Cantidad']],
-        body: tableData,
-        theme: 'grid',
-        headStyles: { fillColor: [44, 24, 16], textColor: [255, 255, 255], fontSize: 10, fontStyle: 'bold', cellPadding: 5 },
-        columnStyles: {
-            0: { cellWidth: 28, fontSize: 9 },
-            1: { cellWidth: 'auto', fontSize: 9.5 },
-            2: { cellWidth: 24, halign: 'center', fontSize: 9 },
-            3: { cellWidth: 28, halign: 'center', fontSize: 12 }
-        },
-        styles: { cellPadding: 4, lineColor: [200, 200, 200], lineWidth: 0.25 },
-        alternateRowStyles: { fillColor: [250, 247, 243] },
-        margin: { left: 14, right: 14 }
+    itemsPedir.forEach(item => {
+        const unidad = item.unidad ? ` (${item.unidad})` : '';
+        const codigo = item.codigo ? ` [${item.codigo}]` : '';
+        texto += `${item.cantidad} x ${item.producto}${unidad}${codigo}\n`;
     });
 
-    const finalY = doc.lastAutoTable.finalY + 15;
-    if (finalY < 260) {
-        doc.setTextColor(44, 24, 16);
-        doc.setFontSize(10);
-        doc.setFont('helvetica', 'bold');
-        doc.text(`Total: ${itemsPedir.length} productos`, 14, finalY);
-        doc.setFontSize(8);
-        doc.setFont('helvetica', 'normal');
-        doc.setTextColor(150);
-        doc.text('Generado desde Casa Amparo 1948 - Control de Inventario', 14, finalY + 8);
+    texto += `———————————————\n`;
+    texto += `*Total: ${itemsPedir.length} productos*`;
+
+    return texto;
+}
+
+async function copiarPedidoProveedor(proveedor) {
+    const texto = generarTextoProveedor(proveedor);
+    if (!texto) {
+        showToast(`${proveedor}: no hay productos por pedir`);
+        return;
     }
 
-    return doc;
+    try {
+        await navigator.clipboard.writeText(texto);
+        showToast(`Pedido ${proveedor} copiado`);
+    } catch (e) {
+        fallbackCopiar(texto);
+    }
 }
 
-function descargarPDFProveedor(proveedor) {
-    const doc = generarPDFInventarioProveedor(proveedor);
-    const fecha = new Date().toISOString().slice(0, 10);
-    const nombreLimpio = proveedor.replace(/[^a-zA-Z0-9]/g, '_');
-    doc.save(`Inventario_${nombreLimpio}_${fecha}.pdf`);
-    showToast(`PDF inventario ${proveedor} descargado`);
-}
-
-function descargarPDFPedidoProveedor(proveedor) {
-    const doc = generarPDFPedidoProveedor(proveedor);
-    if (!doc) return;
-    const fecha = new Date().toISOString().slice(0, 10);
-    const nombreLimpio = proveedor.replace(/[^a-zA-Z0-9]/g, '_');
-    doc.save(`Pedido_${nombreLimpio}_${fecha}.pdf`);
-    showToast(`PDF pedido ${proveedor} descargado`);
-}
-
-function descargarTodosPDFPedidos() {
+async function copiarTodosPedidos() {
     const proveedores = getProveedores();
-    let count = 0;
+    const bloques = [];
 
-    proveedores.forEach((prov, i) => {
-        const tiene = productos.some((p, idx) => {
-            return p.proveedor === prov && (pedidos[idx] || 0) > 0;
-        });
-
-        if (tiene) {
-            setTimeout(() => {
-                descargarPDFPedidoProveedor(prov);
-            }, count * 500);
-            count++;
-        }
+    proveedores.forEach(prov => {
+        const texto = generarTextoProveedor(prov);
+        if (texto) bloques.push(texto);
     });
 
-    if (count === 0) {
-        showToast('No hay pedidos pendientes');
-    } else {
-        showToast(`Descargando ${count} PDFs de pedido...`);
+    if (bloques.length === 0) {
+        showToast('No hay pedidos para copiar');
+        return;
     }
+
+    const textoCompleto = bloques.join('\n\n\n');
+
+    try {
+        await navigator.clipboard.writeText(textoCompleto);
+        showToast(`${bloques.length} pedidos copiados`);
+    } catch (e) {
+        fallbackCopiar(textoCompleto);
+    }
+}
+
+function fallbackCopiar(texto) {
+    const ta = document.createElement('textarea');
+    ta.value = texto;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast('Pedido copiado');
 }
 
 // --- ACCIONES ---
