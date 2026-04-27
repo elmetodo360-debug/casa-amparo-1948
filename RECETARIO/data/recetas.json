@@ -1,9 +1,8 @@
 {
-  "generado": "2026-04-27T14:21:52",
+  "generado": "2026-04-27T15:27:32",
   "version": 1,
-  "total": 58,
+  "total": 56,
   "secciones": [
-    "Chacinas / Entrantes",
     "Entrantes / Para picar",
     "Entre panes",
     "Huevos rotos",
@@ -22,6 +21,260 @@
     "menu"
   ],
   "recetas": [
+    {
+      "id": "albondigas-patatas-fritas",
+      "sheet": "ALBONDIGAS PATATAS FRITAS",
+      "nombre": "ALBONDIGAS CON PATATAS FRITAS",
+      "ingredientes": [
+        {
+          "nombre": "ALBÓNDIGAS TRADICIONALES (Subreceta)",
+          "med": 180,
+          "udm": "g",
+          "notas": "5 unidades"
+        },
+        {
+          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2,5 KG (LAMBWESTON)",
+          "med": 140,
+          "udm": "g",
+          "notas": "Guarnición"
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 1,
+          "udm": "g",
+          "notas": "Picado"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.",
+        "elaboracion": "1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.",
+        "emplatado": "1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
+        "raw": "PRE ELABORACION\n1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.\n\nELABORACION\n1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.\n\nEMPLATAMOS\n1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
+      },
+      "alergenos": [],
+      "pcg": [
+        "Albóndigas totalmente cocinadas en preelaboración.",
+        "Regeneración rápida sin sobrecocinar.",
+        "Salsa ligada y brillante.",
+        "Patatas doradas y crujientes.",
+        "Mantener cadena de frío hasta el pase.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [
+        {
+          "nombre": "ALBÓNDIGAS TRADICIONALES",
+          "codigo": "",
+          "ingredientes": [
+            {
+              "nombre": "Albóndigas mixtas",
+              "med": 30,
+              "udm": "ud"
+            },
+            {
+              "nombre": "Cebolla",
+              "med": 600,
+              "udm": "g"
+            },
+            {
+              "nombre": "Zanahoria",
+              "med": 120,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite de oliva",
+              "med": 80,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Vino blanco",
+              "med": 250,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Caldo de carne",
+              "med": 700,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Harina",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal",
+              "med": 8,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimienta negra",
+              "med": 2,
+              "udm": "g"
+            }
+          ],
+          "elaboracion": "Pochar cebolla, ajo y zanahoria 30–40 min hasta muy tiernos. Añadir harina y cocinar 2 min. Mojar con vino blanco y reducir. Incorporar caldo de carne y cocer 20 min. Triturar fino hasta salsa lisa. Introducir albóndigas ya doradas y guisar 25–30 min hasta cocción completa. Enfriar rápidamente y conservar por raciones listas para regenerar."
+        }
+      ],
+      "foto": "data/fotos/albondigas-patatas-fritas.png",
+      "nombre_carta": "ALBONDIGAS CON PATATAS FRITAS",
+      "seccion": "",
+      "cartas": [],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-fresas-nata",
+      "sheet": "MN FRESAS NATA",
+      "nombre": "FRESAS CON NATA",
+      "ingredientes": [
+        {
+          "nombre": "FRESON",
+          "med": 150,
+          "udm": "g",
+          "notas": "Sin pedunculo, en cuartos"
+        },
+        {
+          "nombre": "NATA MONTADA SPRAY",
+          "med": 100,
+          "udm": "g",
+          "notas": "Aplicar al pase"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Reservamos en camara hasta el pase.",
+        "elaboracion": "1. Disponemos las fresas en cuartos en un bol o copa de servicio.",
+        "emplatado": "1. Coronamos con la nata montada en spray justo al momento del pase para que mantenga textura y volumen.\n2. Servimos inmediatamente.",
+        "raw": "PRE ELABORACION\n1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Reservamos en camara hasta el pase.\n\nELABORACION\n1. Disponemos las fresas en cuartos en un bol o copa de servicio.\n\nEMPLATAMOS\n1. Coronamos con la nata montada en spray justo al momento del pase para que mantenga textura y volumen.\n2. Servimos inmediatamente."
+      },
+      "alergenos": [
+        "Lacteos"
+      ],
+      "pcg": [
+        "Las fresas deben estar bien frias y secas antes de servir.",
+        "La nata montada en spray se aplica SIEMPRE al momento del pase, nunca con antelacion.",
+        "Cortar las fresas justo antes del servicio para evitar oxidacion y perdida de jugo."
+      ],
+      "subrecetas": [],
+      "foto": "",
+      "nombre_carta": "FRESAS CON NATA",
+      "seccion": "",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-fresas-zumo-naranja",
+      "sheet": "MN FRESAS ZUMO NARANJA",
+      "nombre": "FRESAS CON ZUMO DE NARANJA",
+      "ingredientes": [
+        {
+          "nombre": "FRESON",
+          "med": 150,
+          "udm": "g",
+          "notas": "Sin pedunculo, en cuartos"
+        },
+        {
+          "nombre": "NARANJA ZUMO",
+          "med": 200,
+          "udm": "g",
+          "notas": "200 g naranja ≈ 100 ml zumo recien exprimido"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Exprimimos las naranjas hasta obtener 100 ml de zumo y colamos.\n4. Reservamos fresas y zumo en camara hasta el pase.",
+        "elaboracion": "1. Disponemos las fresas en cuartos en un bol o copa de servicio.",
+        "emplatado": "1. Regamos con el zumo de naranja recien exprimido al momento del pase.\n2. Servimos inmediatamente bien frio.",
+        "raw": "PRE ELABORACION\n1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Exprimimos las naranjas hasta obtener 100 ml de zumo y colamos.\n4. Reservamos fresas y zumo en camara hasta el pase.\n\nELABORACION\n1. Disponemos las fresas en cuartos en un bol o copa de servicio.\n\nEMPLATAMOS\n1. Regamos con el zumo de naranja recien exprimido al momento del pase.\n2. Servimos inmediatamente bien frio."
+      },
+      "alergenos": [],
+      "pcg": [
+        "Las fresas deben estar bien frias y secas antes de servir.",
+        "El zumo de naranja se exprime al momento, nunca con horas de antelacion (pierde vitaminas y sabor).",
+        "Cortar las fresas justo antes del servicio para evitar oxidacion."
+      ],
+      "subrecetas": [],
+      "foto": "",
+      "nombre_carta": "FRESAS CON ZUMO DE NARANJA",
+      "seccion": "",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "tartar-atun-huevo-frito",
+      "sheet": "TARTAR ATUN HUEVO FRITO",
+      "nombre": "TARTAR DE ATUN CON HUEVO FRITO",
+      "ingredientes": [
+        {
+          "nombre": "ATUN ROJO YELLOWFIN",
+          "med": 90,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "HUEVOS CAMPEROS",
+          "med": 3,
+          "udm": "ud",
+          "notas": ""
+        },
+        {
+          "nombre": "PATATA ENTERA PELADA AGRIA",
+          "med": 120,
+          "udm": "g",
+          "notas": "En rodajas / guarnición"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 5,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "ACEITE GIRASOL",
+          "med": 5,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "OREGANO SECO",
+          "med": 5,
+          "udm": "g",
+          "notas": "Aliñar el atún"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.",
+        "elaboracion": "1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.",
+        "emplatado": "1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos.",
+        "raw": "PRE ELABORACION\n1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.\n\nELABORACION\n1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.\n\nEMPLATAMOS\n1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos."
+      },
+      "alergenos": [
+        "Dioxido de Azufre y Sulfitos",
+        "Huevos",
+        "Pescado"
+      ],
+      "pcg": [
+        "Las patatas tienen que estar blandas por dentro y crujientes por fuera y bien sazonadas.",
+        "Los huevos tienen que tener la yema liquida."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/tartar-atun-huevo-frito.png",
+      "nombre_carta": "TARTAR DE ATUN CON HUEVO FRITO",
+      "seccion": "",
+      "cartas": [],
+      "descripcion": ""
+    },
     {
       "id": "zamburinas-picantonas",
       "sheet": "ZAMBURIÑAS PICANTONAS",
@@ -151,1360 +404,13 @@
         }
       ],
       "foto": "data/fotos/zamburinas-picantonas.png",
-      "nombre_carta": "6 ZAMBURIÑAS PICANTONAS",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "albondigas-patatas-fritas",
-      "sheet": "ALBONDIGAS PATATAS FRITAS",
-      "nombre": "ALBONDIGAS CON PATATAS FRITAS",
-      "ingredientes": [
-        {
-          "nombre": "ALBÓNDIGAS TRADICIONALES (Subreceta)",
-          "med": 180,
-          "udm": "g",
-          "notas": "5 unidades"
-        },
-        {
-          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2,5 KG (LAMBWESTON)",
-          "med": 140,
-          "udm": "g",
-          "notas": "Guarnición"
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 1,
-          "udm": "g",
-          "notas": "Picado"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.",
-        "elaboracion": "1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.",
-        "emplatado": "1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.\n\nELABORACION\n1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.\n\nEMPLATAMOS\n1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
-      },
-      "alergenos": [],
-      "pcg": [
-        "Albóndigas totalmente cocinadas en preelaboración.",
-        "Regeneración rápida sin sobrecocinar.",
-        "Salsa ligada y brillante.",
-        "Patatas doradas y crujientes.",
-        "Mantener cadena de frío hasta el pase.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [
-        {
-          "nombre": "ALBÓNDIGAS TRADICIONALES",
-          "codigo": "",
-          "ingredientes": [
-            {
-              "nombre": "Albóndigas mixtas",
-              "med": 30,
-              "udm": "ud"
-            },
-            {
-              "nombre": "Cebolla",
-              "med": 600,
-              "udm": "g"
-            },
-            {
-              "nombre": "Zanahoria",
-              "med": 120,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite de oliva",
-              "med": 80,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Vino blanco",
-              "med": 250,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Caldo de carne",
-              "med": 700,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Harina",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal",
-              "med": 8,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimienta negra",
-              "med": 2,
-              "udm": "g"
-            }
-          ],
-          "elaboracion": "Pochar cebolla, ajo y zanahoria 30–40 min hasta muy tiernos. Añadir harina y cocinar 2 min. Mojar con vino blanco y reducir. Incorporar caldo de carne y cocer 20 min. Triturar fino hasta salsa lisa. Introducir albóndigas ya doradas y guisar 25–30 min hasta cocción completa. Enfriar rápidamente y conservar por raciones listas para regenerar."
-        }
-      ],
-      "foto": "data/fotos/albondigas-patatas-fritas.png",
-      "nombre_carta": "ALBONDIGAS CON PATATAS FRITAS",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "bocata-chipirones",
-      "sheet": "BOCATA CHIPIRONES",
-      "nombre": "BOCATA DE CHIPIRONES FRITOS CON ALIOLI, SRIRACHA Y LIMA",
-      "ingredientes": [
-        {
-          "nombre": "BOCATA GRAN RESERVA (50U)",
-          "med": 1,
-          "udm": "ud",
-          "notas": "Bocatín 140-160 g"
-        },
-        {
-          "nombre": "CHIPIRON LIMPIO CONG.",
-          "med": 150,
-          "udm": "g",
-          "notas": "Limpio, en rodajas"
-        },
-        {
-          "nombre": "HARINA ESPECIAL FRITURAS",
-          "med": 40,
-          "udm": "g",
-          "notas": "Enharinado"
-        },
-        {
-          "nombre": "SALSA ALI OLI",
-          "med": 30,
-          "udm": "g",
-          "notas": "Untar pan"
-        },
-        {
-          "nombre": "SALSA SRIRACHA PICANTE (DOSIFICADOR)",
-          "med": 8,
-          "udm": "g",
-          "notas": "Línea fina"
-        },
-        {
-          "nombre": "LIMA",
-          "med": 0.5,
-          "udm": "ud",
-          "notas": "Ralladura"
-        },
-        {
-          "nombre": "PATATAS FRITAS 500 GR CAJA 4 UD (PRODESCO)",
-          "med": 30,
-          "udm": "gr",
-          "notas": "Guarnición"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 30,
-          "udm": "ml",
-          "notas": "Consumo real fritura"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Limpiar chipirones (pluma e interiores) y secar muy bien con papel.\n2. Cortar en rodajas regulares.\n3. Tener harina de frituras preparada.\n4. Cargar alioli en manga o biberón.\n5. Cargar sriracha en biberón fino.\n6. Abrir bocatín longitudinalmente.\n7. Lavar Lima y reservar para rallar al momento.\n8. Reservar salsa ali oli en biberón para el pase.\n9. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. A demanda del plato, sazonar los chipirones y enharinar separando bien las rodajas.\n2. Sacudir el exceso de harina en el cedazo.\n3. Freír a 175ºC durante 1–2 minutos hasta dorado ligero y crujiente.\n4. Escurrir en escurridor de fritos.\n5. Salar ligeramente.\n6. Marcar el interior del pan en plancha o salamandra.\n7. Untar la base del pan con alioli.",
-        "emplatado": "1. Rellenar el bocatín con los chipirones fritos calientes.\n2. Añadir línea fina de sriracha en zigzag por encima.\n3. Terminar con ralladura fresca de Lima al momento.\n4. Cerrar ligeramente el pan.\n5. Servir acompañado de bolsita de patatas chips al lado.\n6. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. Limpiar chipirones (pluma e interiores) y secar muy bien con papel.\n2. Cortar en rodajas regulares.\n3. Tener harina de frituras preparada.\n4. Cargar alioli en manga o biberón.\n5. Cargar sriracha en biberón fino.\n6. Abrir bocatín longitudinalmente.\n7. Lavar Lima y reservar para rallar al momento.\n8. Reservar salsa ali oli en biberón para el pase.\n9. Reservar aceite suave para la cocción.\n\nELABORACION\n1. A demanda del plato, sazonar los chipirones y enharinar separando bien las rodajas.\n2. Sacudir el exceso de harina en el cedazo.\n3. Freír a 175ºC durante 1–2 minutos hasta dorado ligero y crujiente.\n4. Escurrir en escurridor de fritos.\n5. Salar ligeramente.\n6. Marcar el interior del pan en plancha o salamandra.\n7. Untar la base del pan con alioli.\n\nEMPLATAMOS\n1. Rellenar el bocatín con los chipirones fritos calientes.\n2. Añadir línea fina de sriracha en zigzag por encima.\n3. Terminar con ralladura fresca de Lima al momento.\n4. Cerrar ligeramente el pan.\n5. Servir acompañado de bolsita de patatas chips al lado.\n6. Salir inmediato."
-      },
-      "alergenos": [
-        "Dioxido de Azufre y Sulfitos",
-        "Huevos",
-        "Trigo"
-      ],
-      "pcg": [
-        "Chipirón muy seco antes de freír.",
-        "Fritura rápida para textura crujiente y jugosa.",
-        "Harinado ligero, sin exceso.",
-        "Pan tostado interiormente sin resecar.",
-        "Sriracha dosificada, no dominante.",
-        "Lima rallada al momento.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/bocata-chipirones.png",
-      "nombre_carta": "BOCATA DE CHIPIRONES FRITOS CON ALIOLI, SRIRACHA Y LIMA",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "bocata-piripi",
-      "sheet": "BOCATA PIRIPI",
-      "nombre": "BOCATA PIRIPI",
-      "ingredientes": [
-        {
-          "nombre": "BOCATA GRAN RESERVA (50U)",
-          "med": 1,
-          "udm": "ud",
-          "notas": "Bocadillo cristal 160-180 g"
-        },
-        {
-          "nombre": "CINTA DE LOMO ADOBADA EN FILETES",
-          "med": 100,
-          "udm": "g",
-          "notas": "2 filetes"
-        },
-        {
-          "nombre": "BACON AHUMADO",
-          "med": 40,
-          "udm": "g",
-          "notas": "2 lonchas Crujiente"
-        },
-        {
-          "nombre": "QUESO CHEDDAR LONCHAS",
-          "med": 40,
-          "udm": "g",
-          "notas": "2 lonchas"
-        },
-        {
-          "nombre": "TOMATE PERA",
-          "med": 40,
-          "udm": "g",
-          "notas": "Rodajas finas"
-        },
-        {
-          "nombre": "SALSA ALI OLI",
-          "med": 35,
-          "udm": "g",
-          "notas": "Untar pan"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 5,
-          "udm": "ml",
-          "notas": "Plancha"
-        },
-        {
-          "nombre": "PATATAS FRITAS 500 GR CAJA 4 UD (PRODESCO)",
-          "med": 30,
-          "udm": "g",
-          "notas": "Guarnición"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Abrir pan longitudinalmente.\n2. Cortar tomate en rodajas finas.\n3. Cocinar bacon previamente hasta crujiente y reservar.\n4. Tener alioli en manga o biberón.\n5. Preparar plancha caliente.\n6. Reservar salsa ali oli en biberón para el pase.",
-        "elaboracion": "1. Marcar interior del pan en plancha.\n2. Cocinar los 2 filetes de lomo adobado en plancha con ligero aceite.\n3. Dorar por ambas caras 2 min por lado sin resecar.\n4. Colocar lonchas de cheddar sobre el lomo en el último minuto y fundir con campana o salamandra.\n5. Regenerar bacon crujiente brevemente en plancha.",
-        "emplatado": "1. Untar base del pan con alioli.\n2. Colocar rodajas de tomate sazonadas.\n3. Añadir lomo adobado con cheddar fundido encima.\n4. Terminar con bacon crujiente.\n5. Cerrar el bocadillo.\n6. Acompañar con bolsita de patatas chips al lateral.\n7. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Abrir pan longitudinalmente.\n2. Cortar tomate en rodajas finas.\n3. Cocinar bacon previamente hasta crujiente y reservar.\n4. Tener alioli en manga o biberón.\n5. Preparar plancha caliente.\n6. Reservar salsa ali oli en biberón para el pase.\n\nELABORACION\n1. Marcar interior del pan en plancha.\n2. Cocinar los 2 filetes de lomo adobado en plancha con ligero aceite.\n3. Dorar por ambas caras 2 min por lado sin resecar.\n4. Colocar lonchas de cheddar sobre el lomo en el último minuto y fundir con campana o salamandra.\n5. Regenerar bacon crujiente brevemente en plancha.\n\nEMPLATAMOS\n1. Untar base del pan con alioli.\n2. Colocar rodajas de tomate sazonadas.\n3. Añadir lomo adobado con cheddar fundido encima.\n4. Terminar con bacon crujiente.\n5. Cerrar el bocadillo.\n6. Acompañar con bolsita de patatas chips al lateral.\n7. Servir inmediato."
-      },
-      "alergenos": [
-        "Huevos",
-        "Lacteos"
-      ],
-      "pcg": [
-        "Lomo jugoso, no seco.",
-        "Cheddar totalmente fundido.",
-        "Bacon crujiente y escurrido.",
-        "Pan tostado interiormente.",
-        "Tomate fresco sin exceso de agua.",
-        "Montaje rápido y caliente.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/bocata-piripi.png",
-      "nombre_carta": "BOCATA PIRIPI",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "callos-garbanzos-sofrito",
-      "sheet": "CALLOS GARBANZOS SOFRITO",
-      "nombre": "CALLOS CON GARBANZOS Y SOFRITO + PATATAS BASTÓN",
-      "ingredientes": [
-        {
-          "nombre": "CALLOS GUISADOS",
-          "med": 250,
-          "udm": "g",
-          "notas": "Vienen cocinados de obrador"
-        },
-        {
-          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2.5 KG, CAJA 4 BOLSAS (LAMBWESTON)",
-          "med": 80,
-          "udm": "g",
-          "notas": "Guarnición bastón"
-        },
-        {
-          "nombre": "GARBANZO EXTRA COCIDO LATA 3 KG (AMH)",
-          "med": 50,
-          "udm": "g",
-          "notas": "Bote, escurridos - extra"
-        },
-        {
-          "nombre": "HIERBABUENA",
-          "med": 1,
-          "udm": "g",
-          "notas": "Picada al pase, refrescar"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Los callos con garbanzos vienen ya cocinados.\n2. Mantener refrigerados.\n3. Escurrir y enjuagar los garbanzos de bote para añadir extra de legumbre.\n4. Picar la Hierbabuena fresca justo antes del pase.\n5. Tener patatas bastón prefritas listas para segunda fritura.",
-        "elaboracion": "1. Cuando nos demanden el plato, calentar el guiso de callos con garbanzos a fuego lento removiendo con cuidado para que no se peguen.\n2. Incorporar los garbanzos cocidos extra al guiso para reforzar la legumbre.\n3. Calentar 1-2 minutos más hasta temperatura de servicio.\n4. Freír las patatas bastón a 175ºC durante 3-4 minutos hasta doradas y crujientes.\n5. Escurrir y salar.",
-        "emplatado": "1. Colocar las patatas fritas bastón como base en plato hondo o plato llano.\n2. Disponer el guiso de callos con garbanzos encima asegurándonos que toca chorizo y morcilla en cada ración.\n3. Espolvorear Hierbabuena picada por encima al momento del pase para refrescar.\n4. Servir inmediato muy caliente.",
-        "raw": "PRE ELABORACION\n1. Los callos con garbanzos vienen ya cocinados.\n2. Mantener refrigerados.\n3. Escurrir y enjuagar los garbanzos de bote para añadir extra de legumbre.\n4. Picar la Hierbabuena fresca justo antes del pase.\n5. Tener patatas bastón prefritas listas para segunda fritura.\n\nELABORACION\n1. Cuando nos demanden el plato, calentar el guiso de callos con garbanzos a fuego lento removiendo con cuidado para que no se peguen.\n2. Incorporar los garbanzos cocidos extra al guiso para reforzar la legumbre.\n3. Calentar 1-2 minutos más hasta temperatura de servicio.\n4. Freír las patatas bastón a 175ºC durante 3-4 minutos hasta doradas y crujientes.\n5. Escurrir y salar.\n\nEMPLATAMOS\n1. Colocar las patatas fritas bastón como base en plato hondo o plato llano.\n2. Disponer el guiso de callos con garbanzos encima asegurándonos que toca chorizo y morcilla en cada ración.\n3. Espolvorear Hierbabuena picada por encima al momento del pase para refrescar.\n4. Servir inmediato muy caliente."
-      },
-      "alergenos": [],
-      "pcg": [
-        "Callos calentados a fuego lento sin remover bruscamente para no romper textura.",
-        "Garbanzos extra escurridos antes de añadir al guiso.",
-        "Hierbabuena picada al pase, no antes (preserva aroma fresco).",
-        "Patatas bastón doradas y crujientes.",
-        "Montaje rápido para mantener temperatura.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/callos-garbanzos-sofrito.png",
-      "nombre_carta": "CALLOS CON GARBANZOS Y SOFRITO + PATATAS BASTÓN",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-fresas-nata",
-      "sheet": "MN FRESAS NATA",
-      "nombre": "FRESAS CON NATA",
-      "ingredientes": [
-        {
-          "nombre": "FRESON",
-          "med": 150,
-          "udm": "g",
-          "notas": "Sin pedunculo, en cuartos"
-        },
-        {
-          "nombre": "NATA MONTADA SPRAY",
-          "med": 100,
-          "udm": "g",
-          "notas": "Aplicar al pase"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Reservamos en camara hasta el pase.",
-        "elaboracion": "1. Disponemos las fresas en cuartos en un bol o copa de servicio.",
-        "emplatado": "1. Coronamos con la nata montada en spray justo al momento del pase para que mantenga textura y volumen.\n2. Servimos inmediatamente.",
-        "raw": "PRE ELABORACION\n1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Reservamos en camara hasta el pase.\n\nELABORACION\n1. Disponemos las fresas en cuartos en un bol o copa de servicio.\n\nEMPLATAMOS\n1. Coronamos con la nata montada en spray justo al momento del pase para que mantenga textura y volumen.\n2. Servimos inmediatamente."
-      },
-      "alergenos": [
-        "Lacteos"
-      ],
-      "pcg": [
-        "Las fresas deben estar bien frias y secas antes de servir.",
-        "La nata montada en spray se aplica SIEMPRE al momento del pase, nunca con antelacion.",
-        "Cortar las fresas justo antes del servicio para evitar oxidacion y perdida de jugo."
-      ],
-      "subrecetas": [],
-      "foto": "",
-      "nombre_carta": "FRESAS CON NATA",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-fresas-zumo-naranja",
-      "sheet": "MN FRESAS ZUMO NARANJA",
-      "nombre": "FRESAS CON ZUMO DE NARANJA",
-      "ingredientes": [
-        {
-          "nombre": "FRESON",
-          "med": 150,
-          "udm": "g",
-          "notas": "Sin pedunculo, en cuartos"
-        },
-        {
-          "nombre": "NARANJA ZUMO",
-          "med": 200,
-          "udm": "g",
-          "notas": "200 g naranja ≈ 100 ml zumo recien exprimido"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Exprimimos las naranjas hasta obtener 100 ml de zumo y colamos.\n4. Reservamos fresas y zumo en camara hasta el pase.",
-        "elaboracion": "1. Disponemos las fresas en cuartos en un bol o copa de servicio.",
-        "emplatado": "1. Regamos con el zumo de naranja recien exprimido al momento del pase.\n2. Servimos inmediatamente bien frio.",
-        "raw": "PRE ELABORACION\n1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Exprimimos las naranjas hasta obtener 100 ml de zumo y colamos.\n4. Reservamos fresas y zumo en camara hasta el pase.\n\nELABORACION\n1. Disponemos las fresas en cuartos en un bol o copa de servicio.\n\nEMPLATAMOS\n1. Regamos con el zumo de naranja recien exprimido al momento del pase.\n2. Servimos inmediatamente bien frio."
-      },
-      "alergenos": [],
-      "pcg": [
-        "Las fresas deben estar bien frias y secas antes de servir.",
-        "El zumo de naranja se exprime al momento, nunca con horas de antelacion (pierde vitaminas y sabor).",
-        "Cortar las fresas justo antes del servicio para evitar oxidacion."
-      ],
-      "subrecetas": [],
-      "foto": "",
-      "nombre_carta": "FRESAS CON ZUMO DE NARANJA",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "gambon-ajillo",
-      "sheet": "GAMBON AJILLO",
-      "nombre": "GAMBON AL AJILLO",
-      "ingredientes": [
-        {
-          "nombre": "COLA GAMBON Nº2 CONGELADO",
-          "med": 150,
-          "udm": "gr",
-          "notas": "10 ud"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 30,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 100,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "AJO PELADO",
-          "med": 20,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CAYENA RAMA GUINDILLA",
-          "med": 2,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "PEREJIL",
-          "med": 2,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "TOMATE CHERRY",
-          "med": 60,
-          "udm": "g",
-          "notas": "5-6 ud"
-        },
-        {
-          "nombre": "VINO FINO TIO PEPE",
-          "med": 15,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "PIMENTON DULCE DE LA VERA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Cortamos los ajos en laminas y la guindilla en rodajas.\n2. Confitamos los tomates cherry enteros (5-6 ud) en aceite suave a fuego muy bajo hasta que esten tiernos y con color, reservar.",
-        "elaboracion": "1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas y la guindilla en rodajas, dejamos que se doren y añadimos los gambones.\n3. Incorporamos los tomates cherry confitados.\n4. Retiramos del fuego, añadimos un chorrito de vino fino y espolvoreamos el pimenton dulce en el ultimo momento.\n5. Tapamos durante 2 minutos para que los gambones se cocinen.",
-        "emplatado": "1. Servimos en la misma sarten de cocinado decorando con perejil picado.",
-        "raw": "PRE ELABORACION\n1. Cortamos los ajos en laminas y la guindilla en rodajas.\n2. Confitamos los tomates cherry enteros (5-6 ud) en aceite suave a fuego muy bajo hasta que esten tiernos y con color, reservar.\n\nELABORACION\n1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas y la guindilla en rodajas, dejamos que se doren y añadimos los gambones.\n3. Incorporamos los tomates cherry confitados.\n4. Retiramos del fuego, añadimos un chorrito de vino fino y espolvoreamos el pimenton dulce en el ultimo momento.\n5. Tapamos durante 2 minutos para que los gambones se cocinen.\n\nEMPLATAMOS\n1. Servimos en la misma sarten de cocinado decorando con perejil picado."
-      },
-      "alergenos": [
-        "Crustaceos"
-      ],
-      "pcg": [
-        "Los gambones tienen que quedar jugosos, y cocinados suavemtne sin pasarse.",
-        "Tienen que estar sazonados"
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/gambon-ajillo.png",
-      "nombre_carta": "GAMBON AL AJILLO",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-garbanzos-pulpo",
-      "sheet": "MN GARBANZOS PULPO",
-      "nombre": "GARBANZOS CON PULPO",
-      "ingredientes": [
-        {
-          "nombre": "GUISO DE GARBANZOS CON MARISCO (Subreceta)",
-          "med": 280,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 0.5,
-          "udm": "g",
-          "notas": "una pizca"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 15,
-          "udm": "ml",
-          "notas": "1 tbsp"
-        },
-        {
-          "nombre": "PATA PULPO M. COC",
-          "med": 50,
-          "udm": "g",
-          "notas": "Cortado en rodajas"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Cortamos el pulpo en rodajas de 1 cm y reservamos en refrigeracion.\n2. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. Calentamos el guiso a fuego medio, añadimos las rodajas de pulpo cocinamos 2 o 3 minutos.",
-        "emplatado": "1. Presentamos en el fondo del plato los garbanzos decoramos con el Cebollino picado y el AOVE.",
-        "raw": "PRE ELABORACION\n1. Cortamos el pulpo en rodajas de 1 cm y reservamos en refrigeracion.\n2. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentamos el guiso a fuego medio, añadimos las rodajas de pulpo cocinamos 2 o 3 minutos.\n\nEMPLATAMOS\n1. Presentamos en el fondo del plato los garbanzos decoramos con el Cebollino picado y el AOVE."
-      },
-      "alergenos": [],
-      "pcg": [
-        "El guiso debe de estar ligado"
-      ],
-      "subrecetas": [
-        {
-          "nombre": "GUISO DE GARBANZOS CON MARISCO",
-          "codigo": "GUGA00179",
-          "ingredientes": [
-            {
-              "nombre": "Garbanzo cocido Pedrosillano",
-              "med": 4000,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite oliva especial",
-              "med": 150,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Cebolla entera pelada",
-              "med": 1200,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Laurel seco",
-              "med": 1,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimiento verde",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimiento rojo",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal fina",
-              "med": 30,
-              "udm": "g"
-            },
-            {
-              "nombre": "Carne de pimiento choricero",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimentón dulce de la Vera",
-              "med": 5,
-              "udm": "g"
-            },
-            {
-              "nombre": "Tomate triturado extra",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Vino blanco",
-              "med": 150,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Caldo pescado y marisco de roca",
-              "med": 2500,
-              "udm": "ml"
-            }
-          ],
-          "elaboracion": "MEDIDAS PARA 20 RACIONES. Escurrimos los garbanzos y los pasamos por el grifo. Quitamos el pedúnculo a los pimientos y los cortamos en brunoise. Pelamos la cebolla y la picamos en brunoise; picamos el ajo. En un rondón añadimos el aceite, la cebolla picada, el ajo, los pimientos y el laurel, sazonamos y dejamos sudar 5 minutos. Añadimos el pimentón, dejamos que se dore. Incorporamos el tomate triturado, la pulpa de pimiento choricero y los garbanzos. Removemos 2 minutos y añadimos el vino blanco, dejamos reducir. Cubrimos con el caldo de pescado y marisco. Cocinamos a fuego suave 30 minutos. Reservamos hasta el momento de servicio. El guiso debe quedar con caldo pero cremoso; si fuera necesario texturizar con maicena express."
-        }
-      ],
-      "foto": "data/fotos/mn-garbanzos-pulpo.jpeg",
-      "nombre_carta": "GARBANZOS CON PULPO",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-pochas-gambones",
-      "sheet": "MN POCHAS GAMBONES",
-      "nombre": "GUISO DE GARBANZOS CON GAMBONES",
-      "ingredientes": [
-        {
-          "nombre": "GUISO DE GARBANZOS CON MARISCO (Subreceta)",
-          "med": 280,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 0.5,
-          "udm": "g",
-          "notas": "una pizca"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 15,
-          "udm": "ml",
-          "notas": "1 tbsp"
-        },
-        {
-          "nombre": "COLA GAMBON Nº2 CONGELADO",
-          "med": 60,
-          "udm": "g",
-          "notas": "3 ud  en trozs"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Descongelar el gambón en refrigeración.\n2. Cortar cada gambón en 3 trozos y reservar.\n3. Picar el cebollino fino y reservar para terminar el plato.\n4. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. Calentamos el guiso de garbanzos con marisco a fuego medio.\n2. Añadimos los trozos de gambón.\n3. Cocinamos 2 o 3 minutos hasta que el gambón esté hecho.\n4. Rectificar de sal si fuera necesario.",
-        "emplatado": "1. Presentamos en el fondo del plato los garbanzos guisados con los gambones.\n2. Decoramos con el cebollino picado por encima.\n3. Terminamos con un hilo de aceite de oliva virgen extra.",
-        "raw": "PRE ELABORACION\n1. Descongelar el gambón en refrigeración.\n2. Cortar cada gambón en 3 trozos y reservar.\n3. Picar el cebollino fino y reservar para terminar el plato.\n4. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentamos el guiso de garbanzos con marisco a fuego medio.\n2. Añadimos los trozos de gambón.\n3. Cocinamos 2 o 3 minutos hasta que el gambón esté hecho.\n4. Rectificar de sal si fuera necesario.\n\nEMPLATAMOS\n1. Presentamos en el fondo del plato los garbanzos guisados con los gambones.\n2. Decoramos con el cebollino picado por encima.\n3. Terminamos con un hilo de aceite de oliva virgen extra."
-      },
-      "alergenos": [
-        "Crustaceos"
-      ],
-      "pcg": [
-        "Las pochas tienen que estar tiernas y ligadas. No sobrecocinar el pescado."
-      ],
-      "subrecetas": [
-        {
-          "nombre": "GUISO DE GARBANZOS CON MARISCO",
-          "codigo": "GUGA00179",
-          "ingredientes": [
-            {
-              "nombre": "Garbanzo cocido Pedrosillano",
-              "med": 4000,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite oliva especial",
-              "med": 150,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Cebolla entera pelada",
-              "med": 1200,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Laurel seco",
-              "med": 1,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimiento verde",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimiento rojo",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal fina",
-              "med": 30,
-              "udm": "g"
-            },
-            {
-              "nombre": "Carne de pimiento choricero",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimentón dulce de la Vera",
-              "med": 5,
-              "udm": "g"
-            },
-            {
-              "nombre": "Tomate triturado extra",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Vino blanco",
-              "med": 150,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Caldo pescado y marisco de roca",
-              "med": 2500,
-              "udm": "ml"
-            }
-          ],
-          "elaboracion": "MEDIDAS PARA 20 RACIONES. Escurrimos los garbanzos y los pasamos por el grifo. Quitamos el pedúnculo a los pimientos y los cortamos en brunoise. Pelamos la cebolla y la picamos en brunoise; picamos el ajo. En un rondón añadimos el aceite, la cebolla picada, el ajo, los pimientos y el laurel, sazonamos y dejamos sudar 5 minutos. Añadimos el pimentón, dejamos que se dore. Incorporamos el tomate triturado, la pulpa de pimiento choricero y los garbanzos. Removemos 2 minutos y añadimos el vino blanco, dejamos reducir. Cubrimos con el caldo de pescado y marisco. Cocinamos a fuego suave 30 minutos. Reservamos hasta el momento de servicio. El guiso debe quedar con caldo pero cremoso; si fuera necesario texturizar con maicena express."
-        }
-      ],
-      "foto": "",
-      "nombre_carta": "GUISO DE GARBANZOS CON GAMBONES",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-lentejas-tradicionales",
-      "sheet": "MN LENTEJAS TRADICIONALES",
-      "nombre": "LENTEJAS TRADICIONALES CON CHORIZO",
-      "ingredientes": [
-        {
-          "nombre": "ESTOFADO DE LENTEJAS BASE CLÁSICO (Subreceta)",
-          "med": 280,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "PIPARRA ENCURTIDA",
-          "med": 15,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Disponer la mise en place de todos los ingredientes.",
-        "elaboracion": "1. Cuando nos demanden el plato calentamos las lentejas a fuego lento.",
-        "emplatado": "1. las lentejas en el plato sopero, colocando el compango encima.\n2. Servimos acompañado en un bol de las piparras.",
-        "raw": "PRE ELABORACION\n1. Disponer la mise en place de todos los ingredientes.\n\nELABORACION\n1. Cuando nos demanden el plato calentamos las lentejas a fuego lento.\n\nEMPLATAMOS\n1. las lentejas en el plato sopero, colocando el compango encima.\n2. Servimos acompañado en un bol de las piparras."
-      },
-      "alergenos": [
-        "Dioxido de Azufre y Sulfitos"
-      ],
-      "pcg": [
-        "Las lentejas tienen que estar calientes. El guiso debe de quedar con textura"
-      ],
-      "subrecetas": [
-        {
-          "nombre": "ESTOFADO DE LENTEJAS BASE CLÁSICO",
-          "codigo": "ESLE00145",
-          "ingredientes": [
-            {
-              "nombre": "Lenteja pardina",
-              "med": 1500,
-              "udm": "g"
-            },
-            {
-              "nombre": "Cebolla pelada",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimiento verde",
-              "med": 240,
-              "udm": "g"
-            },
-            {
-              "nombre": "Zanahoria",
-              "med": 200,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 12,
-              "udm": "g"
-            },
-            {
-              "nombre": "Tomate pera",
-              "med": 400,
-              "udm": "g"
-            },
-            {
-              "nombre": "Chorizo asturiano",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Papada ibérica curada",
-              "med": 150,
-              "udm": "g"
-            },
-            {
-              "nombre": "Costilla cerdo adobada",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Hueso jamón",
-              "med": 2,
-              "udm": "ud"
-            },
-            {
-              "nombre": "Laurel seco",
-              "med": 2,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pasta concentrado tomate",
-              "med": 40,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal fina",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite oliva especial",
-              "med": 50,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Tomillo fresco",
-              "med": 2,
-              "udm": "g"
-            },
-            {
-              "nombre": "Hogaza trigo blanco (majao)",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado (majao)",
-              "med": 8,
-              "udm": "g"
-            },
-            {
-              "nombre": "Vinagre de Jerez",
-              "med": 10,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Pimentón dulce + comino molido",
-              "med": 20,
-              "udm": "g"
-            }
-          ],
-          "elaboracion": "Remojar las lentejas durante al menos 2 horas. Picar finamente cebolla, pimiento verde, zanahoria y ajos. En cazuela grande, calentar aceite y dorar las verduras picadas. Añadir las lentejas escurridas, hueso de jamón, chorizo, papada, costilla en trozos de 2 cm, hojas de laurel y concentrado de tomate. Cubrir con agua y cocinar a fuego lento ~1 hora hasta tiernas. Preparar el majao: freír ajos enteros en aceite, retirar; en el mismo aceite freír el pan sin quemar y reservar. Apartar del fuego, añadir comino y pimentón. Triturar pan, ajos fritos, pimentón, comino, vinagre con el aceite y un poco de agua de cocción hasta crema fina. Añadir el majao a las lentejas, cocer 5 minutos más. Sacar chorizo y cortar en rodajas; sacar la papada y cortar en cubos 0,5 cm."
-        }
-      ],
-      "foto": "",
-      "nombre_carta": "LENTEJAS TRADICIONALES CON CHORIZO",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-pata-pulpo-revolcona",
-      "sheet": "MN PATA PULPO REVOLCONA",
-      "nombre": "PATA DE PULPO A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
-      "ingredientes": [
-        {
-          "nombre": "PATA PULPO M. COC",
-          "med": 190,
-          "udm": "g",
-          "notas": "1 blister"
-        },
-        {
-          "nombre": "PATATA REVOLCONA",
-          "med": 150,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "MOJO PICON VERDE",
-          "med": 20,
-          "udm": "g",
-          "notas": "Pintado final (Abuela Flora)"
-        },
-        {
-          "nombre": "PIMENTON AGRIDULCE DE LA VERA",
-          "med": 2,
-          "udm": "g",
-          "notas": "Acabado"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 10,
-          "udm": "ml",
-          "notas": "Acabado"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. Calentar el pulpo cerrado en microondas 25–30 segundos a máxima potencia.\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Separar patas y seleccionar la pata grande para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Cortar en rodajas de 0,5 cm o presentar entera según servicio.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.",
-        "emplatado": "1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo sobre la patata o lateralmente con volumen.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentar el pulpo cerrado en microondas 25–30 segundos a máxima potencia.\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Separar patas y seleccionar la pata grande para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Cortar en rodajas de 0,5 cm o presentar entera según servicio.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.\n\nEMPLATAMOS\n1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo sobre la patata o lateralmente con volumen.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato."
-      },
-      "alergenos": [
-        "Frutos secos cascara"
-      ],
-      "pcg": [
-        "Pulpo muy seco antes de plancha para lograr dorado real.",
-        "Marcado fuerte exterior sin resecar interior.",
-        "Mojo verde aplicado al final para mantener frescor y color.",
-        "Patata revolcona caliente y cremosa.",
-        "Pimentón añadido fuera del fuego para evitar amargor.",
-        "Servicio inmediato para conservar temperatura."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/mn-pata-pulpo-revolcona.png",
-      "nombre_carta": "PATA DE PULPO A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": "Tierno, marcado a la plancha sobre patatas rotas crujientes, con nuestro mojo verde casero de cilantro fresco"
-    },
-    {
-      "id": "para-pulpo-mojo-verde",
-      "sheet": "PARA PULPO MOJO VERDE",
-      "nombre": "PATA DE PULPO COMPLETA A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
-      "ingredientes": [
-        {
-          "nombre": "PATA PULPO M. COC",
-          "med": 250,
-          "udm": "g",
-          "notas": "Pata completa"
-        },
-        {
-          "nombre": "PATATA REVOLCONA",
-          "med": 180,
-          "udm": "g",
-          "notas": "Cama"
-        },
-        {
-          "nombre": "MOJO PICON VERDE",
-          "med": 30,
-          "udm": "g",
-          "notas": "Pintado final (Abuela Flora)"
-        },
-        {
-          "nombre": "PIMENTON AGRIDULCE DE LA VERA",
-          "med": 2,
-          "udm": "g",
-          "notas": "Acabado"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 12,
-          "udm": "ml",
-          "notas": "Acabado"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": "Acabado"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. Calentar el pulpo cerrado en microondas 30–40 segundos a máxima potencia (pata completa).\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Seleccionar la pata grande completa para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo entera por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Mantener la pata entera o cortar en rodajas de 1 cm respetando la forma.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.",
-        "emplatado": "1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo completa sobre la patata, manteniendo forma.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentar el pulpo cerrado en microondas 30–40 segundos a máxima potencia (pata completa).\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Seleccionar la pata grande completa para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo entera por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Mantener la pata entera o cortar en rodajas de 1 cm respetando la forma.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.\n\nEMPLATAMOS\n1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo completa sobre la patata, manteniendo forma.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato."
-      },
-      "alergenos": [
-        "Frutos secos cascara"
-      ],
-      "pcg": [
-        "Pulpo muy seco antes de plancha para lograr dorado real.",
-        "Marcado fuerte exterior sin resecar interior.",
-        "Mojo verde aplicado al final para mantener frescor y color.",
-        "Patata revolcona caliente y cremosa.",
-        "Pimentón añadido fuera del fuego para evitar amargor.",
-        "Servicio inmediato para conservar temperatura."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/para-pulpo-mojo-verde.png",
-      "nombre_carta": "PATA DE PULPO COMPLETA A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "mn-pochas-almejas",
-      "sheet": "MN POCHAS ALMEJAS",
-      "nombre": "POCHAS CON ALMEJAS",
-      "ingredientes": [
-        {
-          "nombre": "GUISO DE POCHAS CON MARISCO (Subreceta)",
-          "med": 280,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 0.5,
-          "udm": "g",
-          "notas": "una pizca"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 15,
-          "udm": "ml",
-          "notas": "1 tbsp"
-        },
-        {
-          "nombre": "ALMEJA JAPONICA TALLA XL (30/40 PIEZAS)",
-          "med": 90,
-          "udm": "g",
-          "notas": "3 almejas aprox 30 g/ud"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Purgar las almejas en agua fría con sal durante mínimo 1 hora antes del servicio para que suelten arena.\n2. Lavar bajo agua fría y reservar refrigeradas hasta el pase.\n3. Descartar las almejas que no cierren al golpear.\n4. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. Cuando nos demanden el plato, calentar el guiso de pochas a fuego medio.\n2. Añadir las 3 almejas con la concha hacia arriba y tapar.\n3. Cocinar 2-3 minutos hasta que las almejas se abran.\n4. Descartar las que no abran.",
-        "emplatado": "1. Presentar en el fondo del plato hondo las pochas con su caldo.\n2. Disponer las 3 almejas abiertas alrededor o encima.\n3. Decorar con Cebollino picado.\n4. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Purgar las almejas en agua fría con sal durante mínimo 1 hora antes del servicio para que suelten arena.\n2. Lavar bajo agua fría y reservar refrigeradas hasta el pase.\n3. Descartar las almejas que no cierren al golpear.\n4. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Cuando nos demanden el plato, calentar el guiso de pochas a fuego medio.\n2. Añadir las 3 almejas con la concha hacia arriba y tapar.\n3. Cocinar 2-3 minutos hasta que las almejas se abran.\n4. Descartar las que no abran.\n\nEMPLATAMOS\n1. Presentar en el fondo del plato hondo las pochas con su caldo.\n2. Disponer las 3 almejas abiertas alrededor o encima.\n3. Decorar con Cebollino picado.\n4. Servir inmediato."
-      },
-      "alergenos": [
-        "Crustaceos",
-        "Moluscos",
-        "Pescado"
-      ],
-      "pcg": [
-        "Las pochas tienen que estar tiernas y ligadas. No sobrecocinar el pescado."
-      ],
-      "subrecetas": [
-        {
-          "nombre": "GUISO DE POCHAS CON MARISCO",
-          "codigo": "GUPO00184",
-          "ingredientes": [
-            {
-              "nombre": "Pochas Navarra blancas y verdes",
-              "med": 4000,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite oliva especial",
-              "med": 150,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Cebolla entera pelada",
-              "med": 600,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Laurel seco",
-              "med": 1,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimiento verde",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Papada ibérica curada",
-              "med": 300,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal fina",
-              "med": 30,
-              "udm": "g"
-            },
-            {
-              "nombre": "Carne de pimiento choricero",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimentón dulce de la Vera",
-              "med": 5,
-              "udm": "g"
-            },
-            {
-              "nombre": "Tomate triturado extra",
-              "med": 50,
-              "udm": "g"
-            },
-            {
-              "nombre": "Vino blanco",
-              "med": 150,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Caldo pescado y marisco de roca",
-              "med": 2500,
-              "udm": "ml"
-            }
-          ],
-          "elaboracion": "MEDIDAS PARA 20 RACIONES. Escurrimos las pochas y las pasamos por el grifo. Quitamos el pedúnculo a los pimientos y los cortamos en brunoise. Pelamos la cebolla y la picamos en brunoise; picamos el ajo. En un rondón añadimos el aceite, la cebolla picada, el ajo, el pimiento y el laurel, sazonamos y dejamos sudar 5 minutos. Añadimos el pimentón, dejamos que se dore, añadimos el tomate frito, la pulpa de pimiento choricero y las pochas. Removemos 2 minutos y añadimos el vino blanco, dejamos que reduzca y cubrimos con el caldo. Cocinamos a fuego suave 30 minutos. Reservamos hasta el momento de servicio. El guiso debe quedar con caldo pero cremoso; si fuera necesario texturizar con maicena express."
-        }
-      ],
-      "foto": "data/fotos/mn-pochas-almejas.png",
-      "nombre_carta": "POCHAS CON ALMEJAS",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "pan-de-la-casa-pulpo",
-      "sheet": "PAN DE LA CASA PULPO",
-      "nombre": "REBANADA DE PAN CON TETILLA Y PULPO",
-      "ingredientes": [
-        {
-          "nombre": "PAN PAYES (REBANADA)",
-          "med": 1,
-          "udm": "ud",
-          "notas": "Reb 80-100 g"
-        },
-        {
-          "nombre": "PATA PULPO M. COC",
-          "med": 90,
-          "udm": "g",
-          "notas": "Media pata"
-        },
-        {
-          "nombre": "TETILLA LECHE CRUDA CAMPO CAPELA D.O.P",
-          "med": 60,
-          "udm": "g",
-          "notas": "Dados o lascas"
-        },
-        {
-          "nombre": "AJO PELADO",
-          "med": 6,
-          "udm": "g",
-          "notas": "Laminado"
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 15,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "PIMENTON DULCE DE LA VERA",
-          "med": 1,
-          "udm": "g",
-          "notas": "Opcional"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Tostar pan payes antes del",
-        "elaboracion": "1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.",
-        "emplatado": "1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Tostar pan payes antes del montaje.\n7. Pelar y laminar ajo pelado.\n8. Disponer pimenton dulce de la vera en la mise en place.\n\nELABORACION\n1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.\n\nEMPLATAMOS\n1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato."
-      },
-      "alergenos": [
-        "Trigo"
-      ],
-      "pcg": [
-        "Pan crujiente sin quemar.",
-        "Pulpo caliente y jugoso, no reseco.",
-        "Ajo dorado rubio, no amargo.",
-        "Tetilla fundida con ligero gratinado.",
-        "Montaje rápido para mantener temperatura.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/pan-de-la-casa-pulpo.png",
-      "nombre_carta": "REBANADA DE PAN CON TETILLA Y PULPO",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": "Pan crujiente de la casa relleno de queso tetilla fundido con pulpo al ajillo, ajo dorado y un toque de pimentón"
-    },
-    {
-      "id": "tartar-atun-huevo-frito",
-      "sheet": "TARTAR ATUN HUEVO FRITO",
-      "nombre": "TARTAR DE ATUN CON HUEVO FRITO",
-      "ingredientes": [
-        {
-          "nombre": "ATUN ROJO YELLOWFIN",
-          "med": 90,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "HUEVOS CAMPEROS",
-          "med": 3,
-          "udm": "ud",
-          "notas": ""
-        },
-        {
-          "nombre": "PATATA ENTERA PELADA AGRIA",
-          "med": 120,
-          "udm": "g",
-          "notas": "En rodajas / guarnición"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 5,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 2,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "ACEITE GIRASOL",
-          "med": 5,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "OREGANO SECO",
-          "med": 5,
-          "udm": "g",
-          "notas": "Aliñar el atún"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.",
-        "elaboracion": "1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.",
-        "emplatado": "1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos.",
-        "raw": "PRE ELABORACION\n1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.\n\nELABORACION\n1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.\n\nEMPLATAMOS\n1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos."
-      },
-      "alergenos": [
-        "Dioxido de Azufre y Sulfitos",
-        "Huevos",
-        "Pescado"
-      ],
-      "pcg": [
-        "Las patatas tienen que estar blandas por dentro y crujientes por fuera y bien sazonadas.",
-        "Los huevos tienen que tener la yema liquida."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/tartar-atun-huevo-frito.png",
-      "nombre_carta": "TARTAR DE ATUN CON HUEVO FRITO",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
-    {
-      "id": "tabla-chacinas-cerveceria",
-      "sheet": "TABLA CHACINAS CERVECERIA",
-      "nombre": "TABLA DE CHACINAS CERVECERIAS",
-      "ingredientes": [
-        {
-          "nombre": "SALCH.CULAR SALAMANCA IBERICO",
-          "med": 35,
-          "udm": "g",
-          "notas": "5 rodajas"
-        },
-        {
-          "nombre": "SALCH.CULAR SALAMANCA IBERICO",
-          "med": 35,
-          "udm": "g",
-          "notas": "5 rodajas"
-        },
-        {
-          "nombre": "PALETA CEBO DE CAMPO 50% RAZA IBÉRICA LONCHEADA",
-          "med": 25,
-          "udm": "g",
-          "notas": "3 lonchas"
-        },
-        {
-          "nombre": "LOMO CEBO IBERICO 1/2 LN",
-          "med": 35,
-          "udm": "g",
-          "notas": "5 rodajas"
-        },
-        {
-          "nombre": "QUESO PAJARETE MEZCLA CURADO CABRA- OVEJA",
-          "med": 70,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "TOMATE TRITURADO EXTRA",
-          "med": 50,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "MOLLETE PAN CRISTAL PEQUEÑO CRUDO",
-          "med": 0.5,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 10,
-          "udm": "ml",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Chacinas (Chorizo, Salchichón, Lomo).\n2. Ajustamos cortafiambres al Nº 4.\n3. Cortamos 5 rodajas por producto (≈ 35 g).\n4. Colocamos las rodajas en papel de charcutería con logo, ordenadas y ligeramente superpuestas.\n5. Reservar en cámara tapadas para evitar oxidación.\n6. Paleta ibérica.\n7. Separar las lonchas suavemente para airearlas.\n8. Queso Pajarrete.\n9. Cortar en triángulos de 0,5 cm.\n10. Mantener envase cubierto para que no reseque.",
-        "elaboracion": "1. Tostamos el pan cristal en el momento del pase, cortándolo en piezas de 5 cm, pincelando con AOVE y dorándolo 1–2 minutos hasta que quede muy crujiente; templamos las chacinas fuera de cámara durante 5–7 minutos y mantenemos las rodajas organizadas en papel de charcutería para un",
-        "emplatado": "1. Colocamos las chacinas de manera armoniosa sobre la tabla, ligeramente solapadas para generar un abanico visual equilibrado; situamos el queso en un pequeño grupo que aporte volumen, añadimos el ramiki con la emulsión de tomate y completamos con el pan cristal tostado.",
-        "raw": "PRE ELABORACION\n1. Chacinas (Chorizo, Salchichón, Lomo).\n2. Ajustamos cortafiambres al Nº 4.\n3. Cortamos 5 rodajas por producto (≈ 35 g).\n4. Colocamos las rodajas en papel de charcutería con logo, ordenadas y ligeramente superpuestas.\n5. Reservar en cámara tapadas para evitar oxidación.\n6. Paleta ibérica.\n7. Separar las lonchas suavemente para airearlas.\n8. Queso Pajarrete.\n9. Cortar en triángulos de 0,5 cm.\n10. Mantener envase cubierto para que no reseque.\n\nELABORACION\n1. Tostamos el pan cristal en el momento del pase, cortándolo en piezas de 5 cm, pincelando con AOVE y dorándolo 1–2 minutos hasta que quede muy crujiente; templamos las chacinas fuera de cámara durante 5–7 minutos y mantenemos las rodajas organizadas en papel de charcutería para un montaje rápido; servimos la emulsión de tomate en un ramiki frío y disponemos el pan soplado Bareto.\n\nEMPLATAMOS\n1. Colocamos las chacinas de manera armoniosa sobre la tabla, ligeramente solapadas para generar un abanico visual equilibrado; situamos el queso en un pequeño grupo que aporte volumen, añadimos el ramiki con la emulsión de tomate y completamos con el pan cristal tostado."
-      },
-      "alergenos": [],
-      "pcg": [
-        "La chacina tiene que estar fresca no seca y atemperada"
-      ],
-      "subrecetas": [],
-      "foto": "",
-      "nombre_carta": "Tabla mixta de chacinas ibéricas",
-      "seccion": "Chacinas / Entrantes",
+      "nombre_carta": "Zamboriñas a la bilbaína",
+      "seccion": "Entrantes / Para picar",
       "cartas": [
-        "principal"
+        "principal",
+        "entrehoras"
       ],
-      "descripcion": "Lomo de bellota, chorizo curado, salchichón artesano y queso viejo zamorano"
+      "descripcion": "Frescas, gratinadas con sofrito suave y un golpe de vino blanco al estilo bilbaíno. En su concha"
     },
     {
       "id": "croquetas-jamon-chips",
@@ -1668,6 +574,89 @@
         "entrehoras"
       ],
       "descripcion": "Hecha al día, cremosa y con el punto justo, coronada con atún y piparras de Ibarra"
+    },
+    {
+      "id": "gambon-ajillo",
+      "sheet": "GAMBON AJILLO",
+      "nombre": "GAMBON AL AJILLO",
+      "ingredientes": [
+        {
+          "nombre": "COLA GAMBON Nº2 CONGELADO",
+          "med": 150,
+          "udm": "gr",
+          "notas": "10 ud"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 30,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 100,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "AJO PELADO",
+          "med": 20,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CAYENA RAMA GUINDILLA",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "PEREJIL",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "TOMATE CHERRY",
+          "med": 60,
+          "udm": "g",
+          "notas": "5-6 ud"
+        },
+        {
+          "nombre": "VINO FINO TIO PEPE",
+          "med": 15,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Cortamos los ajos en laminas y la guindilla en rodajas.\n2. Confitamos los tomates cherry enteros (5-6 ud) en aceite suave a fuego muy bajo hasta que esten tiernos y con color, reservar.",
+        "elaboracion": "1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas y la guindilla en rodajas, dejamos que se doren y añadimos los gambones.\n3. Incorporamos los tomates cherry confitados.\n4. Retiramos del fuego, añadimos un chorrito de vino fino y espolvoreamos el pimenton dulce en el ultimo momento.\n5. Tapamos durante 2 minutos para que los gambones se cocinen.",
+        "emplatado": "1. Servimos en la misma sarten de cocinado decorando con perejil picado.",
+        "raw": "PRE ELABORACION\n1. Cortamos los ajos en laminas y la guindilla en rodajas.\n2. Confitamos los tomates cherry enteros (5-6 ud) en aceite suave a fuego muy bajo hasta que esten tiernos y con color, reservar.\n\nELABORACION\n1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas y la guindilla en rodajas, dejamos que se doren y añadimos los gambones.\n3. Incorporamos los tomates cherry confitados.\n4. Retiramos del fuego, añadimos un chorrito de vino fino y espolvoreamos el pimenton dulce en el ultimo momento.\n5. Tapamos durante 2 minutos para que los gambones se cocinen.\n\nEMPLATAMOS\n1. Servimos en la misma sarten de cocinado decorando con perejil picado."
+      },
+      "alergenos": [
+        "Crustaceos"
+      ],
+      "pcg": [
+        "Los gambones tienen que quedar jugosos, y cocinados suavemtne sin pasarse.",
+        "Tienen que estar sazonados"
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/gambon-ajillo.png",
+      "nombre_carta": "Gambones al pil pil con tomate cherry y Jerez",
+      "seccion": "Entrantes / Para picar",
+      "cartas": [
+        "principal",
+        "entrehoras"
+      ],
+      "descripcion": "Chisporroteando en aceite con ajo dorado, guindilla, tomate cherry confitado y un perfume a Jerez"
     },
     {
       "id": "morcilla-burgos-mermelada",
@@ -2011,6 +1000,183 @@
         "entrehoras"
       ],
       "descripcion": "Lomo adobado a la plancha con queso fundido, en mollete crujiente por fuera y tierno por dentro"
+    },
+    {
+      "id": "bocata-chipirones",
+      "sheet": "BOCATA CHIPIRONES",
+      "nombre": "BOCATA DE CHIPIRONES FRITOS CON ALIOLI, SRIRACHA Y LIMA",
+      "ingredientes": [
+        {
+          "nombre": "BOCATA GRAN RESERVA (50U)",
+          "med": 1,
+          "udm": "ud",
+          "notas": "Bocatín 140-160 g"
+        },
+        {
+          "nombre": "CHIPIRON LIMPIO CONG.",
+          "med": 150,
+          "udm": "g",
+          "notas": "Limpio, en rodajas"
+        },
+        {
+          "nombre": "HARINA ESPECIAL FRITURAS",
+          "med": 40,
+          "udm": "g",
+          "notas": "Enharinado"
+        },
+        {
+          "nombre": "SALSA ALI OLI",
+          "med": 30,
+          "udm": "g",
+          "notas": "Untar pan"
+        },
+        {
+          "nombre": "SALSA SRIRACHA PICANTE (DOSIFICADOR)",
+          "med": 8,
+          "udm": "g",
+          "notas": "Línea fina"
+        },
+        {
+          "nombre": "LIMA",
+          "med": 0.5,
+          "udm": "ud",
+          "notas": "Ralladura"
+        },
+        {
+          "nombre": "PATATAS FRITAS 500 GR CAJA 4 UD (PRODESCO)",
+          "med": 30,
+          "udm": "gr",
+          "notas": "Guarnición"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 30,
+          "udm": "ml",
+          "notas": "Consumo real fritura"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Limpiar chipirones (pluma e interiores) y secar muy bien con papel.\n2. Cortar en rodajas regulares.\n3. Tener harina de frituras preparada.\n4. Cargar alioli en manga o biberón.\n5. Cargar sriracha en biberón fino.\n6. Abrir bocatín longitudinalmente.\n7. Lavar Lima y reservar para rallar al momento.\n8. Reservar salsa ali oli en biberón para el pase.\n9. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. A demanda del plato, sazonar los chipirones y enharinar separando bien las rodajas.\n2. Sacudir el exceso de harina en el cedazo.\n3. Freír a 175ºC durante 1–2 minutos hasta dorado ligero y crujiente.\n4. Escurrir en escurridor de fritos.\n5. Salar ligeramente.\n6. Marcar el interior del pan en plancha o salamandra.\n7. Untar la base del pan con alioli.",
+        "emplatado": "1. Rellenar el bocatín con los chipirones fritos calientes.\n2. Añadir línea fina de sriracha en zigzag por encima.\n3. Terminar con ralladura fresca de Lima al momento.\n4. Cerrar ligeramente el pan.\n5. Servir acompañado de bolsita de patatas chips al lado.\n6. Salir inmediato.",
+        "raw": "PRE ELABORACION\n1. Limpiar chipirones (pluma e interiores) y secar muy bien con papel.\n2. Cortar en rodajas regulares.\n3. Tener harina de frituras preparada.\n4. Cargar alioli en manga o biberón.\n5. Cargar sriracha en biberón fino.\n6. Abrir bocatín longitudinalmente.\n7. Lavar Lima y reservar para rallar al momento.\n8. Reservar salsa ali oli en biberón para el pase.\n9. Reservar aceite suave para la cocción.\n\nELABORACION\n1. A demanda del plato, sazonar los chipirones y enharinar separando bien las rodajas.\n2. Sacudir el exceso de harina en el cedazo.\n3. Freír a 175ºC durante 1–2 minutos hasta dorado ligero y crujiente.\n4. Escurrir en escurridor de fritos.\n5. Salar ligeramente.\n6. Marcar el interior del pan en plancha o salamandra.\n7. Untar la base del pan con alioli.\n\nEMPLATAMOS\n1. Rellenar el bocatín con los chipirones fritos calientes.\n2. Añadir línea fina de sriracha en zigzag por encima.\n3. Terminar con ralladura fresca de Lima al momento.\n4. Cerrar ligeramente el pan.\n5. Servir acompañado de bolsita de patatas chips al lado.\n6. Salir inmediato."
+      },
+      "alergenos": [
+        "Dioxido de Azufre y Sulfitos",
+        "Huevos",
+        "Trigo"
+      ],
+      "pcg": [
+        "Chipirón muy seco antes de freír.",
+        "Fritura rápida para textura crujiente y jugosa.",
+        "Harinado ligero, sin exceso.",
+        "Pan tostado interiormente sin resecar.",
+        "Sriracha dosificada, no dominante.",
+        "Lima rallada al momento.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/bocata-chipirones.png",
+      "nombre_carta": "Bocadillo de chipironcitos a la andaluza",
+      "seccion": "Entre panes",
+      "cartas": [
+        "entrehoras"
+      ],
+      "descripcion": "Frescos, rebozados al momento, crujientes y tiernos, en pan de barra recién hecho. El clásico madrileño"
+    },
+    {
+      "id": "bocata-piripi",
+      "sheet": "BOCATA PIRIPI",
+      "nombre": "BOCATA PIRIPI",
+      "ingredientes": [
+        {
+          "nombre": "BOCATA GRAN RESERVA (50U)",
+          "med": 1,
+          "udm": "ud",
+          "notas": "Bocadillo cristal 160-180 g"
+        },
+        {
+          "nombre": "CINTA DE LOMO ADOBADA EN FILETES",
+          "med": 100,
+          "udm": "g",
+          "notas": "2 filetes"
+        },
+        {
+          "nombre": "BACON AHUMADO",
+          "med": 40,
+          "udm": "g",
+          "notas": "2 lonchas Crujiente"
+        },
+        {
+          "nombre": "QUESO CHEDDAR LONCHAS",
+          "med": 40,
+          "udm": "g",
+          "notas": "2 lonchas"
+        },
+        {
+          "nombre": "TOMATE PERA",
+          "med": 40,
+          "udm": "g",
+          "notas": "Rodajas finas"
+        },
+        {
+          "nombre": "SALSA ALI OLI",
+          "med": 35,
+          "udm": "g",
+          "notas": "Untar pan"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 5,
+          "udm": "ml",
+          "notas": "Plancha"
+        },
+        {
+          "nombre": "PATATAS FRITAS 500 GR CAJA 4 UD (PRODESCO)",
+          "med": 30,
+          "udm": "g",
+          "notas": "Guarnición"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Abrir pan longitudinalmente.\n2. Cortar tomate en rodajas finas.\n3. Cocinar bacon previamente hasta crujiente y reservar.\n4. Tener alioli en manga o biberón.\n5. Preparar plancha caliente.\n6. Reservar salsa ali oli en biberón para el pase.",
+        "elaboracion": "1. Marcar interior del pan en plancha.\n2. Cocinar los 2 filetes de lomo adobado en plancha con ligero aceite.\n3. Dorar por ambas caras 2 min por lado sin resecar.\n4. Colocar lonchas de cheddar sobre el lomo en el último minuto y fundir con campana o salamandra.\n5. Regenerar bacon crujiente brevemente en plancha.",
+        "emplatado": "1. Untar base del pan con alioli.\n2. Colocar rodajas de tomate sazonadas.\n3. Añadir lomo adobado con cheddar fundido encima.\n4. Terminar con bacon crujiente.\n5. Cerrar el bocadillo.\n6. Acompañar con bolsita de patatas chips al lateral.\n7. Servir inmediato.",
+        "raw": "PRE ELABORACION\n1. Abrir pan longitudinalmente.\n2. Cortar tomate en rodajas finas.\n3. Cocinar bacon previamente hasta crujiente y reservar.\n4. Tener alioli en manga o biberón.\n5. Preparar plancha caliente.\n6. Reservar salsa ali oli en biberón para el pase.\n\nELABORACION\n1. Marcar interior del pan en plancha.\n2. Cocinar los 2 filetes de lomo adobado en plancha con ligero aceite.\n3. Dorar por ambas caras 2 min por lado sin resecar.\n4. Colocar lonchas de cheddar sobre el lomo en el último minuto y fundir con campana o salamandra.\n5. Regenerar bacon crujiente brevemente en plancha.\n\nEMPLATAMOS\n1. Untar base del pan con alioli.\n2. Colocar rodajas de tomate sazonadas.\n3. Añadir lomo adobado con cheddar fundido encima.\n4. Terminar con bacon crujiente.\n5. Cerrar el bocadillo.\n6. Acompañar con bolsita de patatas chips al lateral.\n7. Servir inmediato."
+      },
+      "alergenos": [
+        "Huevos",
+        "Lacteos"
+      ],
+      "pcg": [
+        "Lomo jugoso, no seco.",
+        "Cheddar totalmente fundido.",
+        "Bacon crujiente y escurrido.",
+        "Pan tostado interiormente.",
+        "Tomate fresco sin exceso de agua.",
+        "Montaje rápido y caliente.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/bocata-piripi.png",
+      "nombre_carta": "Bocadillo Piripi",
+      "seccion": "Entre panes",
+      "cartas": [
+        "entrehoras"
+      ],
+      "descripcion": "Lomo de cerdo a la plancha, bacon crujiente, queso fundido, tomate natural y alioli casero en pan recién tostado"
     },
     {
       "id": "hamburguesa-cabra",
@@ -2717,6 +1883,60 @@
       "descripcion": ""
     },
     {
+      "id": "mncallos-garbanzos",
+      "sheet": "MNCALLOS GARBANZOS ",
+      "nombre": "CALLOS CON GARBANZOS Y SOFRITO + PATATAS BASTÓN",
+      "ingredientes": [
+        {
+          "nombre": "CALLOS GUISADOS",
+          "med": 250,
+          "udm": "g",
+          "notas": "Vienen cocinados de obrador"
+        },
+        {
+          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2.5 KG, CAJA 4 BOLSAS (LAMBWESTON)",
+          "med": 80,
+          "udm": "g",
+          "notas": "Guarnición bastón"
+        },
+        {
+          "nombre": "GARBANZO EXTRA COCIDO LATA 3 KG (AMH)",
+          "med": 50,
+          "udm": "g",
+          "notas": "Bote, escurridos - extra"
+        },
+        {
+          "nombre": "HIERBABUENA",
+          "med": 1,
+          "udm": "g",
+          "notas": "Picada al pase, refrescar"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Los callos con garbanzos vienen ya cocinados.\n2. Mantener refrigerados.\n3. Escurrir y enjuagar los garbanzos de bote para añadir extra de legumbre.\n4. Picar la Hierbabuena fresca justo antes del pase.\n5. Tener patatas bastón prefritas listas para segunda fritura.",
+        "elaboracion": "1. Cuando nos demanden el plato, calentar el guiso de callos con garbanzos a fuego lento removiendo con cuidado para que no se peguen.\n2. Incorporar los garbanzos cocidos extra al guiso para reforzar la legumbre.\n3. Calentar 1-2 minutos más hasta temperatura de servicio.\n4. Freír las patatas bastón a 175ºC durante 3-4 minutos hasta doradas y crujientes.\n5. Escurrir y salar.",
+        "emplatado": "1. Colocar las patatas fritas bastón como base en plato hondo o plato llano.\n2. Disponer el guiso de callos con garbanzos encima asegurándonos que toca chorizo y morcilla en cada ración.\n3. Espolvorear Hierbabuena picada por encima al momento del pase para refrescar.\n4. Servir inmediato muy caliente.",
+        "raw": "PRE ELABORACION\n1. Los callos con garbanzos vienen ya cocinados.\n2. Mantener refrigerados.\n3. Escurrir y enjuagar los garbanzos de bote para añadir extra de legumbre.\n4. Picar la Hierbabuena fresca justo antes del pase.\n5. Tener patatas bastón prefritas listas para segunda fritura.\n\nELABORACION\n1. Cuando nos demanden el plato, calentar el guiso de callos con garbanzos a fuego lento removiendo con cuidado para que no se peguen.\n2. Incorporar los garbanzos cocidos extra al guiso para reforzar la legumbre.\n3. Calentar 1-2 minutos más hasta temperatura de servicio.\n4. Freír las patatas bastón a 175ºC durante 3-4 minutos hasta doradas y crujientes.\n5. Escurrir y salar.\n\nEMPLATAMOS\n1. Colocar las patatas fritas bastón como base en plato hondo o plato llano.\n2. Disponer el guiso de callos con garbanzos encima asegurándonos que toca chorizo y morcilla en cada ración.\n3. Espolvorear Hierbabuena picada por encima al momento del pase para refrescar.\n4. Servir inmediato muy caliente."
+      },
+      "alergenos": [],
+      "pcg": [
+        "Callos calentados a fuego lento sin remover bruscamente para no romper textura.",
+        "Garbanzos extra escurridos antes de añadir al guiso.",
+        "Hierbabuena picada al pase, no antes (preserva aroma fresco).",
+        "Patatas bastón doradas y crujientes.",
+        "Montaje rápido para mantener temperatura.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/mncallos-garbanzos.png",
+      "nombre_carta": "La cuchara del día",
+      "seccion": "Menú — Primeros",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
       "id": "mn-ensalada-4-estaciones",
       "sheet": "MN ENSALADA 4 ESTACIONES",
       "nombre": "ENSALADA 4 ESTACIONES",
@@ -2774,6 +1994,258 @@
       "subrecetas": [],
       "foto": "data/fotos/mn-ensalada-4-estaciones.png",
       "nombre_carta": "Ensalada Cuatro Estaciones con atún, huevo cocido, tomate y mezcla de hojas",
+      "seccion": "Menú — Primeros",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-garbanzos-pulpo",
+      "sheet": "MN GARBANZOS PULPO",
+      "nombre": "GARBANZOS CON PULPO",
+      "ingredientes": [
+        {
+          "nombre": "GUISO DE GARBANZOS CON MARISCO (Subreceta)",
+          "med": 280,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 0.5,
+          "udm": "g",
+          "notas": "una pizca"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 15,
+          "udm": "ml",
+          "notas": "1 tbsp"
+        },
+        {
+          "nombre": "PATA PULPO M. COC",
+          "med": 50,
+          "udm": "g",
+          "notas": "Cortado en rodajas"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Cortamos el pulpo en rodajas de 1 cm y reservamos en refrigeracion.\n2. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. Calentamos el guiso a fuego medio, añadimos las rodajas de pulpo cocinamos 2 o 3 minutos.",
+        "emplatado": "1. Presentamos en el fondo del plato los garbanzos decoramos con el Cebollino picado y el AOVE.",
+        "raw": "PRE ELABORACION\n1. Cortamos el pulpo en rodajas de 1 cm y reservamos en refrigeracion.\n2. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentamos el guiso a fuego medio, añadimos las rodajas de pulpo cocinamos 2 o 3 minutos.\n\nEMPLATAMOS\n1. Presentamos en el fondo del plato los garbanzos decoramos con el Cebollino picado y el AOVE."
+      },
+      "alergenos": [],
+      "pcg": [
+        "El guiso debe de estar ligado"
+      ],
+      "subrecetas": [
+        {
+          "nombre": "GUISO DE GARBANZOS CON MARISCO",
+          "codigo": "GUGA00179",
+          "ingredientes": [
+            {
+              "nombre": "Garbanzo cocido Pedrosillano",
+              "med": 4000,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite oliva especial",
+              "med": 150,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Cebolla entera pelada",
+              "med": 1200,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Laurel seco",
+              "med": 1,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimiento verde",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimiento rojo",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal fina",
+              "med": 30,
+              "udm": "g"
+            },
+            {
+              "nombre": "Carne de pimiento choricero",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimentón dulce de la Vera",
+              "med": 5,
+              "udm": "g"
+            },
+            {
+              "nombre": "Tomate triturado extra",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Vino blanco",
+              "med": 150,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Caldo pescado y marisco de roca",
+              "med": 2500,
+              "udm": "ml"
+            }
+          ],
+          "elaboracion": "MEDIDAS PARA 20 RACIONES. Escurrimos los garbanzos y los pasamos por el grifo. Quitamos el pedúnculo a los pimientos y los cortamos en brunoise. Pelamos la cebolla y la picamos en brunoise; picamos el ajo. En un rondón añadimos el aceite, la cebolla picada, el ajo, los pimientos y el laurel, sazonamos y dejamos sudar 5 minutos. Añadimos el pimentón, dejamos que se dore. Incorporamos el tomate triturado, la pulpa de pimiento choricero y los garbanzos. Removemos 2 minutos y añadimos el vino blanco, dejamos reducir. Cubrimos con el caldo de pescado y marisco. Cocinamos a fuego suave 30 minutos. Reservamos hasta el momento de servicio. El guiso debe quedar con caldo pero cremoso; si fuera necesario texturizar con maicena express."
+        }
+      ],
+      "foto": "data/fotos/mn-garbanzos-pulpo.jpeg",
+      "nombre_carta": "La cuchara del día",
+      "seccion": "Menú — Primeros",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-pochas-gambones",
+      "sheet": "MN POCHAS GAMBONES",
+      "nombre": "GUISO DE GARBANZOS CON GAMBONES",
+      "ingredientes": [
+        {
+          "nombre": "GUISO DE GARBANZOS CON MARISCO (Subreceta)",
+          "med": 280,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 0.5,
+          "udm": "g",
+          "notas": "una pizca"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 15,
+          "udm": "ml",
+          "notas": "1 tbsp"
+        },
+        {
+          "nombre": "COLA GAMBON Nº2 CONGELADO",
+          "med": 60,
+          "udm": "g",
+          "notas": "3 ud  en trozs"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Descongelar el gambón en refrigeración.\n2. Cortar cada gambón en 3 trozos y reservar.\n3. Picar el cebollino fino y reservar para terminar el plato.\n4. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. Calentamos el guiso de garbanzos con marisco a fuego medio.\n2. Añadimos los trozos de gambón.\n3. Cocinamos 2 o 3 minutos hasta que el gambón esté hecho.\n4. Rectificar de sal si fuera necesario.",
+        "emplatado": "1. Presentamos en el fondo del plato los garbanzos guisados con los gambones.\n2. Decoramos con el cebollino picado por encima.\n3. Terminamos con un hilo de aceite de oliva virgen extra.",
+        "raw": "PRE ELABORACION\n1. Descongelar el gambón en refrigeración.\n2. Cortar cada gambón en 3 trozos y reservar.\n3. Picar el cebollino fino y reservar para terminar el plato.\n4. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentamos el guiso de garbanzos con marisco a fuego medio.\n2. Añadimos los trozos de gambón.\n3. Cocinamos 2 o 3 minutos hasta que el gambón esté hecho.\n4. Rectificar de sal si fuera necesario.\n\nEMPLATAMOS\n1. Presentamos en el fondo del plato los garbanzos guisados con los gambones.\n2. Decoramos con el cebollino picado por encima.\n3. Terminamos con un hilo de aceite de oliva virgen extra."
+      },
+      "alergenos": [
+        "Crustaceos"
+      ],
+      "pcg": [
+        "Las pochas tienen que estar tiernas y ligadas. No sobrecocinar el pescado."
+      ],
+      "subrecetas": [
+        {
+          "nombre": "GUISO DE GARBANZOS CON MARISCO",
+          "codigo": "GUGA00179",
+          "ingredientes": [
+            {
+              "nombre": "Garbanzo cocido Pedrosillano",
+              "med": 4000,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite oliva especial",
+              "med": 150,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Cebolla entera pelada",
+              "med": 1200,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Laurel seco",
+              "med": 1,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimiento verde",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimiento rojo",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal fina",
+              "med": 30,
+              "udm": "g"
+            },
+            {
+              "nombre": "Carne de pimiento choricero",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimentón dulce de la Vera",
+              "med": 5,
+              "udm": "g"
+            },
+            {
+              "nombre": "Tomate triturado extra",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Vino blanco",
+              "med": 150,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Caldo pescado y marisco de roca",
+              "med": 2500,
+              "udm": "ml"
+            }
+          ],
+          "elaboracion": "MEDIDAS PARA 20 RACIONES. Escurrimos los garbanzos y los pasamos por el grifo. Quitamos el pedúnculo a los pimientos y los cortamos en brunoise. Pelamos la cebolla y la picamos en brunoise; picamos el ajo. En un rondón añadimos el aceite, la cebolla picada, el ajo, los pimientos y el laurel, sazonamos y dejamos sudar 5 minutos. Añadimos el pimentón, dejamos que se dore. Incorporamos el tomate triturado, la pulpa de pimiento choricero y los garbanzos. Removemos 2 minutos y añadimos el vino blanco, dejamos reducir. Cubrimos con el caldo de pescado y marisco. Cocinamos a fuego suave 30 minutos. Reservamos hasta el momento de servicio. El guiso debe quedar con caldo pero cremoso; si fuera necesario texturizar con maicena express."
+        }
+      ],
+      "foto": "",
+      "nombre_carta": "La cuchara del día",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -2849,6 +2321,280 @@
       "subrecetas": [],
       "foto": "data/fotos/mn-judias-verdes-jamon.png",
       "nombre_carta": "Judías verdes salteadas con jamón y huevo frito",
+      "seccion": "Menú — Primeros",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-lentejas-tradicionales",
+      "sheet": "MN LENTEJAS TRADICIONALES",
+      "nombre": "LENTEJAS TRADICIONALES CON CHORIZO",
+      "ingredientes": [
+        {
+          "nombre": "ESTOFADO DE LENTEJAS BASE CLÁSICO (Subreceta)",
+          "med": 280,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "PIPARRA ENCURTIDA",
+          "med": 15,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Disponer la mise en place de todos los ingredientes.",
+        "elaboracion": "1. Cuando nos demanden el plato calentamos las lentejas a fuego lento.",
+        "emplatado": "1. las lentejas en el plato sopero, colocando el compango encima.\n2. Servimos acompañado en un bol de las piparras.",
+        "raw": "PRE ELABORACION\n1. Disponer la mise en place de todos los ingredientes.\n\nELABORACION\n1. Cuando nos demanden el plato calentamos las lentejas a fuego lento.\n\nEMPLATAMOS\n1. las lentejas en el plato sopero, colocando el compango encima.\n2. Servimos acompañado en un bol de las piparras."
+      },
+      "alergenos": [
+        "Dioxido de Azufre y Sulfitos"
+      ],
+      "pcg": [
+        "Las lentejas tienen que estar calientes. El guiso debe de quedar con textura"
+      ],
+      "subrecetas": [
+        {
+          "nombre": "ESTOFADO DE LENTEJAS BASE CLÁSICO",
+          "codigo": "ESLE00145",
+          "ingredientes": [
+            {
+              "nombre": "Lenteja pardina",
+              "med": 1500,
+              "udm": "g"
+            },
+            {
+              "nombre": "Cebolla pelada",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimiento verde",
+              "med": 240,
+              "udm": "g"
+            },
+            {
+              "nombre": "Zanahoria",
+              "med": 200,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 12,
+              "udm": "g"
+            },
+            {
+              "nombre": "Tomate pera",
+              "med": 400,
+              "udm": "g"
+            },
+            {
+              "nombre": "Chorizo asturiano",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Papada ibérica curada",
+              "med": 150,
+              "udm": "g"
+            },
+            {
+              "nombre": "Costilla cerdo adobada",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Hueso jamón",
+              "med": 2,
+              "udm": "ud"
+            },
+            {
+              "nombre": "Laurel seco",
+              "med": 2,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pasta concentrado tomate",
+              "med": 40,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal fina",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite oliva especial",
+              "med": 50,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Tomillo fresco",
+              "med": 2,
+              "udm": "g"
+            },
+            {
+              "nombre": "Hogaza trigo blanco (majao)",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado (majao)",
+              "med": 8,
+              "udm": "g"
+            },
+            {
+              "nombre": "Vinagre de Jerez",
+              "med": 10,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Pimentón dulce + comino molido",
+              "med": 20,
+              "udm": "g"
+            }
+          ],
+          "elaboracion": "Remojar las lentejas durante al menos 2 horas. Picar finamente cebolla, pimiento verde, zanahoria y ajos. En cazuela grande, calentar aceite y dorar las verduras picadas. Añadir las lentejas escurridas, hueso de jamón, chorizo, papada, costilla en trozos de 2 cm, hojas de laurel y concentrado de tomate. Cubrir con agua y cocinar a fuego lento ~1 hora hasta tiernas. Preparar el majao: freír ajos enteros en aceite, retirar; en el mismo aceite freír el pan sin quemar y reservar. Apartar del fuego, añadir comino y pimentón. Triturar pan, ajos fritos, pimentón, comino, vinagre con el aceite y un poco de agua de cocción hasta crema fina. Añadir el majao a las lentejas, cocer 5 minutos más. Sacar chorizo y cortar en rodajas; sacar la papada y cortar en cubos 0,5 cm."
+        }
+      ],
+      "foto": "",
+      "nombre_carta": "La cuchara del día",
+      "seccion": "Menú — Primeros",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-pochas-almejas",
+      "sheet": "MN POCHAS ALMEJAS",
+      "nombre": "POCHAS CON ALMEJAS",
+      "ingredientes": [
+        {
+          "nombre": "GUISO DE POCHAS CON MARISCO (Subreceta)",
+          "med": 280,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 0.5,
+          "udm": "g",
+          "notas": "una pizca"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 15,
+          "udm": "ml",
+          "notas": "1 tbsp"
+        },
+        {
+          "nombre": "ALMEJA JAPONICA TALLA XL (30/40 PIEZAS)",
+          "med": 90,
+          "udm": "g",
+          "notas": "3 almejas aprox 30 g/ud"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Purgar las almejas en agua fría con sal durante mínimo 1 hora antes del servicio para que suelten arena.\n2. Lavar bajo agua fría y reservar refrigeradas hasta el pase.\n3. Descartar las almejas que no cierren al golpear.\n4. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. Cuando nos demanden el plato, calentar el guiso de pochas a fuego medio.\n2. Añadir las 3 almejas con la concha hacia arriba y tapar.\n3. Cocinar 2-3 minutos hasta que las almejas se abran.\n4. Descartar las que no abran.",
+        "emplatado": "1. Presentar en el fondo del plato hondo las pochas con su caldo.\n2. Disponer las 3 almejas abiertas alrededor o encima.\n3. Decorar con Cebollino picado.\n4. Servir inmediato.",
+        "raw": "PRE ELABORACION\n1. Purgar las almejas en agua fría con sal durante mínimo 1 hora antes del servicio para que suelten arena.\n2. Lavar bajo agua fría y reservar refrigeradas hasta el pase.\n3. Descartar las almejas que no cierren al golpear.\n4. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Cuando nos demanden el plato, calentar el guiso de pochas a fuego medio.\n2. Añadir las 3 almejas con la concha hacia arriba y tapar.\n3. Cocinar 2-3 minutos hasta que las almejas se abran.\n4. Descartar las que no abran.\n\nEMPLATAMOS\n1. Presentar en el fondo del plato hondo las pochas con su caldo.\n2. Disponer las 3 almejas abiertas alrededor o encima.\n3. Decorar con Cebollino picado.\n4. Servir inmediato."
+      },
+      "alergenos": [
+        "Crustaceos",
+        "Moluscos",
+        "Pescado"
+      ],
+      "pcg": [
+        "Las pochas tienen que estar tiernas y ligadas. No sobrecocinar el pescado."
+      ],
+      "subrecetas": [
+        {
+          "nombre": "GUISO DE POCHAS CON MARISCO",
+          "codigo": "GUPO00184",
+          "ingredientes": [
+            {
+              "nombre": "Pochas Navarra blancas y verdes",
+              "med": 4000,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite oliva especial",
+              "med": 150,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Cebolla entera pelada",
+              "med": 600,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Laurel seco",
+              "med": 1,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimiento verde",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Papada ibérica curada",
+              "med": 300,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal fina",
+              "med": 30,
+              "udm": "g"
+            },
+            {
+              "nombre": "Carne de pimiento choricero",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimentón dulce de la Vera",
+              "med": 5,
+              "udm": "g"
+            },
+            {
+              "nombre": "Tomate triturado extra",
+              "med": 50,
+              "udm": "g"
+            },
+            {
+              "nombre": "Vino blanco",
+              "med": 150,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Caldo pescado y marisco de roca",
+              "med": 2500,
+              "udm": "ml"
+            }
+          ],
+          "elaboracion": "MEDIDAS PARA 20 RACIONES. Escurrimos las pochas y las pasamos por el grifo. Quitamos el pedúnculo a los pimientos y los cortamos en brunoise. Pelamos la cebolla y la picamos en brunoise; picamos el ajo. En un rondón añadimos el aceite, la cebolla picada, el ajo, el pimiento y el laurel, sazonamos y dejamos sudar 5 minutos. Añadimos el pimentón, dejamos que se dore, añadimos el tomate frito, la pulpa de pimiento choricero y las pochas. Removemos 2 minutos y añadimos el vino blanco, dejamos que reduzca y cubrimos con el caldo. Cocinamos a fuego suave 30 minutos. Reservamos hasta el momento de servicio. El guiso debe quedar con caldo pero cremoso; si fuera necesario texturizar con maicena express."
+        }
+      ],
+      "foto": "data/fotos/mn-pochas-almejas.png",
+      "nombre_carta": "La cuchara del día",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -3452,6 +3198,74 @@
       "descripcion": ""
     },
     {
+      "id": "mn-pata-pulpo-revolcona",
+      "sheet": "MN PATA PULPO REVOLCONA",
+      "nombre": "PATA DE PULPO A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
+      "ingredientes": [
+        {
+          "nombre": "PATA PULPO M. COC",
+          "med": 150,
+          "udm": "g",
+          "notas": "1 blister"
+        },
+        {
+          "nombre": "PATATA REVOLCONA",
+          "med": 150,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "MOJO PICON VERDE",
+          "med": 20,
+          "udm": "g",
+          "notas": "Pintado final (Abuela Flora)"
+        },
+        {
+          "nombre": "PIMENTON AGRIDULCE DE LA VERA",
+          "med": 2,
+          "udm": "g",
+          "notas": "Acabado"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 10,
+          "udm": "ml",
+          "notas": "Acabado"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. Calentar el pulpo cerrado en microondas 25–30 segundos a máxima potencia.\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Separar patas y seleccionar la pata grande para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Cortar en rodajas de 0,5 cm o presentar entera según servicio.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.",
+        "emplatado": "1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo sobre la patata o lateralmente con volumen.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato.",
+        "raw": "PRE ELABORACION\n1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentar el pulpo cerrado en microondas 25–30 segundos a máxima potencia.\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Separar patas y seleccionar la pata grande para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Cortar en rodajas de 0,5 cm o presentar entera según servicio.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.\n\nEMPLATAMOS\n1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo sobre la patata o lateralmente con volumen.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato."
+      },
+      "alergenos": [
+        "Frutos secos cascara"
+      ],
+      "pcg": [
+        "Pulpo muy seco antes de plancha para lograr dorado real.",
+        "Marcado fuerte exterior sin resecar interior.",
+        "Mojo verde aplicado al final para mantener frescor y color.",
+        "Patata revolcona caliente y cremosa.",
+        "Pimentón añadido fuera del fuego para evitar amargor.",
+        "Servicio inmediato para conservar temperatura."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/mn-pata-pulpo-revolcona.png",
+      "nombre_carta": "Pulpo a la plancha con mojo verde (versión menú, supl. +4€)",
+      "seccion": "Menú — Segundos",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": "Tierno, marcado a la plancha sobre patatas rotas crujientes, con nuestro mojo verde casero de cilantro fresco"
+    },
+    {
       "id": "mn-solomillo-cabrales",
       "sheet": "MN SOLOMILLO CABRALES",
       "nombre": "SOLOMILLO CABRALES",
@@ -3804,8 +3618,83 @@
       "descripcion": "Pan artesano untado con nuestro salmorejo cremoso, coronado con taquitos de jamón ibérico y un chorrito de aceite virgen extra"
     },
     {
-      "id": "boquerones-vinagre-bareto",
-      "sheet": "BOQUERONES VINAGRE BARETO",
+      "id": "pan-de-la-casa-pulpo",
+      "sheet": "PAN DE LA CASA PULPO",
+      "nombre": "REBANADA DE PAN CON TETILLA Y PULPO",
+      "ingredientes": [
+        {
+          "nombre": "PAN PAYES (REBANADA)",
+          "med": 1,
+          "udm": "ud",
+          "notas": "Reb 80-100 g"
+        },
+        {
+          "nombre": "PATA PULPO M. COC",
+          "med": 90,
+          "udm": "g",
+          "notas": "Media pata"
+        },
+        {
+          "nombre": "TETILLA LECHE CRUDA CAMPO CAPELA D.O.P",
+          "med": 60,
+          "udm": "g",
+          "notas": "Dados o lascas"
+        },
+        {
+          "nombre": "AJO PELADO",
+          "med": 6,
+          "udm": "g",
+          "notas": "Laminado"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 15,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "med": 1,
+          "udm": "g",
+          "notas": "Opcional"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Tostar pan payes antes del",
+        "elaboracion": "1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.",
+        "emplatado": "1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato.",
+        "raw": "PRE ELABORACION\n1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Tostar pan payes antes del montaje.\n7. Pelar y laminar ajo pelado.\n8. Disponer pimenton dulce de la vera en la mise en place.\n\nELABORACION\n1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.\n\nEMPLATAMOS\n1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato."
+      },
+      "alergenos": [
+        "Trigo"
+      ],
+      "pcg": [
+        "Pan crujiente sin quemar.",
+        "Pulpo caliente y jugoso, no reseco.",
+        "Ajo dorado rubio, no amargo.",
+        "Tetilla fundida con ligero gratinado.",
+        "Montaje rápido para mantener temperatura.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/pan-de-la-casa-pulpo.png",
+      "nombre_carta": "Pan de queso tetilla y pulpo",
+      "seccion": "Panes de la casa",
+      "cartas": [
+        "principal",
+        "entrehoras"
+      ],
+      "descripcion": "Pan crujiente de la casa relleno de queso tetilla fundido con pulpo al ajillo, ajo dorado y un toque de pimentón"
+    },
+    {
+      "id": "boquerones-vinagre",
+      "sheet": "BOQUERONES VINAGRE",
       "nombre": "BOQUERONES EN VINAGRE BARETO",
       "ingredientes": [
         {
@@ -3874,7 +3763,7 @@
           "elaboracion": "Pelar los ajos y limpiar el perejil deshojado.\nIntroducir en thermomix/túrmix el aceite suave junto con el ajo, el perejil y la sal.\nTriturar a velocidad media-alta hasta obtener una emulsión verde homogénea, sin trozos.\nColar fino si se desea textura más limpia.\nReservar en biberón etiquetado en refrigeración.\nUSO: salsear los lomos de boquerón antes de servir."
         }
       ],
-      "foto": "data/fotos/boquerones-vinagre-bareto.png",
+      "foto": "data/fotos/boquerones-vinagre.png",
       "nombre_carta": "Boquerones en vinagre con sus patatitas (ración)",
       "seccion": "Para acompañar el vermú",
       "cartas": [
@@ -3998,77 +3887,6 @@
         "entrehoras"
       ],
       "descripcion": "Con o sin cebolla, jugosita por dentro y dorada por fuera. La de siempre"
-    },
-    {
-      "id": "arroz-blanco-infantil",
-      "sheet": "ARROZ BLANCO INFANTIL",
-      "nombre": "ARROZ BLANCO INFANTIL AL HORNO",
-      "ingredientes": [
-        {
-          "nombre": "ARROZ GRANO MEDIO VAPORIZADO BOLSA 5 KG (LA CAMPANA)",
-          "med": 80,
-          "udm": "g",
-          "notas": "Peso en crudo"
-        },
-        {
-          "nombre": "CEBOLLA CARAMELIZADA",
-          "med": 20,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "AJO PELADO",
-          "med": 4,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "AGUA",
-          "med": 180,
-          "udm": "ml",
-          "notas": "Según absorción"
-        },
-        {
-          "nombre": "ACEITE GIRASOL",
-          "med": 8,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "OREGANO SECO",
-          "med": 1,
-          "udm": "g",
-          "notas": "Hoja pequeña"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 2,
-          "udm": "g",
-          "notas": "Ajustar"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Disponer la mise en place de todos los ingredientes.\n2. Disponer arroz grano medio vaporizado en la mise en place.\n3. Disponer cebolla caramelizada en la mise en place.\n4. Pelar y laminar ajo pelado.\n5. Disponer agua para la cocción.\n6. Reservar aceite girasol para la cocción.\n7. Disponer oregano seco en la mise en place.",
-        "elaboracion": "1. Cocinar el plato siguiendo el procedimiento estándar de la receta.",
-        "emplatado": "1. INTERACCION EN SALA.",
-        "raw": "PRE ELABORACION\n1. Disponer la mise en place de todos los ingredientes.\n2. Disponer arroz grano medio vaporizado en la mise en place.\n3. Disponer cebolla caramelizada en la mise en place.\n4. Pelar y laminar ajo pelado.\n5. Disponer agua para la cocción.\n6. Reservar aceite girasol para la cocción.\n7. Disponer oregano seco en la mise en place.\n\nELABORACION\n1. Cocinar el plato siguiendo el procedimiento estándar de la receta.\n\nEMPLATAMOS\n1. INTERACCION EN SALA."
-      },
-      "alergenos": [],
-      "pcg": [
-        "Sofrito sin color excesivo.",
-        "Proporción agua/arroz constante en cada producción.",
-        "Grano suelto, no pastoso.",
-        "Reposo obligatorio tras horno.",
-        "Retirar laurel antes del servicio."
-      ],
-      "subrecetas": [],
-      "foto": "",
-      "nombre_carta": "Arroz blanco (guarnición infantil)",
-      "seccion": "Para los peques — Guarnición",
-      "cartas": [
-        "principal"
-      ],
-      "descripcion": ""
     },
     {
       "id": "macarrones-infantiles-tom",
@@ -4309,12 +4127,12 @@
       "descripcion": "Canelones caseros con relleno tradicional, gratinados con bechamel cremosa y queso manchego fundido"
     },
     {
-      "id": "entrana-angus-mojo-verde",
-      "sheet": "ENTRAÑA ANGUS MOJO VERDE",
-      "nombre": "ENTRAÑA DE ANGUS CON MOJO VERDE",
+      "id": "entrana-angus-mojo-picon",
+      "sheet": "ENTRAÑA ANGUS MOJO PICON",
+      "nombre": "ENTRAÑA DE ANGUS CON MOJO PICON",
       "ingredientes": [
         {
-          "nombre": "ENTRECOT VACA HEMBRA SELECCION CONTINENTAL",
+          "nombre": "ENTRAÑA YRORD",
           "med": 230,
           "udm": "g",
           "notas": ""
@@ -4341,8 +4159,8 @@
       "elaboracion": {
         "pre": "1. Limpiaremos la entraña quitandole la membrada de grasa de ambos lados, sazonamos con Sal fina.\n2. Disponer entrecot vaca hembra seleccion continental en la mise en place.",
         "elaboracion": "1. Asar por un lado durante 4 minutos, hasta que coja color dorado dar la vuelta y cocinar otros 4 minutos.\n2. Dejar reposar 2 minutos la entraña para que los jugos se repartan.\n3. Freimos las patatas a 175ºC hasta que esten doradas y crujientes.",
-        "emplatado": "1. Escalopamos la entraña en lardones de 2 cm, sazonamos con la sal en escamas y acompañamos del mojo verde.",
-        "raw": "PRE ELABORACION\n1. Limpiaremos la entraña quitandole la membrada de grasa de ambos lados, sazonamos con Sal fina.\n2. Disponer entrecot vaca hembra seleccion continental en la mise en place.\n\nELABORACION\n1. Asar por un lado durante 4 minutos, hasta que coja color dorado dar la vuelta y cocinar otros 4 minutos.\n2. Dejar reposar 2 minutos la entraña para que los jugos se repartan.\n3. Freimos las patatas a 175ºC hasta que esten doradas y crujientes.\n\nEMPLATAMOS\n1. Escalopamos la entraña en lardones de 2 cm, sazonamos con la sal en escamas y acompañamos del mojo verde."
+        "emplatado": "1. Escalopamos la entraña en lardones de 2 cm, sazonamos con la sal en escamas y acompañamos del mojo",
+        "raw": "PRE ELABORACION\n1. Limpiaremos la entraña quitandole la membrada de grasa de ambos lados, sazonamos con Sal fina.\n2. Disponer entrecot vaca hembra seleccion continental en la mise en place.\n\nELABORACION\n1. Asar por un lado durante 4 minutos, hasta que coja color dorado dar la vuelta y cocinar otros 4 minutos.\n2. Dejar reposar 2 minutos la entraña para que los jugos se repartan.\n3. Freimos las patatas a 175ºC hasta que esten doradas y crujientes.\n\nEMPLATAMOS\n1. Escalopamos la entraña en lardones de 2 cm, sazonamos con la sal en escamas y acompañamos del mojo"
       },
       "alergenos": [
         "Dioxido de Azufre y Sulfitos"
@@ -4351,7 +4169,7 @@
         "La entraña es una carne que se enfria muy rapido por lo que tenemos que servirla según sale de la parrilla. Asegurar el punto de la carne"
       ],
       "subrecetas": [],
-      "foto": "data/fotos/entrana-angus-mojo-verde.png",
+      "foto": "data/fotos/entrana-angus-mojo-picon.png",
       "nombre_carta": "Entraña a la parrilla con mojo picón",
       "seccion": "Segundos platos",
       "cartas": [
@@ -4590,6 +4408,74 @@
         "principal"
       ],
       "descripcion": "Ternera empanada crujiente con huevos fritos de corral y un toque de trufa negra. Un clásico elevado"
+    },
+    {
+      "id": "pata-pulpo-mojo-verde",
+      "sheet": "PATA PULPO MOJO VERDE",
+      "nombre": "PATA DE PULPO COMPLETA A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
+      "ingredientes": [
+        {
+          "nombre": "PATA PULPO M. COC",
+          "med": 250,
+          "udm": "g",
+          "notas": "Pata completa"
+        },
+        {
+          "nombre": "PATATA REVOLCONA",
+          "med": 180,
+          "udm": "g",
+          "notas": "Cama"
+        },
+        {
+          "nombre": "MOJO PICON VERDE",
+          "med": 30,
+          "udm": "g",
+          "notas": "Pintado final (Abuela Flora)"
+        },
+        {
+          "nombre": "PIMENTON AGRIDULCE DE LA VERA",
+          "med": 2,
+          "udm": "g",
+          "notas": "Acabado"
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 12,
+          "udm": "ml",
+          "notas": "Acabado"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": "Acabado"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. Calentar el pulpo cerrado en microondas 30–40 segundos a máxima potencia (pata completa).\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Seleccionar la pata grande completa para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo entera por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Mantener la pata entera o cortar en rodajas de 1 cm respetando la forma.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.",
+        "emplatado": "1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo completa sobre la patata, manteniendo forma.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato.",
+        "raw": "PRE ELABORACION\n1. Mantener pulpo refrigerado en su envase al vacío hasta uso.\n2. Tener Patata revolcona porcionada en frío.\n3. Dosificar mojo verde en biberón o brocha gastronómica.\n4. Preparar plancha limpia y caliente.\n5. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Calentar el pulpo cerrado en microondas 30–40 segundos a máxima potencia (pata completa).\n2. Abrir bolsa con cuidado.\n3. Lavar rápidamente bajo agua fría para retirar exceso de colágeno superficial.\n4. Secar completamente con papel absorbente.\n5. Seleccionar la pata grande completa para el plato.\n6. Engrasar plancha ligeramente.\n7. Marcar la pata de pulpo entera por todas sus caras hasta dorado intenso.\n8. Pintar la pata con mojo verde en plancha durante últimos segundos.\n9. Mantener la pata entera o cortar en rodajas de 1 cm respetando la forma.\n10. Calentar Patata revolcona 45 segundos en microondas o sauté.\n\nEMPLATAMOS\n1. Colocar cama central de Patata revolcona en plato oval.\n2. Disponer la pata de pulpo completa sobre la patata, manteniendo forma.\n3. Pintar nuevamente con mojo verde por encima.\n4. Espolvorear pimentón agridulce.\n5. Terminar con AOVE y sal en escamas.\n6. Servir inmediato."
+      },
+      "alergenos": [
+        "Frutos secos cascara"
+      ],
+      "pcg": [
+        "Pulpo muy seco antes de plancha para lograr dorado real.",
+        "Marcado fuerte exterior sin resecar interior.",
+        "Mojo verde aplicado al final para mantener frescor y color.",
+        "Patata revolcona caliente y cremosa.",
+        "Pimentón añadido fuera del fuego para evitar amargor.",
+        "Servicio inmediato para conservar temperatura."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/pata-pulpo-mojo-verde.png",
+      "nombre_carta": "Pulpo a la plancha con mojo verde de cilantro",
+      "seccion": "Segundos platos",
+      "cartas": [
+        "principal"
+      ],
+      "descripcion": "Tierno, marcado a la plancha sobre patatas rotas crujientes, con nuestro mojo verde casero de cilantro fresco"
     }
   ]
 }

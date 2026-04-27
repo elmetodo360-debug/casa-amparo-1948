@@ -38,16 +38,36 @@ SKIP_SHEETS = {
     "Carta Menu CCA1948",
     "Carta Entrehoras CCA1948",
     "FT Platos CCA1948",
+    "Comparativa FT vs Cartas",
 }
 
 # Overrides explícitos: hoja -> nombre exacto de plato en FT Platos CCA1948.
 # Usar cuando el matcher no acierta por singular/plural u otra ambigüedad lingüística.
 OVERRIDES = {
+    "ZAMBURIÑAS PICANTONAS": "Zamboriñas a la bilbaína",
+    "BOCATA CHIPIRONES": "Bocadillo de chipironcitos a la andaluza",
+    "BOCATA LOMO CHEDDAR": "Bocadillo de lomo adobado con queso",
+    "BOCATA PIRIPI": "Bocadillo Piripi",
+    "GAMBON AJILLO": "Gambones al pil pil con tomate cherry y Jerez",
+    "PATA PULPO MOJO VERDE": "Pulpo a la plancha con mojo verde de cilantro",
+    "PAN DE LA CASA PULPO": "Pan de queso tetilla y pulpo",
     "CHIPIRONCITOS HUEVO FRITO": "Huevos rotos con chipironcitos a la andaluza",
     "MACARRONES AMPARO": "Los macarrones de Amparo (con champiñones y chorizo de León)",
     "MACARRONES INFANTILES TOM": "Pasta con tomate (guarnición infantil)",
     "TOMATE TEMPORADA BONITO": "Tomates aliñados con bonito, encurtidos y aguacate",
+    "MN PATA PULPO REVOLCONA": "Pulpo a la plancha con mojo verde (versión menú, supl. +4€)",
+    "MNCALLOS GARBANZOS": "La cuchara del día",
+    "MN LENTEJAS TRADICIONALES": "La cuchara del día",
+    "MN POCHAS ALMEJAS": "La cuchara del día",
+    "MN POCHAS GAMBONES": "La cuchara del día",
+    "MN GARBANZOS PULPO": "La cuchara del día",
 }
+
+
+def is_menu_sheet(sheet_name):
+    """Detecta hojas del menú: tanto con espacio (MN ALCACHOFA) como pegado (MNCALLOS)."""
+    s = sheet_name.upper().strip()
+    return s.startswith("MN ") or (s.startswith("MN") and len(s) > 2 and s[2].isalpha())
 
 
 def slugify(text):
@@ -279,14 +299,14 @@ def best_match(sheet_name, sheet_title, candidates):
         return None
 
     first_token = title_tokens[0]
-    is_menu_sheet = sheet_name.upper().startswith("MN ")
+    menu_sheet = is_menu_sheet(sheet_name)
 
     best = None
     best_score = 0.0
     best_overlap = 0
     for c in candidates:
         cartas = c.get("cartas") or []
-        if is_menu_sheet:
+        if menu_sheet:
             if "menu" not in cartas:
                 continue
         else:
@@ -465,14 +485,18 @@ def main():
         except Exception as e:
             print(f"  ERROR parseando {sheet_name}: {e}")
             continue
-        # cruzar con índice carta
+        # cruzar con índice carta. Probamos override por nombre exacto y por trim
+        # (algunas hojas tienen espacios al final accidentalmente).
         match = None
-        if sheet_name in OVERRIDES:
-            target = OVERRIDES[sheet_name]
-            target_norm = normalize_text(target)
-            for c in indice:
-                if normalize_text(c["plato"]) == target_norm:
-                    match = c
+        for key in (sheet_name, sheet_name.strip(), sheet_name.strip().upper()):
+            if key in OVERRIDES:
+                target = OVERRIDES[key]
+                target_norm = normalize_text(target)
+                for c in indice:
+                    if normalize_text(c["plato"]) == target_norm:
+                        match = c
+                        break
+                if match:
                     break
         if match is None:
             match = best_match(sheet_name, r["nombre"], indice)
@@ -484,6 +508,10 @@ def main():
             r["nombre_carta"] = r["nombre"]
             r["seccion"] = ""
             r["cartas"] = []
+        # Fallback: cualquier hoja con prefijo MN se etiqueta como menú aunque
+        # no aparezca en el índice (postres del menú, platos nuevos, etc.).
+        if is_menu_sheet(sheet_name) and "menu" not in r["cartas"]:
+            r["cartas"] = (r["cartas"] or []) + ["menu"]
         # descripción comercial si existe
         desc = find_description(r["nombre_carta"], descripciones)
         r["descripcion"] = desc
