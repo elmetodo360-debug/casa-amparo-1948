@@ -253,18 +253,42 @@ def tokens(t):
     return [w for w in normalize_text(t).split() if w and w not in STOP and len(w) > 2]
 
 
-def best_match(sheet_name, candidates):
-    """candidates: lista de dicts {plato, seccion, cartas}. Devuelve mejor match por solapamiento."""
-    sheet_tokens = set(tokens(sheet_name))
+def best_match(sheet_name, sheet_title, candidates):
+    """Devuelve el plato del índice que mejor encaja con la hoja.
+
+    Reglas:
+    1. Construye el set de tokens del título y nombre de la hoja.
+    2. Exige que el PRIMER token significativo del título de la hoja aparezca en el candidato.
+    3. Si la hoja empieza por 'MN ', solo considera candidatos del menú (carta == 'menu').
+    4. Entre los que pasan filtros, ranking por Jaccard (overlap/union) con desempate por overlap.
+    5. Si no hay candidato que pase, devuelve None (mejor sin match que match incorrecto).
+    """
+    title_tokens = tokens(sheet_title)
+    name_tokens = tokens(sheet_name)
+    sheet_tokens = set(title_tokens) | set(name_tokens)
+    if not sheet_tokens or not title_tokens:
+        return None
+
+    first_token = title_tokens[0]
+    is_menu_sheet = sheet_name.upper().startswith("MN ")
+
     best = None
-    best_score = 0
+    best_score = 0.0
+    best_overlap = 0
     for c in candidates:
+        if is_menu_sheet and "menu" not in (c.get("cartas") or []):
+            continue
         ct = set(tokens(c["plato"]))
-        score = len(sheet_tokens & ct)
-        if score > best_score:
-            best_score = score
+        if not ct or first_token not in ct:
+            continue
+        overlap = len(sheet_tokens & ct)
+        union = len(sheet_tokens | ct)
+        jaccard = overlap / union if union else 0
+        if jaccard > best_score or (jaccard == best_score and overlap > best_overlap):
+            best_score = jaccard
+            best_overlap = overlap
             best = c
-    return best if best_score > 0 else None
+    return best
 
 
 def parse_carta_index(wb):
@@ -395,7 +419,7 @@ def main():
             print(f"  ERROR parseando {sheet_name}: {e}")
             continue
         # cruzar con índice carta
-        match = best_match(sheet_name, indice)
+        match = best_match(sheet_name, r["nombre"], indice)
         if match:
             r["nombre_carta"] = match["plato"]
             r["seccion"] = match["seccion"]
