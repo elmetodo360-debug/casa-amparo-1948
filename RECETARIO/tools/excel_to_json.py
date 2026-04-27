@@ -350,11 +350,21 @@ def parse_carta_index(wb):
             cartas.append("entrehoras")
         if row[5]:
             cartas.append("menu")
+        seccion_str = str(seccion).strip()
+        plato_str = str(plato).strip()
+        # Platos infantiles (sección "Para los peques" o nombre con "(infantil)") van
+        # a su propia carta "infantil" en lugar de aparecer en la carta principal.
+        is_infantil = (
+            "peques" in seccion_str.lower()
+            or "infantil" in plato_str.lower()
+        )
+        if is_infantil:
+            cartas = ["infantil"]
         out.append(
             {
                 "num": num,
-                "plato": str(plato).strip(),
-                "seccion": str(seccion).strip(),
+                "plato": plato_str,
+                "seccion": seccion_str,
                 "cartas": cartas,
             }
         )
@@ -503,7 +513,7 @@ def main():
         if match is None:
             match = best_match(sheet_name, r["nombre"], indice)
         if match:
-            r["nombre_carta"] = match["plato"]
+            r["nombre_carta"] = match["plato"].replace("Zamboriñas", "Zamburiñas")
             r["seccion"] = match["seccion"]
             r["cartas"] = match["cartas"]
         else:
@@ -528,7 +538,7 @@ def main():
         "version": 1,
         "total": len(recetas),
         "secciones": secciones,
-        "cartas": ["principal", "entrehoras", "menu"],
+        "cartas": ["principal", "entrehoras", "menu", "infantil"],
         "recetas": sorted(recetas, key=lambda x: (x["seccion"], x["nombre"])),
     }
 

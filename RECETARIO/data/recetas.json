@@ -1,5 +1,5 @@
 {
-  "generado": "2026-04-27T15:46:24",
+  "generado": "2026-04-27T15:54:19",
   "version": 1,
   "total": 56,
   "secciones": [
@@ -18,7 +18,8 @@
   "cartas": [
     "principal",
     "entrehoras",
-    "menu"
+    "menu",
+    "infantil"
   ],
   "recetas": [
     {
@@ -230,13 +231,13 @@
         }
       ],
       "foto": "data/fotos/zamburinas-picantonas.png",
-      "nombre_carta": "Zamboriñas a la bilbaína",
+      "nombre_carta": "Zamburiñas a la bilbaína",
       "seccion": "Entrantes / Para picar",
       "cartas": [
         "principal",
         "entrehoras"
       ],
-      "descripcion": "Frescas, gratinadas con sofrito suave y un golpe de vino blanco al estilo bilbaíno. En su concha"
+      "descripcion": ""
     },
     {
       "id": "croquetas-jamon-chips",
@@ -3950,7 +3951,7 @@
       "nombre_carta": "Pasta con tomate (guarnición infantil)",
       "seccion": "Para los peques — Guarnición",
       "cartas": [
-        "principal"
+        "infantil"
       ],
       "descripcion": ""
     },
@@ -4012,7 +4013,7 @@
       "nombre_carta": "Huevos fritos con salchichas (infantil)",
       "seccion": "Para los peques — Plato",
       "cartas": [
-        "principal"
+        "infantil"
       ],
       "descripcion": ""
     },
@@ -4075,7 +4076,7 @@
       "nombre_carta": "Pechuga de pollo a la plancha (infantil)",
       "seccion": "Para los peques — Plato",
       "cartas": [
-        "principal"
+        "infantil"
       ],
       "descripcion": ""
     },

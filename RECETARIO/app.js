@@ -100,6 +100,7 @@ function buildFilters() {
     { id: "principal", label: "Carta" },
     { id: "entrehoras", label: "Entrehoras" },
     { id: "menu", label: "Menú" },
+    { id: "infantil", label: "Menú infantil" },
   ];
 
   for (const c of cartas) {
@@ -151,7 +152,7 @@ function cardEl(r) {
     bd.className = "badges";
     bd.innerHTML = (r.cartas || [])
       .map((c) => {
-        const lbl = c === "principal" ? "Carta" : c === "entrehoras" ? "Entrehoras" : "Menú";
+        const lbl = cartaLabel(c);
         return `<span class="badge">${lbl}</span>`;
       })
       .join("");
@@ -178,7 +179,7 @@ function openDetail(r) {
 
   const cartasTags = (r.cartas || [])
     .map((c) => {
-      const lbl = c === "principal" ? "Carta" : c === "entrehoras" ? "Entrehoras" : "Menú";
+      const lbl = cartaLabel(c);
       return `<span class="meta-tag">${lbl}</span>`;
     })
     .join("");
@@ -279,6 +280,13 @@ $("#lightbox").addEventListener("click", () => {
 });
 
 /* ---------- Helpers ---------- */
+function cartaLabel(c) {
+  if (c === "principal") return "Carta";
+  if (c === "entrehoras") return "Entrehoras";
+  if (c === "infantil") return "Menú infantil";
+  return "Menú";
+}
+
 function detailsBlock(title, tag, body, openByDefault) {
   const tagHtml = tag ? `<span class="elab-tag">${tag}</span>` : "";
   const formatted = formatBody(body);
