@@ -1,7 +1,7 @@
 {
-  "generado": "2026-04-27T09:52:09",
+  "generado": "2026-04-27T14:04:02",
   "version": 1,
-  "total": 56,
+  "total": 58,
   "secciones": [
     "Chacinas / Entrantes",
     "Entrantes / Para picar",
@@ -203,6 +203,82 @@
       "subrecetas": [],
       "foto": "data/fotos/callos-garbanzos-sofrito.png",
       "nombre_carta": "CALLOS CON GARBANZOS Y SOFRITO + PATATAS BASTÓN",
+      "seccion": "",
+      "cartas": [],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-fresas-nata",
+      "sheet": "MN FRESAS NATA",
+      "nombre": "FRESAS CON NATA",
+      "ingredientes": [
+        {
+          "nombre": "FRESON",
+          "med": 150,
+          "udm": "g",
+          "notas": "Sin pedunculo, en cuartos"
+        },
+        {
+          "nombre": "NATA MONTADA SPRAY",
+          "med": 100,
+          "udm": "g",
+          "notas": "Aplicar al pase"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Reservamos en camara hasta el pase.",
+        "elaboracion": "1. Disponemos las fresas en cuartos en un bol o copa de servicio.",
+        "emplatado": "1. Coronamos con la nata montada en spray justo al momento del pase para que mantenga textura y volumen.\n2. Servimos inmediatamente.",
+        "raw": "PRE ELABORACION\n1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Reservamos en camara hasta el pase.\n\nELABORACION\n1. Disponemos las fresas en cuartos en un bol o copa de servicio.\n\nEMPLATAMOS\n1. Coronamos con la nata montada en spray justo al momento del pase para que mantenga textura y volumen.\n2. Servimos inmediatamente."
+      },
+      "alergenos": [
+        "Lacteos"
+      ],
+      "pcg": [
+        "Las fresas deben estar bien frias y secas antes de servir.",
+        "La nata montada en spray se aplica SIEMPRE al momento del pase, nunca con antelacion.",
+        "Cortar las fresas justo antes del servicio para evitar oxidacion y perdida de jugo."
+      ],
+      "subrecetas": [],
+      "foto": "",
+      "nombre_carta": "FRESAS CON NATA",
+      "seccion": "",
+      "cartas": [],
+      "descripcion": ""
+    },
+    {
+      "id": "mn-fresas-zumo-naranja",
+      "sheet": "MN FRESAS ZUMO NARANJA",
+      "nombre": "FRESAS CON ZUMO DE NARANJA",
+      "ingredientes": [
+        {
+          "nombre": "FRESON",
+          "med": 150,
+          "udm": "g",
+          "notas": "Sin pedunculo, en cuartos"
+        },
+        {
+          "nombre": "NARANJA ZUMO",
+          "med": 200,
+          "udm": "g",
+          "notas": "200 g naranja ≈ 100 ml zumo recien exprimido"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Exprimimos las naranjas hasta obtener 100 ml de zumo y colamos.\n4. Reservamos fresas y zumo en camara hasta el pase.",
+        "elaboracion": "1. Disponemos las fresas en cuartos en un bol o copa de servicio.",
+        "emplatado": "1. Regamos con el zumo de naranja recien exprimido al momento del pase.\n2. Servimos inmediatamente bien frio.",
+        "raw": "PRE ELABORACION\n1. Lavamos las fresas con agua fria.\n2. Retiramos el pedunculo y cortamos cada fresa en cuartos.\n3. Exprimimos las naranjas hasta obtener 100 ml de zumo y colamos.\n4. Reservamos fresas y zumo en camara hasta el pase.\n\nELABORACION\n1. Disponemos las fresas en cuartos en un bol o copa de servicio.\n\nEMPLATAMOS\n1. Regamos con el zumo de naranja recien exprimido al momento del pase.\n2. Servimos inmediatamente bien frio."
+      },
+      "alergenos": [],
+      "pcg": [
+        "Las fresas deben estar bien frias y secas antes de servir.",
+        "El zumo de naranja se exprime al momento, nunca con horas de antelacion (pierde vitaminas y sabor).",
+        "Cortar las fresas justo antes del servicio para evitar oxidacion."
+      ],
+      "subrecetas": [],
+      "foto": "",
+      "nombre_carta": "FRESAS CON ZUMO DE NARANJA",
       "seccion": "",
       "cartas": [],
       "descripcion": ""
@@ -1245,13 +1321,31 @@
           "med": 2,
           "udm": "g",
           "notas": ""
+        },
+        {
+          "nombre": "TOMATE CHERRY",
+          "med": 60,
+          "udm": "g",
+          "notas": "5-6 ud"
+        },
+        {
+          "nombre": "VINO FINO TIO PEPE",
+          "med": 15,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
         }
       ],
       "elaboracion": {
-        "pre": "1. Cortamos los ajos en laminas y la guindilla en rodaja.\n2. Pelar y laminar ajo pelado.",
-        "elaboracion": "1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas, la guindilla en rodajas, dejamos que se dore y añadimos los gambones retiramos del fuego y tapamos durante 2 minutos para que los gambonesa se cocinen.",
-        "emplatado": "1. Servimos en la misma sarten de cocinado decorando con Perejil picado.",
-        "raw": "PRE ELABORACION\n1. Cortamos los ajos en laminas y la guindilla en rodaja.\n2. Pelar y laminar ajo pelado.\n\nELABORACION\n1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas, la guindilla en rodajas, dejamos que se dore y añadimos los gambones retiramos del fuego y tapamos durante 2 minutos para que los gambonesa se cocinen.\n\nEMPLATAMOS\n1. Servimos en la misma sarten de cocinado decorando con Perejil picado."
+        "pre": "1. Cortamos los ajos en laminas y la guindilla en rodajas.\n2. Confitamos los tomates cherry enteros (5-6 ud) en aceite suave a fuego muy bajo hasta que esten tiernos y con color, reservar.",
+        "elaboracion": "1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas y la guindilla en rodajas, dejamos que se doren y añadimos los gambones.\n3. Incorporamos los tomates cherry confitados.\n4. Retiramos del fuego, añadimos un chorrito de vino fino y espolvoreamos el pimenton dulce en el ultimo momento.\n5. Tapamos durante 2 minutos para que los gambones se cocinen.",
+        "emplatado": "1. Servimos en la misma sarten de cocinado decorando con perejil picado.",
+        "raw": "PRE ELABORACION\n1. Cortamos los ajos en laminas y la guindilla en rodajas.\n2. Confitamos los tomates cherry enteros (5-6 ud) en aceite suave a fuego muy bajo hasta que esten tiernos y con color, reservar.\n\nELABORACION\n1. Sazonamos los gambones.\n2. Calentamos la mezcla de aceites en el fuego, cuando este muy caliente añadimos los ajos en laminas y la guindilla en rodajas, dejamos que se doren y añadimos los gambones.\n3. Incorporamos los tomates cherry confitados.\n4. Retiramos del fuego, añadimos un chorrito de vino fino y espolvoreamos el pimenton dulce en el ultimo momento.\n5. Tapamos durante 2 minutos para que los gambones se cocinen.\n\nEMPLATAMOS\n1. Servimos en la misma sarten de cocinado decorando con perejil picado."
       },
       "alergenos": [
         "Crustaceos"
@@ -1261,7 +1355,7 @@
         "Tienen que estar sazonados"
       ],
       "subrecetas": [],
-      "foto": "data/fotos/gambon-ajillo.jpeg",
+      "foto": "data/fotos/gambon-ajillo.png",
       "nombre_carta": "Mollete de gambones al ajillo con alioli",
       "seccion": "Entre panes",
       "cartas": [
@@ -3268,7 +3362,7 @@
         "Montaje al pase para evitar reblandecimiento."
       ],
       "subrecetas": [],
-      "foto": "",
+      "foto": "data/fotos/pan-de-la-casa-salmorejo-jamon.png",
       "nombre_carta": "Pan de salmorejo con taquitos de jamón",
       "seccion": "Panes de la casa",
       "cartas": [
@@ -3336,7 +3430,7 @@
         "Servicio inmediato para conservar temperatura."
       ],
       "subrecetas": [],
-      "foto": "data/fotos/mn-pata-pulpo-revolcona.jpeg",
+      "foto": "data/fotos/mn-pata-pulpo-revolcona.png",
       "nombre_carta": "Pan de queso tetilla y pulpo",
       "seccion": "Panes de la casa",
       "cartas": [
@@ -4459,7 +4553,7 @@
       "ingredientes": [
         {
           "nombre": "PATA PULPO M. COC",
-          "med": 300,
+          "med": 250,
           "udm": "g",
           "notas": "Pata completa"
         },
@@ -4512,7 +4606,7 @@
         "Servicio inmediato para conservar temperatura."
       ],
       "subrecetas": [],
-      "foto": "data/fotos/para-pulpo-mojo-verde.jpeg",
+      "foto": "data/fotos/para-pulpo-mojo-verde.png",
       "nombre_carta": "Pulpo a la plancha con mojo verde de cilantro",
       "seccion": "Segundos platos",
       "cartas": [
