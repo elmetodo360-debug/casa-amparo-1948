@@ -50,18 +50,15 @@ $("#logout").addEventListener("click", logout);
 
 /* ---------- Datos ---------- */
 let RECETAS = [];
-let SECCIONES = [];
-let activeSeccion = "todas";
 let activeCarta = "todas";
 let query = "";
 
 async function loadData() {
   try {
-    const res = await fetch("data/recetas.json", { cache: "no-store" });
+    const res = await fetch("data/recetas.json?v=" + Date.now(), { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     RECETAS = data.recetas || [];
-    SECCIONES = data.secciones || [];
     buildFilters();
     render();
   } catch (e) {
@@ -98,7 +95,6 @@ function buildFilters() {
   const cont = $("#filters");
   cont.innerHTML = "";
 
-  // Cartas
   const cartas = [
     { id: "todas", label: "Todas" },
     { id: "principal", label: "Carta" },
@@ -110,38 +106,8 @@ function buildFilters() {
     const b = document.createElement("button");
     b.className = "chip" + (c.id === activeCarta ? " active" : "");
     b.textContent = c.label;
-    b.dataset.kind = "carta";
-    b.dataset.id = c.id;
     b.addEventListener("click", () => {
       activeCarta = c.id;
-      buildFilters();
-      render();
-    });
-    cont.appendChild(b);
-  }
-
-  // Separador visual
-  const sep = document.createElement("span");
-  sep.style.cssText = "flex-shrink:0;width:1px;background:var(--line);margin:4px 4px";
-  cont.appendChild(sep);
-
-  // Secciones
-  const todasSec = document.createElement("button");
-  todasSec.className = "chip" + (activeSeccion === "todas" ? " active" : "");
-  todasSec.textContent = "Todas las secciones";
-  todasSec.addEventListener("click", () => {
-    activeSeccion = "todas";
-    buildFilters();
-    render();
-  });
-  cont.appendChild(todasSec);
-
-  for (const s of SECCIONES) {
-    const b = document.createElement("button");
-    b.className = "chip" + (s === activeSeccion ? " active" : "");
-    b.textContent = s;
-    b.addEventListener("click", () => {
-      activeSeccion = s;
       buildFilters();
       render();
     });
@@ -154,7 +120,6 @@ function render() {
   const q = norm(query.trim());
   const filtered = RECETAS.filter((r) => {
     if (activeCarta !== "todas" && !(r.cartas || []).includes(activeCarta)) return false;
-    if (activeSeccion !== "todas" && r.seccion !== activeSeccion) return false;
     if (!recipeMatchesQuery(r, q)) return false;
     return true;
   });
@@ -195,10 +160,7 @@ function cardEl(r) {
 
   const body = document.createElement("div");
   body.className = "card-body";
-  body.innerHTML = `
-    <div class="card-title">${escapeHtml(r.nombre_carta || r.nombre)}</div>
-    <div class="card-section">${escapeHtml(r.seccion || "")}</div>
-  `;
+  body.innerHTML = `<div class="card-title">${escapeHtml(r.nombre_carta || r.nombre)}</div>`;
 
   a.appendChild(wrap);
   a.appendChild(body);
@@ -270,7 +232,6 @@ function openDetail(r) {
   cont.innerHTML = `
     ${heroPhoto}
     <div class="detail-body">
-      ${r.seccion ? `<div class="detail-section">${escapeHtml(r.seccion)}</div>` : ""}
       <h1 class="detail-title">${escapeHtml(r.nombre_carta || r.nombre)}</h1>
       ${r.descripcion ? `<p class="detail-desc">${escapeHtml(r.descripcion)}</p>` : ""}
       <div class="detail-meta">
