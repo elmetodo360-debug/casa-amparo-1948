@@ -14,6 +14,7 @@ import os
 import re
 import sys
 import shutil
+import subprocess
 import zipfile
 import unicodedata
 import warnings
@@ -63,6 +64,17 @@ OVERRIDES = {
     "MN GARBANZOS PULPO": "La cuchara del día",
     "ALBONDIGAS PATATAS FRITAS": "Albóndigas de ternera en salsa",
     "TARTAR ATUN HUEVO FRITO": "Huevos rotos con dados de atún rojo y trufa",
+}
+
+# Nombres cortos para los guisos rotativos del menú "La cuchara del día".
+# La clave es el `nombre` real (título row 3 col A de la hoja). Si un plato no
+# está aquí, se usa el nombre completo como fallback.
+CUCHARA_SHORT_NAMES = {
+    "CALLOS CON GARBANZOS Y SOFRITO + PATATAS BASTÓN": "Callos con garbanzos",
+    "GARBANZOS CON PULPO": "Garbanzos con pulpo",
+    "GUISO DE GARBANZOS CON GAMBONES": "Garbanzos con gambones",
+    "LENTEJAS TRADICIONALES CON CHORIZO": "Lentejas con chorizo",
+    "POCHAS CON ALMEJAS": "Pochas con almejas",
 }
 
 
@@ -262,10 +274,28 @@ def build_sheet_to_images(excel_path):
     return result
 
 
-def extract_image(excel_path, internal_path, dest_path):
+# Rotaciones a aplicar tras extraer la foto. Clave = slug de la hoja, valor = grados.
+# El Excel embebe algunas imágenes con la rotación aplicada solo a nivel de visualización
+# (el PNG bruto está en su orientación original). Aquí compensamos.
+PHOTO_ROTATIONS = {
+    "morcilla-burgos-mermelada": 270,  # 270° = 90° antihorario
+}
+
+
+def extract_image(excel_path, internal_path, dest_path, slug=None):
     with zipfile.ZipFile(excel_path) as z:
         with z.open(internal_path) as src, open(dest_path, "wb") as dst:
             shutil.copyfileobj(src, dst)
+    if slug and slug in PHOTO_ROTATIONS:
+        deg = PHOTO_ROTATIONS[slug]
+        try:
+            subprocess.run(
+                ["magick", "mogrify", "-rotate", str(deg), dest_path],
+                check=True,
+                capture_output=True,
+            )
+        except (subprocess.CalledProcessError, FileNotFoundError) as e:
+            print(f"  AVISO: no se pudo rotar {dest_path}: {e}")
 
 
 def normalize_text(t):
@@ -452,7 +482,7 @@ def parse_recipe_sheet(ws, sheet_name, image_paths, excel_path, fotos_dir):
         slug = slugify(sheet_name)
         dest_name = f"{slug}{ext}"
         dest = os.path.join(fotos_dir, dest_name)
-        extract_image(excel_path, internal, dest)
+        extract_image(excel_path, internal, dest, slug=slug)
         foto_rel = f"data/fotos/{dest_name}"
 
     return {
@@ -514,6 +544,12 @@ def main():
             match = best_match(sheet_name, r["nombre"], indice)
         if match:
             r["nombre_carta"] = match["plato"].replace("Zamboriñas", "Zamburiñas")
+            # Los 5 guisos rotativos comparten nombre_carta "La cuchara del día";
+            # añadimos detrás un nombre corto del plato para que se distingan en
+            # la lista y el detalle de la app.
+            if r["nombre_carta"] == "La cuchara del día" and r.get("nombre"):
+                short = CUCHARA_SHORT_NAMES.get(r["nombre"], r["nombre"])
+                r["nombre_carta"] = f"La cuchara del día : {short}"
             r["seccion"] = match["seccion"]
             r["cartas"] = match["cartas"]
         else:

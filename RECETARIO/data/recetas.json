@@ -1,5 +1,5 @@
 {
-  "generado": "2026-04-27T15:54:19",
+  "generado": "2026-04-27T19:58:29",
   "version": 1,
   "total": 56,
   "secciones": [
@@ -237,7 +237,7 @@
         "principal",
         "entrehoras"
       ],
-      "descripcion": ""
+      "descripcion": "Frescas, gratinadas con sofrito suave y un golpe de vino blanco al estilo bilbaíno. En su concha"
     },
     {
       "id": "croquetas-jamon-chips",
@@ -1240,9 +1240,9 @@
       ],
       "elaboracion": {
         "pre": "1. Abrir pan longitudinalmente.\n2. Laminar ajos finos.\n3. Elaborar Mermelada de piquillo y reservar en biberón o manga.\n4. Porcionar filetes de ternera.\n5. Precalentar plancha.\n6. Tener lista la bolsa de patatas chips para guarnición.\n7. Pelar y laminar ajo pelado.\n8. Salpimentar con pimienta negra molida.",
-        "elaboracion": "1. Freír ajos laminados en Aceite suave hasta color rubio.\n2. Retirar y escurrir sobre papel absorbente.\n3. Marcar interior del pan en plancha.\n4. Salpimentar filete de ternera.\n5. Cocinar en plancha fuerte 45–60 segundos por lado.\n6. Reposar 20 segundos.\n7. Calentar ligeramente la mermelada de piquillo.",
+        "elaboracion": "1. Freír ajos laminados en Aceite suave hasta color rubio.\n2. Retirar y escurrir sobre papel absorbente.\n3. Marcar interior del pan en plancha.\n4. Salpimentar filete de ternera.\n5. Cocinar en plancha fuerte 45–60 segundos por lado.\n6. Reposar 20 segundos.\n7.- Mojar el pan en el aceite de freir los filetes",
         "emplatado": "1. Extender mermelada de piquillo en base del pan.\n2. Colocar filete de ternera caliente.\n3. Terminar con ajos fritos crujientes.\n4. Cerrar pepito.\n5. Cortar al sesgo opcional.\n6. Acompañar con 30 g de patatas chips al lado del plato.\n7. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Abrir pan longitudinalmente.\n2. Laminar ajos finos.\n3. Elaborar Mermelada de piquillo y reservar en biberón o manga.\n4. Porcionar filetes de ternera.\n5. Precalentar plancha.\n6. Tener lista la bolsa de patatas chips para guarnición.\n7. Pelar y laminar ajo pelado.\n8. Salpimentar con pimienta negra molida.\n\nELABORACION\n1. Freír ajos laminados en Aceite suave hasta color rubio.\n2. Retirar y escurrir sobre papel absorbente.\n3. Marcar interior del pan en plancha.\n4. Salpimentar filete de ternera.\n5. Cocinar en plancha fuerte 45–60 segundos por lado.\n6. Reposar 20 segundos.\n7. Calentar ligeramente la mermelada de piquillo.\n\nEMPLATAMOS\n1. Extender mermelada de piquillo en base del pan.\n2. Colocar filete de ternera caliente.\n3. Terminar con ajos fritos crujientes.\n4. Cerrar pepito.\n5. Cortar al sesgo opcional.\n6. Acompañar con 30 g de patatas chips al lado del plato.\n7. Servir inmediato."
+        "raw": "PRE ELABORACION\n1. Abrir pan longitudinalmente.\n2. Laminar ajos finos.\n3. Elaborar Mermelada de piquillo y reservar en biberón o manga.\n4. Porcionar filetes de ternera.\n5. Precalentar plancha.\n6. Tener lista la bolsa de patatas chips para guarnición.\n7. Pelar y laminar ajo pelado.\n8. Salpimentar con pimienta negra molida.\n\nELABORACION\n1. Freír ajos laminados en Aceite suave hasta color rubio.\n2. Retirar y escurrir sobre papel absorbente.\n3. Marcar interior del pan en plancha.\n4. Salpimentar filete de ternera.\n5. Cocinar en plancha fuerte 45–60 segundos por lado.\n6. Reposar 20 segundos.\n7.- Mojar el pan en el aceite de freir los filetes\n\n\nEMPLATAMOS\n1. Extender mermelada de piquillo en base del pan.\n2. Colocar filete de ternera caliente.\n3. Terminar con ajos fritos crujientes.\n4. Cerrar pepito.\n5. Cortar al sesgo opcional.\n6. Acompañar con 30 g de patatas chips al lado del plato.\n7. Servir inmediato."
       },
       "alergenos": [],
       "pcg": [
@@ -1359,13 +1359,19 @@
           "med": 140,
           "udm": "g",
           "notas": "Guarnición"
+        },
+        {
+          "nombre": "HUEVOS CAMPEROS",
+          "med": 1,
+          "udm": "UD",
+          "notas": "Frito, puntilla crujiente"
         }
       ],
       "elaboracion": {
-        "pre": "1. refrigerada.\n2. Disponer frisandwich en la mise en place.\n3. Disponer filetes de vaca 6 mm en la mise en place.",
-        "elaboracion": "1. Untar ligeramente las 3 rebanadas con mantequilla.\n2. Dorar pan en plancha por ambas caras hasta tostado uniforme.\n3. Cocinar pechuga de pollo en plancha y cortar en láminas.\n4. Sobre primera rebanada colocar Mahonesa, jamón york y queso cheddar.\n5. Fundir queso brevemente con campana o salamandra.\n6. Colocar segunda rebanada.\n7. Añadir Mahonesa, lechuga, tomate, bacon crujiente y pollo.\n8. Cerrar con tercera rebanada.\n9. Freír patatas a 175ºC hasta doradas y crujientes.",
-        "emplatado": "1. Cortar el sándwich en 4 triángulos iguales.\n2. Pinchar cada cuarto con brocheta larga.\n3. Colocar centrado en plato.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. refrigerada.\n2. Disponer frisandwich en la mise en place.\n3. Disponer filetes de vaca 6 mm en la mise en place.\n\nELABORACION\n1. Untar ligeramente las 3 rebanadas con mantequilla.\n2. Dorar pan en plancha por ambas caras hasta tostado uniforme.\n3. Cocinar pechuga de pollo en plancha y cortar en láminas.\n4. Sobre primera rebanada colocar Mahonesa, jamón york y queso cheddar.\n5. Fundir queso brevemente con campana o salamandra.\n6. Colocar segunda rebanada.\n7. Añadir Mahonesa, lechuga, tomate, bacon crujiente y pollo.\n8. Cerrar con tercera rebanada.\n9. Freír patatas a 175ºC hasta doradas y crujientes.\n\nEMPLATAMOS\n1. Cortar el sándwich en 4 triángulos iguales.\n2. Pinchar cada cuarto con brocheta larga.\n3. Colocar centrado en plato.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
+        "pre": "",
+        "elaboracion": "1. Untar ligeramente las 3 rebanadas con mantequilla.\n2. Dorar pan en plancha por ambas caras hasta tostado uniforme.\n3. Cocinar pechuga de pollo en plancha y cortar en láminas.\n4. Sobre primera rebanada colocar jamón york y queso cheddar.\n5. Fundir queso brevemente con campana o salamandra.\n6. Colocar segunda rebanada.\n7. Freír huevo campero en aceite caliente hasta puntilla crujiente y yema líquida.\n8. Añadir Mahonesa, lechuga, tomate, bacon crujiente, el pollo y el huevo..\n9. Cerrar con tercera rebanada.\n9. Freír patatas a 175ºC hasta doradas y crujientes.",
+        "emplatado": "1. Cortar el sándwich en 4 triángulos iguales.\n2. Pinchar cada cuarto con brocheta larga.\n3. Colocar centrado en plato.\n4. Servir patatas fitas al lateral.",
+        "raw": "PRE ELABORACION\n\nELABORACION\n1. Untar ligeramente las 3 rebanadas con mantequilla.\n2. Dorar pan en plancha por ambas caras hasta tostado uniforme.\n3. Cocinar pechuga de pollo en plancha y cortar en láminas.\n4. Sobre primera rebanada colocar jamón york y queso cheddar.\n5. Fundir queso brevemente con campana o salamandra.\n6. Colocar segunda rebanada.\n7. Freír huevo campero en aceite caliente hasta puntilla crujiente y yema líquida.\n8. Añadir Mahonesa, lechuga, tomate, bacon crujiente, el pollo y el huevo..\n9. Cerrar con tercera rebanada.\n9. Freír patatas a 175ºC hasta doradas y crujientes.\n\n\nEMPLATAMOS\n1. Cortar el sándwich en 4 triángulos iguales.\n2. Pinchar cada cuarto con brocheta larga.\n3. Colocar centrado en plato.\n4. Servir patatas fitas al lateral."
       },
       "alergenos": [
         "Huevos",
@@ -1629,20 +1635,27 @@
           "notas": ""
         },
         {
-          "nombre": "OREGANO SECO",
-          "med": 5,
-          "udm": "g",
+          "nombre": "ACEITE DE SESAMO",
+          "med": 2,
+          "udm": "ml",
           "notas": "Aliñar el atún"
+        },
+        {
+          "nombre": "CREMA TARTUFATA NEGRA",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
         }
       ],
       "elaboracion": {
-        "pre": "1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.",
+        "pre": "1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.",
         "elaboracion": "1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.",
         "emplatado": "1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos.",
-        "raw": "PRE ELABORACION\n1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.\n\nELABORACION\n1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.\n\nEMPLATAMOS\n1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos."
+        "raw": "PRE ELABORACION\n1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n\nELABORACION\n1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.\n\nEMPLATAMOS\n1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos."
       },
       "alergenos": [
         "Dioxido de Azufre y Sulfitos",
+        "Granos de Sésamo",
         "Huevos",
         "Pescado"
       ],
@@ -1829,7 +1842,7 @@
       ],
       "subrecetas": [],
       "foto": "data/fotos/mncallos-garbanzos.png",
-      "nombre_carta": "La cuchara del día",
+      "nombre_carta": "La cuchara del día : Callos con garbanzos",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -2015,7 +2028,7 @@
         }
       ],
       "foto": "data/fotos/mn-garbanzos-pulpo.jpeg",
-      "nombre_carta": "La cuchara del día",
+      "nombre_carta": "La cuchara del día : Garbanzos con pulpo",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -2145,7 +2158,7 @@
         }
       ],
       "foto": "",
-      "nombre_carta": "La cuchara del día",
+      "nombre_carta": "La cuchara del día : Garbanzos con gambones",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -2362,7 +2375,7 @@
         }
       ],
       "foto": "",
-      "nombre_carta": "La cuchara del día",
+      "nombre_carta": "La cuchara del día : Lentejas con chorizo",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -2494,7 +2507,7 @@
         }
       ],
       "foto": "data/fotos/mn-pochas-almejas.png",
-      "nombre_carta": "La cuchara del día",
+      "nombre_carta": "La cuchara del día : Pochas con almejas",
       "seccion": "Menú — Primeros",
       "cartas": [
         "menu"
@@ -3513,21 +3526,15 @@
           "notas": ""
         },
         {
-          "nombre": "BOQUERON ENHARINADO CONGELADO",
-          "med": 3,
+          "nombre": "BOQUERON VINAGRE",
+          "med": 5,
           "udm": "ud",
           "notas": ""
         },
         {
           "nombre": "ANCHOA 0 CANTABRICO",
-          "med": 2,
+          "med": 3,
           "udm": "ud",
-          "notas": ""
-        },
-        {
-          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2.5 KG, CAJA 4 BOLSAS (LAMBWESTON)",
-          "med": 20,
-          "udm": "g",
           "notas": ""
         },
         {
@@ -3538,10 +3545,10 @@
         }
       ],
       "elaboracion": {
-        "pre": "1. Las anchoas y los boquerones vienen en conserva, una vez abiertos hay que pasarlos a contenedor hermetico guardando la trazabilidad y poniendo fecha de caducicad secundaria, 4 dias, se conserva en frio positivo.\n2. El pan de cristal viene congelado, hay que descongelarlo en camara de frio positivo al menos 24h antes de su uso.\n3. D.\n4. Tostar pan payes antes del",
-        "elaboracion": "1. Abrimos el pan a la mitad.\n2. Tostar el pan en tostador u horno, hasta que este crujiente sin estar duro.\n3. Salsear con la emulsion de tomate y poner en el centro la anchoa y los boquerones en los bordes, con la piel hacia arriba.\n4. Terminamos añadiendo la salsa mery sobre los boquerones.",
-        "emplatado": "1. en bandeja metalica rectangular con papel corporativo.\n2. Con unas patatas chips a un lado.",
-        "raw": "PRE ELABORACION\n1. Las anchoas y los boquerones vienen en conserva, una vez abiertos hay que pasarlos a contenedor hermetico guardando la trazabilidad y poniendo fecha de caducicad secundaria, 4 dias, se conserva en frio positivo.\n2. El pan de cristal viene congelado, hay que descongelarlo en camara de frio positivo al menos 24h antes de su uso.\n3. D.\n4. Tostar pan payes antes del montaje.\n5. Disponer salmorejo precocinado sin gluten en la mise en place.\n\nELABORACION\n1. Abrimos el pan a la mitad.\n2. Tostar el pan en tostador u horno, hasta que este crujiente sin estar duro.\n3. Salsear con la emulsion de tomate y poner en el centro la anchoa y los boquerones en los bordes, con la piel hacia arriba.\n4. Terminamos añadiendo la salsa mery sobre los boquerones.\n\nEMPLATAMOS\n1. en bandeja metalica rectangular con papel corporativo.\n2. Con unas patatas chips a un lado."
+        "pre": "1. Las anchoas y los boquerones vienen en conserva, una vez abiertos hay que pasarlos a contenedor hermetico guardando la trazabilidad y poniendo fecha de caducicad secundaria, 4 dias, se conserva en frio positivo.\n2. El pan de cristal viene congelado, hay que descongelarlo en camara de frio positivo al menos 24h antes de su uso.",
+        "elaboracion": "3. Tostar pan payes antes del",
+        "emplatado": "1. En bandeja ovalada de acero inox.",
+        "raw": "PRE ELABORACION\n1. Las anchoas y los boquerones vienen en conserva, una vez abiertos hay que pasarlos a contenedor hermetico guardando la trazabilidad y poniendo fecha de caducicad secundaria, 4 dias, se conserva en frio positivo.\n2. El pan de cristal viene congelado, hay que descongelarlo en camara de frio positivo al menos 24h antes de su uso.\n\nELABORACION\n3. Tostar pan payes antes del montaje.\n4. Disponer salmorejo precocinado sin gluten en la mise en place.\n5. Colocamos alternando boqueron, anchoa asi hasta tener 5 boquerones y 3 anchoas.\n6. Terminamos añadiendo la salsa mery sobre los boquerones.\n\nEMPLATAMOS\n1. En bandeja ovalada de acero inox."
       },
       "alergenos": [
         "Pescado",
@@ -3597,10 +3604,10 @@
         }
       ],
       "elaboracion": {
-        "pre": "1. Disponer rebanadas de pan payés porcionadas.\n2. Cocer huevos 10 min desde hervor.\n3. Enfriar, pelar y picar fino.\n4. Mantener salmorejo refrigerado entre 0–4ºC.\n5. Porcionar paleta ibérica en lascas.\n6. Dosificar AOVE en biberón.\n7. Tostar pan payes antes del",
+        "pre": "1. Disponer rebanadas de pan payés porcionadas.\n2. Cocer huevos 10 min desde hervor.\n3. Enfriar, pelar y picar fino.\n4. Mantener salmorejo refrigerado entre 0–4ºC.\n5. Porcionar paleta ibérica en lascas.\n6. Dosificar AOVE en biberón.\n7. Reservar aceite suave para la cocción.",
         "elaboracion": "1. Tostar rebanada de pan en horno o salamandra hasta dorado crujiente.\n2. Untar salmorejo de forma uniforme sobre toda la superficie.\n3. Cortar la tostada en 6 porciones regulares.\n4. Colocar lascas de paleta ibérica sobre cada porción.\n5. Añadir huevo cocido picado repartido.\n6. Terminar con chorro fino de AOVE.",
         "emplatado": "1. Colocar las 6 porciones alineadas o en abanico en plato.\n2. Revisar limpieza de bordes.\n3. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Disponer rebanadas de pan payés porcionadas.\n2. Cocer huevos 10 min desde hervor.\n3. Enfriar, pelar y picar fino.\n4. Mantener salmorejo refrigerado entre 0–4ºC.\n5. Porcionar paleta ibérica en lascas.\n6. Dosificar AOVE en biberón.\n7. Tostar pan payes antes del montaje.\n8. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Tostar rebanada de pan en horno o salamandra hasta dorado crujiente.\n2. Untar salmorejo de forma uniforme sobre toda la superficie.\n3. Cortar la tostada en 6 porciones regulares.\n4. Colocar lascas de paleta ibérica sobre cada porción.\n5. Añadir huevo cocido picado repartido.\n6. Terminar con chorro fino de AOVE.\n\nEMPLATAMOS\n1. Colocar las 6 porciones alineadas o en abanico en plato.\n2. Revisar limpieza de bordes.\n3. Servir inmediato."
+        "raw": "PRE ELABORACION\n1. Disponer rebanadas de pan payés porcionadas.\n2. Cocer huevos 10 min desde hervor.\n3. Enfriar, pelar y picar fino.\n4. Mantener salmorejo refrigerado entre 0–4ºC.\n5. Porcionar paleta ibérica en lascas.\n6. Dosificar AOVE en biberón.\n7. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Tostar rebanada de pan en horno o salamandra hasta dorado crujiente.\n2. Untar salmorejo de forma uniforme sobre toda la superficie.\n3. Cortar la tostada en 6 porciones regulares.\n4. Colocar lascas de paleta ibérica sobre cada porción.\n5. Añadir huevo cocido picado repartido.\n6. Terminar con chorro fino de AOVE.\n\nEMPLATAMOS\n1. Colocar las 6 porciones alineadas o en abanico en plato.\n2. Revisar limpieza de bordes.\n3. Servir inmediato."
       },
       "alergenos": [
         "Huevos",
@@ -3672,10 +3679,10 @@
         }
       ],
       "elaboracion": {
-        "pre": "1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Tostar pan payes antes del",
+        "pre": "1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Pelar y laminar ajo pelado.\n7. Disponer pimenton dulce de la vera en la mise en place.",
         "elaboracion": "1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.",
         "emplatado": "1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Tostar pan payes antes del montaje.\n7. Pelar y laminar ajo pelado.\n8. Disponer pimenton dulce de la vera en la mise en place.\n\nELABORACION\n1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.\n\nEMPLATAMOS\n1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato."
+        "raw": "PRE ELABORACION\n1. Cortar rebanada de pan payés.\n2. Cortar queso tetilla en dados pequeños o lascas gruesas.\n3. Laminar ajo fino.\n4. Separar media pata de pulpo cocido.\n5. Precalentar salamandra o gratinador.\n6. Pelar y laminar ajo pelado.\n7. Disponer pimenton dulce de la vera en la mise en place.\n\nELABORACION\n1. Tostar la rebanada de pan hasta dorado crujiente.\n2. Calentar sartén con aceite.\n3. Dorar ajo laminado suavemente.\n4. Añadir el pulpo troceado o entero y saltear 30–45 segundos.\n5. Colocar el pulpo sobre la tostada.\n6. Rellenar huecos con queso tetilla.\n7. Gratinar hasta fundido y ligero dorado.\n\nEMPLATAMOS\n1. Servir la rebanada centrada en plato.\n2. Añadir hilo de AOVE.\n3. Terminar con sal en escamas.\n4. Espolvorear pimentón opcional.\n5. Salir inmediato."
       },
       "alergenos": [
         "Trigo"
