@@ -1,5 +1,5 @@
 {
-  "generado": "2026-04-27T15:27:32",
+  "generado": "2026-04-27T15:46:24",
   "version": 1,
   "total": 56,
   "secciones": [
@@ -21,110 +21,6 @@
     "menu"
   ],
   "recetas": [
-    {
-      "id": "albondigas-patatas-fritas",
-      "sheet": "ALBONDIGAS PATATAS FRITAS",
-      "nombre": "ALBONDIGAS CON PATATAS FRITAS",
-      "ingredientes": [
-        {
-          "nombre": "ALBÓNDIGAS TRADICIONALES (Subreceta)",
-          "med": 180,
-          "udm": "g",
-          "notas": "5 unidades"
-        },
-        {
-          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2,5 KG (LAMBWESTON)",
-          "med": 140,
-          "udm": "g",
-          "notas": "Guarnición"
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 1,
-          "udm": "g",
-          "notas": "Picado"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.",
-        "elaboracion": "1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.",
-        "emplatado": "1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.\n\nELABORACION\n1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.\n\nEMPLATAMOS\n1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
-      },
-      "alergenos": [],
-      "pcg": [
-        "Albóndigas totalmente cocinadas en preelaboración.",
-        "Regeneración rápida sin sobrecocinar.",
-        "Salsa ligada y brillante.",
-        "Patatas doradas y crujientes.",
-        "Mantener cadena de frío hasta el pase.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [
-        {
-          "nombre": "ALBÓNDIGAS TRADICIONALES",
-          "codigo": "",
-          "ingredientes": [
-            {
-              "nombre": "Albóndigas mixtas",
-              "med": 30,
-              "udm": "ud"
-            },
-            {
-              "nombre": "Cebolla",
-              "med": 600,
-              "udm": "g"
-            },
-            {
-              "nombre": "Zanahoria",
-              "med": 120,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite de oliva",
-              "med": 80,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Vino blanco",
-              "med": 250,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Caldo de carne",
-              "med": 700,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Harina",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal",
-              "med": 8,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimienta negra",
-              "med": 2,
-              "udm": "g"
-            }
-          ],
-          "elaboracion": "Pochar cebolla, ajo y zanahoria 30–40 min hasta muy tiernos. Añadir harina y cocinar 2 min. Mojar con vino blanco y reducir. Incorporar caldo de carne y cocer 20 min. Triturar fino hasta salsa lisa. Introducir albóndigas ya doradas y guisar 25–30 min hasta cocción completa. Enfriar rápidamente y conservar por raciones listas para regenerar."
-        }
-      ],
-      "foto": "data/fotos/albondigas-patatas-fritas.png",
-      "nombre_carta": "ALBONDIGAS CON PATATAS FRITAS",
-      "seccion": "",
-      "cartas": [],
-      "descripcion": ""
-    },
     {
       "id": "mn-fresas-nata",
       "sheet": "MN FRESAS NATA",
@@ -203,76 +99,6 @@
       "cartas": [
         "menu"
       ],
-      "descripcion": ""
-    },
-    {
-      "id": "tartar-atun-huevo-frito",
-      "sheet": "TARTAR ATUN HUEVO FRITO",
-      "nombre": "TARTAR DE ATUN CON HUEVO FRITO",
-      "ingredientes": [
-        {
-          "nombre": "ATUN ROJO YELLOWFIN",
-          "med": 90,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "HUEVOS CAMPEROS",
-          "med": 3,
-          "udm": "ud",
-          "notas": ""
-        },
-        {
-          "nombre": "PATATA ENTERA PELADA AGRIA",
-          "med": 120,
-          "udm": "g",
-          "notas": "En rodajas / guarnición"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 5,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 2,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "ACEITE GIRASOL",
-          "med": 5,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "OREGANO SECO",
-          "med": 5,
-          "udm": "g",
-          "notas": "Aliñar el atún"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.",
-        "elaboracion": "1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.",
-        "emplatado": "1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos.",
-        "raw": "PRE ELABORACION\n1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.\n\nELABORACION\n1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.\n\nEMPLATAMOS\n1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos."
-      },
-      "alergenos": [
-        "Dioxido de Azufre y Sulfitos",
-        "Huevos",
-        "Pescado"
-      ],
-      "pcg": [
-        "Las patatas tienen que estar blandas por dentro y crujientes por fuera y bien sazonadas.",
-        "Los huevos tienen que tener la yema liquida."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/tartar-atun-huevo-frito.png",
-      "nombre_carta": "TARTAR DE ATUN CON HUEVO FRITO",
-      "seccion": "",
-      "cartas": [],
       "descripcion": ""
     },
     {
@@ -1761,6 +1587,79 @@
       "descripcion": ""
     },
     {
+      "id": "tartar-atun-huevo-frito",
+      "sheet": "TARTAR ATUN HUEVO FRITO",
+      "nombre": "TARTAR DE ATUN CON HUEVO FRITO",
+      "ingredientes": [
+        {
+          "nombre": "ATUN ROJO YELLOWFIN",
+          "med": 90,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "HUEVOS CAMPEROS",
+          "med": 3,
+          "udm": "ud",
+          "notas": ""
+        },
+        {
+          "nombre": "PATATA ENTERA PELADA AGRIA",
+          "med": 120,
+          "udm": "g",
+          "notas": "En rodajas / guarnición"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 5,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "ACEITE GIRASOL",
+          "med": 5,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "OREGANO SECO",
+          "med": 5,
+          "udm": "g",
+          "notas": "Aliñar el atún"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.",
+        "elaboracion": "1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.",
+        "emplatado": "1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos.",
+        "raw": "PRE ELABORACION\n1. Cortaremos el atún en dados de 0,5 x 0,5 cm.\n2. Recibimos la patata pelada agria.\n3. La cortamos en rodajas de 5 mm con la mandolina o cuchillo afilado y la lavamos en agua fría para retirar el almidón.\n4. Escurrimos bien.\n5. Freímos las patatas a 160ºC durante 5 minutos para que queden pochadas (sin coger color).\n6. Reservamos sobre rejilla hasta el momento del pase.\n7. Disponer atun rojo yellowfin en la mise en place.\n8. Disponer oregano seco en la mise en place.\n\nELABORACION\n1. En un bol colocamos el atún y aliñamos con el aceite de sésamo, la sal y un poco de crema tartufata.\n2. Freímos las patatas en rodajas a 175ºC durante 2 minutos hasta que queden doradas y crujientes, sazonamos.\n3. Freímos los huevos en aceite muy caliente para que la yema quede líquida y la clara con puntilla.\n\nEMPLATAMOS\n1. En la base del plato colocamos las patatas fritas en rodajas.\n2. Sobre estas colocamos los dos huevos fritos y en medio de ambos el tartar de atún aliñado con tartufata.\n3. Terminamos añadiendo un poco de sal en escamas sobre los huevos."
+      },
+      "alergenos": [
+        "Dioxido de Azufre y Sulfitos",
+        "Huevos",
+        "Pescado"
+      ],
+      "pcg": [
+        "Las patatas tienen que estar blandas por dentro y crujientes por fuera y bien sazonadas.",
+        "Los huevos tienen que tener la yema liquida."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/tartar-atun-huevo-frito.png",
+      "nombre_carta": "Huevos rotos con dados de atún rojo y trufa",
+      "seccion": "Huevos rotos",
+      "cartas": [
+        "principal",
+        "entrehoras"
+      ],
+      "descripcion": "Dados de atún rojo cortados a cuchillo con un toque de trufa negra sobre patatas crujientes. Nuestro capricho"
+    },
+    {
       "id": "mn-huevos-rotos",
       "sheet": "MN HUEVOS ROTOS",
       "nombre": "HUEVOS ROTOS CON JAMON SERRANO",
@@ -2852,6 +2751,112 @@
       "foto": "data/fotos/mn-tomate-temporada-boq.png",
       "nombre_carta": "Ensalada de tomate de temporada con boquerones en vinagre y piparras",
       "seccion": "Menú — Primeros",
+      "cartas": [
+        "menu"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "albondigas-patatas-fritas",
+      "sheet": "ALBONDIGAS PATATAS FRITAS",
+      "nombre": "ALBONDIGAS CON PATATAS FRITAS",
+      "ingredientes": [
+        {
+          "nombre": "ALBÓNDIGAS TRADICIONALES (Subreceta)",
+          "med": 180,
+          "udm": "g",
+          "notas": "5 unidades"
+        },
+        {
+          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2,5 KG (LAMBWESTON)",
+          "med": 140,
+          "udm": "g",
+          "notas": "Guarnición"
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 1,
+          "udm": "g",
+          "notas": "Picado"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.",
+        "elaboracion": "1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.",
+        "emplatado": "1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
+        "raw": "PRE ELABORACION\n1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.\n\nELABORACION\n1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.\n\nEMPLATAMOS\n1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
+      },
+      "alergenos": [],
+      "pcg": [
+        "Albóndigas totalmente cocinadas en preelaboración.",
+        "Regeneración rápida sin sobrecocinar.",
+        "Salsa ligada y brillante.",
+        "Patatas doradas y crujientes.",
+        "Mantener cadena de frío hasta el pase.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [
+        {
+          "nombre": "ALBÓNDIGAS TRADICIONALES",
+          "codigo": "",
+          "ingredientes": [
+            {
+              "nombre": "Albóndigas mixtas",
+              "med": 30,
+              "udm": "ud"
+            },
+            {
+              "nombre": "Cebolla",
+              "med": 600,
+              "udm": "g"
+            },
+            {
+              "nombre": "Zanahoria",
+              "med": 120,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite de oliva",
+              "med": 80,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Vino blanco",
+              "med": 250,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Caldo de carne",
+              "med": 700,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Harina",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal",
+              "med": 8,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimienta negra",
+              "med": 2,
+              "udm": "g"
+            }
+          ],
+          "elaboracion": "Pochar cebolla, ajo y zanahoria 30–40 min hasta muy tiernos. Añadir harina y cocinar 2 min. Mojar con vino blanco y reducir. Incorporar caldo de carne y cocer 20 min. Triturar fino hasta salsa lisa. Introducir albóndigas ya doradas y guisar 25–30 min hasta cocción completa. Enfriar rápidamente y conservar por raciones listas para regenerar."
+        }
+      ],
+      "foto": "data/fotos/albondigas-patatas-fritas.png",
+      "nombre_carta": "Albóndigas de ternera en salsa",
+      "seccion": "Menú — Segundos",
       "cartas": [
         "menu"
       ],

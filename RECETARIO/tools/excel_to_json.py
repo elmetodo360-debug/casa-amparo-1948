@@ -61,6 +61,8 @@ OVERRIDES = {
     "MN POCHAS ALMEJAS": "La cuchara del día",
     "MN POCHAS GAMBONES": "La cuchara del día",
     "MN GARBANZOS PULPO": "La cuchara del día",
+    "ALBONDIGAS PATATAS FRITAS": "Albóndigas de ternera en salsa",
+    "TARTAR ATUN HUEVO FRITO": "Huevos rotos con dados de atún rojo y trufa",
 }
 
 
