@@ -1,5 +1,5 @@
 {
-  "generado": "2026-04-27T14:12:11",
+  "generado": "2026-04-27T14:21:52",
   "version": 1,
   "total": 58,
   "secciones": [
@@ -152,6 +152,110 @@
       ],
       "foto": "data/fotos/zamburinas-picantonas.png",
       "nombre_carta": "6 ZAMBURIÑAS PICANTONAS",
+      "seccion": "",
+      "cartas": [],
+      "descripcion": ""
+    },
+    {
+      "id": "albondigas-patatas-fritas",
+      "sheet": "ALBONDIGAS PATATAS FRITAS",
+      "nombre": "ALBONDIGAS CON PATATAS FRITAS",
+      "ingredientes": [
+        {
+          "nombre": "ALBÓNDIGAS TRADICIONALES (Subreceta)",
+          "med": 180,
+          "udm": "g",
+          "notas": "5 unidades"
+        },
+        {
+          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2,5 KG (LAMBWESTON)",
+          "med": 140,
+          "udm": "g",
+          "notas": "Guarnición"
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 1,
+          "udm": "g",
+          "notas": "Picado"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.",
+        "elaboracion": "1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.",
+        "emplatado": "1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
+        "raw": "PRE ELABORACION\n1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.\n\nELABORACION\n1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.\n\nEMPLATAMOS\n1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
+      },
+      "alergenos": [],
+      "pcg": [
+        "Albóndigas totalmente cocinadas en preelaboración.",
+        "Regeneración rápida sin sobrecocinar.",
+        "Salsa ligada y brillante.",
+        "Patatas doradas y crujientes.",
+        "Mantener cadena de frío hasta el pase.",
+        "Servicio inmediato."
+      ],
+      "subrecetas": [
+        {
+          "nombre": "ALBÓNDIGAS TRADICIONALES",
+          "codigo": "",
+          "ingredientes": [
+            {
+              "nombre": "Albóndigas mixtas",
+              "med": 30,
+              "udm": "ud"
+            },
+            {
+              "nombre": "Cebolla",
+              "med": 600,
+              "udm": "g"
+            },
+            {
+              "nombre": "Zanahoria",
+              "med": 120,
+              "udm": "g"
+            },
+            {
+              "nombre": "Ajo pelado",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Aceite de oliva",
+              "med": 80,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Vino blanco",
+              "med": 250,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Caldo de carne",
+              "med": 700,
+              "udm": "ml"
+            },
+            {
+              "nombre": "Harina",
+              "med": 20,
+              "udm": "g"
+            },
+            {
+              "nombre": "Sal",
+              "med": 8,
+              "udm": "g"
+            },
+            {
+              "nombre": "Pimienta negra",
+              "med": 2,
+              "udm": "g"
+            }
+          ],
+          "elaboracion": "Pochar cebolla, ajo y zanahoria 30–40 min hasta muy tiernos. Añadir harina y cocinar 2 min. Mojar con vino blanco y reducir. Incorporar caldo de carne y cocer 20 min. Triturar fino hasta salsa lisa. Introducir albóndigas ya doradas y guisar 25–30 min hasta cocción completa. Enfriar rápidamente y conservar por raciones listas para regenerar."
+        }
+      ],
+      "foto": "data/fotos/albondigas-patatas-fritas.png",
+      "nombre_carta": "ALBONDIGAS CON PATATAS FRITAS",
       "seccion": "",
       "cartas": [],
       "descripcion": ""
@@ -989,7 +1093,7 @@
       "nombre_carta": "PATA DE PULPO A LA PLANCHA CON PATATA REVOLCONA Y MOJO VERDE",
       "seccion": "",
       "cartas": [],
-      "descripcion": ""
+      "descripcion": "Tierno, marcado a la plancha sobre patatas rotas crujientes, con nuestro mojo verde casero de cilantro fresco"
     },
     {
       "id": "para-pulpo-mojo-verde",
@@ -1257,7 +1361,7 @@
       "nombre_carta": "REBANADA DE PAN CON TETILLA Y PULPO",
       "seccion": "",
       "cartas": [],
-      "descripcion": ""
+      "descripcion": "Pan crujiente de la casa relleno de queso tetilla fundido con pulpo al ajillo, ajo dorado y un toque de pimentón"
     },
     {
       "id": "tartar-atun-huevo-frito",
@@ -1563,7 +1667,7 @@
         "principal",
         "entrehoras"
       ],
-      "descripcion": ""
+      "descripcion": "Hecha al día, cremosa y con el punto justo, coronada con atún y piparras de Ibarra"
     },
     {
       "id": "morcilla-burgos-mermelada",
@@ -1717,7 +1821,7 @@
         "principal",
         "entrehoras"
       ],
-      "descripcion": ""
+      "descripcion": "Tostada a fuego vivo, crujiente por los bordes y tierna en el centro, con nuestra salsa brava casera de culantro fresco"
     },
     {
       "id": "patatas-bravas-bambolea",
@@ -1778,6 +1882,77 @@
       "descripcion": "Cortadas a mano, fritas dos veces hasta el crujiente perfecto, con nuestra salsa brava secreta de la casa"
     },
     {
+      "id": "tomate-temporada-bonito",
+      "sheet": "TOMATE TEMPORADA BONITO",
+      "nombre": "TOMATE DE TEMPORADA CON BONITO",
+      "ingredientes": [
+        {
+          "nombre": "TOMATE ENSALADA",
+          "med": 400,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 4,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "ACEITE SUAVE",
+          "med": 30,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "VINAGRETA FRANCESA (Subreceta)",
+          "med": 50,
+          "udm": "ml",
+          "notas": ""
+        },
+        {
+          "nombre": "BONITO CONSERVA EN ESCABECHE",
+          "med": 80,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CEBOLLETA",
+          "med": 10,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "PIPARRA ENCURTIDA",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Cortamos los tomates de manera desigual, usaremos los mejores tomates de temporada mezclandolos con tomates cherrys de colores, etc.\n2. Cortamos la Cebolleta en pluma fina.\n3. Cortamos la piparra en aros.\n4. ELABRACION.\n5. Cuando nos demanden el plato en un bowl aliñamos los tomates, la piparra y la Cebolleta con la sal en escamas y la Vinagreta francesa, removemos bien para que queden bien aliñados.\n6. Reservar aceite suave para la cocción.",
+        "elaboracion": "1. Cocinar el plato siguiendo el procedimiento estándar de la receta.",
+        "emplatado": "1. Colocamos los tomates aliñados en el fondo del plato.Colocamos el bonito encima de los tomates.\n2. Decoramos con el AOVE.",
+        "raw": "PRE ELABORACION\n1. Cortamos los tomates de manera desigual, usaremos los mejores tomates de temporada mezclandolos con tomates cherrys de colores, etc.\n2. Cortamos la Cebolleta en pluma fina.\n3. Cortamos la piparra en aros.\n4. ELABRACION.\n5. Cuando nos demanden el plato en un bowl aliñamos los tomates, la piparra y la Cebolleta con la sal en escamas y la Vinagreta francesa, removemos bien para que queden bien aliñados.\n6. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Cocinar el plato siguiendo el procedimiento estándar de la receta.\n\nEMPLATAMOS\n1. Colocamos los tomates aliñados en el fondo del plato.Colocamos el bonito encima de los tomates.\n2. Decoramos con el AOVE."
+      },
+      "alergenos": [
+        "Dioxido de Azufre y Sulfitos",
+        "Pescado"
+      ],
+      "pcg": [
+        "Usar los mejores tomates de temporada, mezclandolos para dar color al plato."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/tomate-temporada-bonito.png",
+      "nombre_carta": "Tomates aliñados con bonito, encurtidos y aguacate",
+      "seccion": "Entrantes / Para picar",
+      "cartas": [
+        "principal",
+        "entrehoras"
+      ],
+      "descripcion": "Frescos de temporada, aliñados con aceite virgen extra, bonito del norte, encurtidos artesanos y aguacate soasado"
+    },
+    {
       "id": "bocata-lomo-cheddar",
       "sheet": "BOCATA LOMO CHEDDAR",
       "nombre": "BOCADILLO DE LOMO ADOBADO Y QUESO CHEDDAR",
@@ -1836,74 +2011,6 @@
         "entrehoras"
       ],
       "descripcion": "Lomo adobado a la plancha con queso fundido, en mollete crujiente por fuera y tierno por dentro"
-    },
-    {
-      "id": "chipironcitos-huevo-frito",
-      "sheet": "CHIPIRONCITOS HUEVO FRITO",
-      "nombre": "CHIPIRONCITOS A LA ANDALuZA CON HUEVO FRITO",
-      "ingredientes": [
-        {
-          "nombre": "CHIPIRON LIMPIO CONG.",
-          "med": 200,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "HARINA ESPECIAL FRITURAS",
-          "med": 20,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "HUEVOS CAMPEROS",
-          "med": 2,
-          "udm": "ud",
-          "notas": ""
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 2,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 1,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Limpiar los chipirones retirando pluma e interiores.\n2. Separar los tentáculos y reservar.\n3. Cortar los cuerpos en anillas de 2 cm.",
-        "elaboracion": "1. A demanda del plato, sazonar los chipirones.\n2. Enharinar separando bien las anillas para asegurar cobertura uniforme.\n3. Sacudir el exceso de harina en un cedazo.\n4. Freír en aceite a 175 °C durante 3–4 minutos, hasta dorados y crujientes.\n5. Escurrir el exceso de aceite en escurridor de fritos.\n6. Freír los huevos en aceite muy caliente, logrando yema líquida y clara con puntilla.",
-        "emplatado": "1. Disponer los chipirones fritos en la base del plato.\n2. Colocar los huevos fritos encima.\n3. Terminar con sal Maldon y Cebollino picado.",
-        "raw": "PRE ELABORACION\n1. Limpiar los chipirones retirando pluma e interiores.\n2. Separar los tentáculos y reservar.\n3. Cortar los cuerpos en anillas de 2 cm.\n\nELABORACION\n1. A demanda del plato, sazonar los chipirones.\n2. Enharinar separando bien las anillas para asegurar cobertura uniforme.\n3. Sacudir el exceso de harina en un cedazo.\n4. Freír en aceite a 175 °C durante 3–4 minutos, hasta dorados y crujientes.\n5. Escurrir el exceso de aceite en escurridor de fritos.\n6. Freír los huevos en aceite muy caliente, logrando yema líquida y clara con puntilla.\n\nEMPLATAMOS\n1. Disponer los chipirones fritos en la base del plato.\n2. Colocar los huevos fritos encima.\n3. Terminar con sal Maldon y Cebollino picado."
-      },
-      "alergenos": [
-        "Huevos",
-        "Trigo"
-      ],
-      "pcg": [
-        "Chipirones: Bien limpios y secos antes de enharinar para asegurar fritura crujiente.",
-        "Enharinado: Sacudir bien el exceso de harina para evitar fritura pesada y aceite sucio.",
-        "Fritura: Aceite a 175 °C estable para lograr chipirón dorado y crujiente sin resecar.",
-        "Huevo frito: Yema líquida y clara con puntilla; freír justo antes del emplatado.",
-        "Servicio: Montar y servir inmediatamente para mantener contraste de texturas."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/chipironcitos-huevo-frito.png",
-      "nombre_carta": "Bocadillo de chipironcitos a la andaluza",
-      "seccion": "Entre panes",
-      "cartas": [
-        "entrehoras"
-      ],
-      "descripcion": "Frescos, rebozados al momento, crujientes y tiernos, en pan de barra recién hecho. El clásico madrileño"
     },
     {
       "id": "hamburguesa-cabra",
@@ -2017,7 +2124,7 @@
         "entrehoras",
         "menu"
       ],
-      "descripcion": ""
+      "descripcion": "Rubia gallega sellada al punto, queso de cabra fundido, cebolla caramelizada y paleta ibérica en brioche tostado"
     },
     {
       "id": "mollete-gambon-ajillo",
@@ -2291,6 +2398,75 @@
       "descripcion": "Triple piso de pan tostado con pollo a la plancha, bacon crujiente, huevo frito y mayonesa casera"
     },
     {
+      "id": "chipironcitos-huevo-frito",
+      "sheet": "CHIPIRONCITOS HUEVO FRITO",
+      "nombre": "CHIPIRONCITOS A LA ANDALuZA CON HUEVO FRITO",
+      "ingredientes": [
+        {
+          "nombre": "CHIPIRON LIMPIO CONG.",
+          "med": 200,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "HARINA ESPECIAL FRITURAS",
+          "med": 20,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "HUEVOS CAMPEROS",
+          "med": 2,
+          "udm": "ud",
+          "notas": ""
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 2,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CEBOLLINO",
+          "med": 1,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Limpiar los chipirones retirando pluma e interiores.\n2. Separar los tentáculos y reservar.\n3. Cortar los cuerpos en anillas de 2 cm.",
+        "elaboracion": "1. A demanda del plato, sazonar los chipirones.\n2. Enharinar separando bien las anillas para asegurar cobertura uniforme.\n3. Sacudir el exceso de harina en un cedazo.\n4. Freír en aceite a 175 °C durante 3–4 minutos, hasta dorados y crujientes.\n5. Escurrir el exceso de aceite en escurridor de fritos.\n6. Freír los huevos en aceite muy caliente, logrando yema líquida y clara con puntilla.",
+        "emplatado": "1. Disponer los chipirones fritos en la base del plato.\n2. Colocar los huevos fritos encima.\n3. Terminar con sal Maldon y Cebollino picado.",
+        "raw": "PRE ELABORACION\n1. Limpiar los chipirones retirando pluma e interiores.\n2. Separar los tentáculos y reservar.\n3. Cortar los cuerpos en anillas de 2 cm.\n\nELABORACION\n1. A demanda del plato, sazonar los chipirones.\n2. Enharinar separando bien las anillas para asegurar cobertura uniforme.\n3. Sacudir el exceso de harina en un cedazo.\n4. Freír en aceite a 175 °C durante 3–4 minutos, hasta dorados y crujientes.\n5. Escurrir el exceso de aceite en escurridor de fritos.\n6. Freír los huevos en aceite muy caliente, logrando yema líquida y clara con puntilla.\n\nEMPLATAMOS\n1. Disponer los chipirones fritos en la base del plato.\n2. Colocar los huevos fritos encima.\n3. Terminar con sal Maldon y Cebollino picado."
+      },
+      "alergenos": [
+        "Huevos",
+        "Trigo"
+      ],
+      "pcg": [
+        "Chipirones: Bien limpios y secos antes de enharinar para asegurar fritura crujiente.",
+        "Enharinado: Sacudir bien el exceso de harina para evitar fritura pesada y aceite sucio.",
+        "Fritura: Aceite a 175 °C estable para lograr chipirón dorado y crujiente sin resecar.",
+        "Huevo frito: Yema líquida y clara con puntilla; freír justo antes del emplatado.",
+        "Servicio: Montar y servir inmediatamente para mantener contraste de texturas."
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/chipironcitos-huevo-frito.png",
+      "nombre_carta": "Huevos rotos con chipironcitos a la andaluza",
+      "seccion": "Huevos rotos",
+      "cartas": [
+        "principal",
+        "entrehoras"
+      ],
+      "descripcion": "Chipironcitos recién fritos, ligeros y crujientes, sobre patatas caseras. Adictivos con aroma andaluz"
+    },
+    {
       "id": "huevos-rotos-jamon-iberic",
       "sheet": "HUEVOS ROTOS JAMON IBERIC",
       "nombre": "HUEVOS ROTOS CON JAMON IBERICO",
@@ -2341,7 +2517,7 @@
         "principal",
         "entrehoras"
       ],
-      "descripcion": ""
+      "descripcion": "Yema líquida y dorada sobre patatas crujientes, con láminas generosas de jamón de bellota"
     },
     {
       "id": "huevos-rotos-torreznos",
@@ -2816,76 +2992,6 @@
       "descripcion": ""
     },
     {
-      "id": "tomate-temporada-bonito",
-      "sheet": "TOMATE TEMPORADA BONITO",
-      "nombre": "TOMATE DE TEMPORADA CON BONITO",
-      "ingredientes": [
-        {
-          "nombre": "TOMATE ENSALADA",
-          "med": 400,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 4,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "ACEITE SUAVE",
-          "med": 30,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "VINAGRETA FRANCESA (Subreceta)",
-          "med": 50,
-          "udm": "ml",
-          "notas": ""
-        },
-        {
-          "nombre": "BONITO CONSERVA EN ESCABECHE",
-          "med": 80,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CEBOLLETA",
-          "med": 10,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "PIPARRA ENCURTIDA",
-          "med": 2,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Cortamos los tomates de manera desigual, usaremos los mejores tomates de temporada mezclandolos con tomates cherrys de colores, etc.\n2. Cortamos la Cebolleta en pluma fina.\n3. Cortamos la piparra en aros.\n4. ELABRACION.\n5. Cuando nos demanden el plato en un bowl aliñamos los tomates, la piparra y la Cebolleta con la sal en escamas y la Vinagreta francesa, removemos bien para que queden bien aliñados.\n6. Reservar aceite suave para la cocción.",
-        "elaboracion": "1. Cocinar el plato siguiendo el procedimiento estándar de la receta.",
-        "emplatado": "1. Colocamos los tomates aliñados en el fondo del plato.Colocamos el bonito encima de los tomates.\n2. Decoramos con el AOVE.",
-        "raw": "PRE ELABORACION\n1. Cortamos los tomates de manera desigual, usaremos los mejores tomates de temporada mezclandolos con tomates cherrys de colores, etc.\n2. Cortamos la Cebolleta en pluma fina.\n3. Cortamos la piparra en aros.\n4. ELABRACION.\n5. Cuando nos demanden el plato en un bowl aliñamos los tomates, la piparra y la Cebolleta con la sal en escamas y la Vinagreta francesa, removemos bien para que queden bien aliñados.\n6. Reservar aceite suave para la cocción.\n\nELABORACION\n1. Cocinar el plato siguiendo el procedimiento estándar de la receta.\n\nEMPLATAMOS\n1. Colocamos los tomates aliñados en el fondo del plato.Colocamos el bonito encima de los tomates.\n2. Decoramos con el AOVE."
-      },
-      "alergenos": [
-        "Dioxido de Azufre y Sulfitos",
-        "Pescado"
-      ],
-      "pcg": [
-        "Usar los mejores tomates de temporada, mezclandolos para dar color al plato."
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/tomate-temporada-bonito.png",
-      "nombre_carta": "Ensalada de tomate de temporada con boquerones en vinagre y piparras",
-      "seccion": "Menú — Primeros",
-      "cartas": [
-        "menu"
-      ],
-      "descripcion": ""
-    },
-    {
       "id": "mn-tomate-temporada-boq",
       "sheet": "MN TOMATE TEMPORADA BOQ",
       "nombre": "TOMATE DE TEMPORADA CON BOQUERONES EN VINAGRE",
@@ -3000,112 +3106,6 @@
       "foto": "data/fotos/mn-tomate-temporada-boq.png",
       "nombre_carta": "Ensalada de tomate de temporada con boquerones en vinagre y piparras",
       "seccion": "Menú — Primeros",
-      "cartas": [
-        "menu"
-      ],
-      "descripcion": ""
-    },
-    {
-      "id": "albondigas-patatas-fritas",
-      "sheet": "ALBONDIGAS PATATAS FRITAS",
-      "nombre": "ALBONDIGAS CON PATATAS FRITAS",
-      "ingredientes": [
-        {
-          "nombre": "ALBÓNDIGAS TRADICIONALES (Subreceta)",
-          "med": 180,
-          "udm": "g",
-          "notas": "5 unidades"
-        },
-        {
-          "nombre": "PATATA RESERVA PRIVADA 9/9 CON PIEL BOLSA 2,5 KG (LAMBWESTON)",
-          "med": 140,
-          "udm": "g",
-          "notas": "Guarnición"
-        },
-        {
-          "nombre": "CEBOLLINO",
-          "med": 1,
-          "udm": "g",
-          "notas": "Picado"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.",
-        "elaboracion": "1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.",
-        "emplatado": "1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato.",
-        "raw": "PRE ELABORACION\n1. Elaborar subreceta de albóndigas tradicionales hasta cocción completa.\n2. Enfriar rápidamente y conservar en cámara a 0–4ºC.\n3. Porcionar 5 albóndigas con su salsa por ración (~180 g).\n4. Tener patatas prefritas listas para segunda fritura.\n5. Picar Cebollino fino.\n\nELABORACION\n1. Regenerar ración de albóndigas con salsa en cazo o sauté 2–3 min a fuego medio.\n2. Mover suavemente para napado uniforme.\n3. Freír patatas a 175ºC hasta dorado crujiente.\n4. Escurrir y salar al momento.\n5. Verificar temperatura interior mínima de servicio.\n\nEMPLATAMOS\n1. Colocar 5 albóndigas en plato hondo.\n2. Napar con salsa abundante y brillante.\n3. Añadir Cebollino picado.\n4. Servir patatas fritas al lateral.\n5. Salir inmediato."
-      },
-      "alergenos": [],
-      "pcg": [
-        "Albóndigas totalmente cocinadas en preelaboración.",
-        "Regeneración rápida sin sobrecocinar.",
-        "Salsa ligada y brillante.",
-        "Patatas doradas y crujientes.",
-        "Mantener cadena de frío hasta el pase.",
-        "Servicio inmediato."
-      ],
-      "subrecetas": [
-        {
-          "nombre": "ALBÓNDIGAS TRADICIONALES",
-          "codigo": "",
-          "ingredientes": [
-            {
-              "nombre": "Albóndigas mixtas",
-              "med": 30,
-              "udm": "ud"
-            },
-            {
-              "nombre": "Cebolla",
-              "med": 600,
-              "udm": "g"
-            },
-            {
-              "nombre": "Zanahoria",
-              "med": 120,
-              "udm": "g"
-            },
-            {
-              "nombre": "Ajo pelado",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Aceite de oliva",
-              "med": 80,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Vino blanco",
-              "med": 250,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Caldo de carne",
-              "med": 700,
-              "udm": "ml"
-            },
-            {
-              "nombre": "Harina",
-              "med": 20,
-              "udm": "g"
-            },
-            {
-              "nombre": "Sal",
-              "med": 8,
-              "udm": "g"
-            },
-            {
-              "nombre": "Pimienta negra",
-              "med": 2,
-              "udm": "g"
-            }
-          ],
-          "elaboracion": "Pochar cebolla, ajo y zanahoria 30–40 min hasta muy tiernos. Añadir harina y cocinar 2 min. Mojar con vino blanco y reducir. Incorporar caldo de carne y cocer 20 min. Triturar fino hasta salsa lisa. Introducir albóndigas ya doradas y guisar 25–30 min hasta cocción completa. Enfriar rápidamente y conservar por raciones listas para regenerar."
-        }
-      ],
-      "foto": "data/fotos/albondigas-patatas-fritas.png",
-      "nombre_carta": "Albóndigas de ternera en salsa",
-      "seccion": "Menú — Segundos",
       "cartas": [
         "menu"
       ],
@@ -3372,85 +3372,6 @@
       "descripcion": ""
     },
     {
-      "id": "macarrones-amparo",
-      "sheet": "MACARRONES AMPARO",
-      "nombre": "LOS MACARRONES DE AMPARO",
-      "ingredientes": [
-        {
-          "nombre": "MACARRON PLUMA",
-          "med": 200,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "AJO PELADO",
-          "med": 5,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CEBOLLA CARAMELIZADA",
-          "med": 40,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CHORIZO SARTA DULCE Y PICANTE",
-          "med": 50,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "CHAMPI SILVESTRE PORTOBELLO",
-          "med": 50,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "TOMATE FRITO CASERO AOVE",
-          "med": 150,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "SALSA BRAVA HOST. (CAJA 4 UDS)",
-          "med": 150,
-          "udm": "g",
-          "notas": ""
-        },
-        {
-          "nombre": "Queso mezcla curado",
-          "med": 50,
-          "udm": "g",
-          "notas": ""
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Picamos el ajo y la cebolla en brunoise.\n2. Cortamos los champiñones en laminas.\n3. Cortamos el chorizo en dados.\n4. Disponer macarron pluma en la mise en place.\n5. Pelar y laminar ajo pelado.",
-        "elaboracion": "1. Cuando se demande el plato, calentar aceite de oliva en un sauté y sofreír el ajo y la cebolla hasta que estén transparentes.\n2. Añadir el chorizo y cocinar 1 minuto, permitiendo que suelte su grasa.\n3. Incorporar los portobellos laminados y saltear hasta que estén tiernos.\n4. Agregar la pasta cocida, la salsa de tomate y la mitad de la bechamel, removiendo bien durante 2 minutos para integrar los sabores.\n5. Transferir la mezcla a un violin, napar con la bechamel restante y cubrir con queso rallado.\n6. Gratinar en la salamandra hasta que el queso esté dorado y burbujeante.\n7. Servir de inmediato.",
-        "emplatado": "1. Plato Violin pequeño sobre Violin media y servilleta.\n2. Servimos directamente en el violin.",
-        "raw": "PRE ELABORACION\n1. Picamos el ajo y la cebolla en brunoise.\n2. Cortamos los champiñones en laminas.\n3. Cortamos el chorizo en dados.\n4. Disponer macarron pluma en la mise en place.\n5. Pelar y laminar ajo pelado.\n\nELABORACION\n1. Cuando se demande el plato, calentar aceite de oliva en un sauté y sofreír el ajo y la cebolla hasta que estén transparentes.\n2. Añadir el chorizo y cocinar 1 minuto, permitiendo que suelte su grasa.\n3. Incorporar los portobellos laminados y saltear hasta que estén tiernos.\n4. Agregar la pasta cocida, la salsa de tomate y la mitad de la bechamel, removiendo bien durante 2 minutos para integrar los sabores.\n5. Transferir la mezcla a un violin, napar con la bechamel restante y cubrir con queso rallado.\n6. Gratinar en la salamandra hasta que el queso esté dorado y burbujeante.\n7. Servir de inmediato.\n\nEMPLATAMOS\n1. Plato Violin pequeño sobre Violin media y servilleta.\n2. Servimos directamente en el violin."
-      },
-      "alergenos": [
-        "Huevos",
-        "Mostaza",
-        "Soja",
-        "Trigo"
-      ],
-      "pcg": [
-        "El gratinado tiene que estar dorado pero no quemado.",
-        "Mezclar bien todos los ingredientes en la sarten para que los sabores se integran junto a la bechamel"
-      ],
-      "subrecetas": [],
-      "foto": "data/fotos/macarrones-amparo.png",
-      "nombre_carta": "Macarrones de Amparo (versión menú)",
-      "seccion": "Menú — Segundos",
-      "cartas": [
-        "menu"
-      ],
-      "descripcion": ""
-    },
-    {
       "id": "mn-macarrones-gratinados",
       "sheet": "MN MACARRONES GRATINADOS",
       "nombre": "MACARRONES GRATINADOS",
@@ -3523,67 +3444,6 @@
       ],
       "subrecetas": [],
       "foto": "data/fotos/mn-macarrones-gratinados.jpeg",
-      "nombre_carta": "Macarrones de Amparo (versión menú)",
-      "seccion": "Menú — Segundos",
-      "cartas": [
-        "menu"
-      ],
-      "descripcion": ""
-    },
-    {
-      "id": "macarrones-infantiles-tom",
-      "sheet": "MACARRONES INFANTILES TOM",
-      "nombre": "MACARRONES INFANTILES CON TOMATE Y QUESO",
-      "ingredientes": [
-        {
-          "nombre": "MACARRON PLUMA",
-          "med": 90,
-          "udm": "g",
-          "notas": "Peso en crudo"
-        },
-        {
-          "nombre": "TOMATE FRITO",
-          "med": 120,
-          "udm": "g",
-          "notas": "Ya elaborada"
-        },
-        {
-          "nombre": "QUESO MOZZARELA RALLADA",
-          "med": 20,
-          "udm": "g",
-          "notas": "Mezcla / mozzarella"
-        },
-        {
-          "nombre": "ACEITE GIRASOL",
-          "med": 5,
-          "udm": "g",
-          "notas": "Para mezclar pasta cocida"
-        },
-        {
-          "nombre": "SAL FINA",
-          "med": 2,
-          "udm": "g",
-          "notas": "Agua de cocción (c/s)"
-        }
-      ],
-      "elaboracion": {
-        "pre": "1. Hervir agua abundante con sal.\n2. Cocer los macarrones hasta punto al dente según fabricante.\n3. Escurrir inmediatamente.\n4. Enfriar en baño de agua con hielo hasta cortar cocción.\n5. Escurrir completamente.\n6. Mezclar con aceite de girasol para evitar apelmazado.\n7. Guardar en GN tapado a 0–4ºC.\n8. Mantener salsa de tomate refrigerada.",
-        "elaboracion": "1. Regenerar 220 g de pasta en agua caliente 30 segundos o vapor 1 minuto.\n2. Calentar 120 g de salsa de tomate en cazo o microondas hasta 75ºC.\n3. Mezclar pasta con salsa hasta napar uniforme.",
-        "emplatado": "1. Colocar pasta en plato hondo o bol.\n2. Espolvorear queso rallado en superficie.\n3. Servir inmediato.",
-        "raw": "PRE ELABORACION\n1. Hervir agua abundante con sal.\n2. Cocer los macarrones hasta punto al dente según fabricante.\n3. Escurrir inmediatamente.\n4. Enfriar en baño de agua con hielo hasta cortar cocción.\n5. Escurrir completamente.\n6. Mezclar con aceite de girasol para evitar apelmazado.\n7. Guardar en GN tapado a 0–4ºC.\n8. Mantener salsa de tomate refrigerada.\n\nELABORACION\n1. Regenerar 220 g de pasta en agua caliente 30 segundos o vapor 1 minuto.\n2. Calentar 120 g de salsa de tomate en cazo o microondas hasta 75ºC.\n3. Mezclar pasta con salsa hasta napar uniforme.\n\nEMPLATAMOS\n1. Colocar pasta en plato hondo o bol.\n2. Espolvorear queso rallado en superficie.\n3. Servir inmediato."
-      },
-      "alergenos": [
-        "Huevos",
-        "Lacteos",
-        "Mostaza",
-        "Soja",
-        "Trigo"
-      ],
-      "pcg": [
-        "Punto de cocción: pasta al dente (resistencia nítida al diente, núcleo apenas perceptible). Nunca pasada — pierde estructura al regenerar."
-      ],
-      "subrecetas": [],
-      "foto": "",
       "nombre_carta": "Macarrones de Amparo (versión menú)",
       "seccion": "Menú — Segundos",
       "cartas": [
@@ -4020,7 +3880,7 @@
       "cartas": [
         "entrehoras"
       ],
-      "descripcion": ""
+      "descripcion": "Macerados en vinagre de Jerez, tiernos y frescos, con ajo, perejil y patatas crujientes"
     },
     {
       "id": "gilda-anchoa",
@@ -4066,7 +3926,7 @@
       "cartas": [
         "entrehoras"
       ],
-      "descripcion": ""
+      "descripcion": "Anchoa del Cantábrico, aceituna y guindilla vasca. El clásico pincho en un bocado"
     },
     {
       "id": "pincho-tortilla",
@@ -4204,6 +4064,67 @@
       "subrecetas": [],
       "foto": "",
       "nombre_carta": "Arroz blanco (guarnición infantil)",
+      "seccion": "Para los peques — Guarnición",
+      "cartas": [
+        "principal"
+      ],
+      "descripcion": ""
+    },
+    {
+      "id": "macarrones-infantiles-tom",
+      "sheet": "MACARRONES INFANTILES TOM",
+      "nombre": "MACARRONES INFANTILES CON TOMATE Y QUESO",
+      "ingredientes": [
+        {
+          "nombre": "MACARRON PLUMA",
+          "med": 90,
+          "udm": "g",
+          "notas": "Peso en crudo"
+        },
+        {
+          "nombre": "TOMATE FRITO",
+          "med": 120,
+          "udm": "g",
+          "notas": "Ya elaborada"
+        },
+        {
+          "nombre": "QUESO MOZZARELA RALLADA",
+          "med": 20,
+          "udm": "g",
+          "notas": "Mezcla / mozzarella"
+        },
+        {
+          "nombre": "ACEITE GIRASOL",
+          "med": 5,
+          "udm": "g",
+          "notas": "Para mezclar pasta cocida"
+        },
+        {
+          "nombre": "SAL FINA",
+          "med": 2,
+          "udm": "g",
+          "notas": "Agua de cocción (c/s)"
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Hervir agua abundante con sal.\n2. Cocer los macarrones hasta punto al dente según fabricante.\n3. Escurrir inmediatamente.\n4. Enfriar en baño de agua con hielo hasta cortar cocción.\n5. Escurrir completamente.\n6. Mezclar con aceite de girasol para evitar apelmazado.\n7. Guardar en GN tapado a 0–4ºC.\n8. Mantener salsa de tomate refrigerada.",
+        "elaboracion": "1. Regenerar 220 g de pasta en agua caliente 30 segundos o vapor 1 minuto.\n2. Calentar 120 g de salsa de tomate en cazo o microondas hasta 75ºC.\n3. Mezclar pasta con salsa hasta napar uniforme.",
+        "emplatado": "1. Colocar pasta en plato hondo o bol.\n2. Espolvorear queso rallado en superficie.\n3. Servir inmediato.",
+        "raw": "PRE ELABORACION\n1. Hervir agua abundante con sal.\n2. Cocer los macarrones hasta punto al dente según fabricante.\n3. Escurrir inmediatamente.\n4. Enfriar en baño de agua con hielo hasta cortar cocción.\n5. Escurrir completamente.\n6. Mezclar con aceite de girasol para evitar apelmazado.\n7. Guardar en GN tapado a 0–4ºC.\n8. Mantener salsa de tomate refrigerada.\n\nELABORACION\n1. Regenerar 220 g de pasta en agua caliente 30 segundos o vapor 1 minuto.\n2. Calentar 120 g de salsa de tomate en cazo o microondas hasta 75ºC.\n3. Mezclar pasta con salsa hasta napar uniforme.\n\nEMPLATAMOS\n1. Colocar pasta en plato hondo o bol.\n2. Espolvorear queso rallado en superficie.\n3. Servir inmediato."
+      },
+      "alergenos": [
+        "Huevos",
+        "Lacteos",
+        "Mostaza",
+        "Soja",
+        "Trigo"
+      ],
+      "pcg": [
+        "Punto de cocción: pasta al dente (resistencia nítida al diente, núcleo apenas perceptible). Nunca pasada — pierde estructura al regenerar."
+      ],
+      "subrecetas": [],
+      "foto": "",
+      "nombre_carta": "Pasta con tomate (guarnición infantil)",
       "seccion": "Para los peques — Guarnición",
       "cartas": [
         "principal"
@@ -4490,6 +4411,85 @@
       "subrecetas": [],
       "foto": "data/fotos/entrecot-trinchado-patata.jpeg",
       "nombre_carta": "Entrecot de vaca vieja con pimientos de Gernika",
+      "seccion": "Segundos platos",
+      "cartas": [
+        "principal"
+      ],
+      "descripcion": "Madurada en seco, sellada a la parrilla con su costra sabrosa y jugosa por dentro. Con Gernikas recién fritos"
+    },
+    {
+      "id": "macarrones-amparo",
+      "sheet": "MACARRONES AMPARO",
+      "nombre": "LOS MACARRONES DE AMPARO",
+      "ingredientes": [
+        {
+          "nombre": "MACARRON PLUMA",
+          "med": 200,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "AJO PELADO",
+          "med": 5,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CEBOLLA CARAMELIZADA",
+          "med": 40,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CHORIZO SARTA DULCE Y PICANTE",
+          "med": 50,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "CHAMPI SILVESTRE PORTOBELLO",
+          "med": 50,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "TOMATE FRITO CASERO AOVE",
+          "med": 150,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "SALSA BRAVA HOST. (CAJA 4 UDS)",
+          "med": 150,
+          "udm": "g",
+          "notas": ""
+        },
+        {
+          "nombre": "Queso mezcla curado",
+          "med": 50,
+          "udm": "g",
+          "notas": ""
+        }
+      ],
+      "elaboracion": {
+        "pre": "1. Picamos el ajo y la cebolla en brunoise.\n2. Cortamos los champiñones en laminas.\n3. Cortamos el chorizo en dados.\n4. Disponer macarron pluma en la mise en place.\n5. Pelar y laminar ajo pelado.",
+        "elaboracion": "1. Cuando se demande el plato, calentar aceite de oliva en un sauté y sofreír el ajo y la cebolla hasta que estén transparentes.\n2. Añadir el chorizo y cocinar 1 minuto, permitiendo que suelte su grasa.\n3. Incorporar los portobellos laminados y saltear hasta que estén tiernos.\n4. Agregar la pasta cocida, la salsa de tomate y la mitad de la bechamel, removiendo bien durante 2 minutos para integrar los sabores.\n5. Transferir la mezcla a un violin, napar con la bechamel restante y cubrir con queso rallado.\n6. Gratinar en la salamandra hasta que el queso esté dorado y burbujeante.\n7. Servir de inmediato.",
+        "emplatado": "1. Plato Violin pequeño sobre Violin media y servilleta.\n2. Servimos directamente en el violin.",
+        "raw": "PRE ELABORACION\n1. Picamos el ajo y la cebolla en brunoise.\n2. Cortamos los champiñones en laminas.\n3. Cortamos el chorizo en dados.\n4. Disponer macarron pluma en la mise en place.\n5. Pelar y laminar ajo pelado.\n\nELABORACION\n1. Cuando se demande el plato, calentar aceite de oliva en un sauté y sofreír el ajo y la cebolla hasta que estén transparentes.\n2. Añadir el chorizo y cocinar 1 minuto, permitiendo que suelte su grasa.\n3. Incorporar los portobellos laminados y saltear hasta que estén tiernos.\n4. Agregar la pasta cocida, la salsa de tomate y la mitad de la bechamel, removiendo bien durante 2 minutos para integrar los sabores.\n5. Transferir la mezcla a un violin, napar con la bechamel restante y cubrir con queso rallado.\n6. Gratinar en la salamandra hasta que el queso esté dorado y burbujeante.\n7. Servir de inmediato.\n\nEMPLATAMOS\n1. Plato Violin pequeño sobre Violin media y servilleta.\n2. Servimos directamente en el violin."
+      },
+      "alergenos": [
+        "Huevos",
+        "Mostaza",
+        "Soja",
+        "Trigo"
+      ],
+      "pcg": [
+        "El gratinado tiene que estar dorado pero no quemado.",
+        "Mezclar bien todos los ingredientes en la sarten para que los sabores se integran junto a la bechamel"
+      ],
+      "subrecetas": [],
+      "foto": "data/fotos/macarrones-amparo.png",
+      "nombre_carta": "Los macarrones de Amparo (con champiñones y chorizo de León)",
       "seccion": "Segundos platos",
       "cartas": [
         "principal"

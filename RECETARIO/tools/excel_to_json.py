@@ -40,6 +40,15 @@ SKIP_SHEETS = {
     "FT Platos CCA1948",
 }
 
+# Overrides explícitos: hoja -> nombre exacto de plato en FT Platos CCA1948.
+# Usar cuando el matcher no acierta por singular/plural u otra ambigüedad lingüística.
+OVERRIDES = {
+    "CHIPIRONCITOS HUEVO FRITO": "Huevos rotos con chipironcitos a la andaluza",
+    "MACARRONES AMPARO": "Los macarrones de Amparo (con champiñones y chorizo de León)",
+    "MACARRONES INFANTILES TOM": "Pasta con tomate (guarnición infantil)",
+    "TOMATE TEMPORADA BONITO": "Tomates aliñados con bonito, encurtidos y aguacate",
+}
+
 
 def slugify(text):
     text = unicodedata.normalize("NFKD", str(text))
@@ -276,8 +285,14 @@ def best_match(sheet_name, sheet_title, candidates):
     best_score = 0.0
     best_overlap = 0
     for c in candidates:
-        if is_menu_sheet and "menu" not in (c.get("cartas") or []):
-            continue
+        cartas = c.get("cartas") or []
+        if is_menu_sheet:
+            if "menu" not in cartas:
+                continue
+        else:
+            # Hojas no-MN: excluir candidatos que SOLO están en el menú
+            if cartas == ["menu"]:
+                continue
         ct = set(tokens(c["plato"]))
         if not ct or first_token not in ct:
             continue
@@ -324,26 +339,58 @@ def parse_carta_index(wb):
     return out
 
 
+def find_description(nombre_carta, descripciones):
+    """Busca la descripción comercial. Igualdad normalizada y luego fuzzy por Jaccard."""
+    if not nombre_carta:
+        return ""
+    key = normalize_text(nombre_carta)
+    if key in descripciones:
+        return descripciones[key]
+    target = set(tokens(nombre_carta))
+    if not target:
+        return ""
+    best = ""
+    best_score = 0.0
+    for k, v in descripciones.items():
+        kt = set(tokens(k))
+        ov = len(target & kt)
+        if ov < 2:
+            continue
+        union = len(target | kt)
+        score = ov / union if union else 0
+        if score > best_score:
+            best_score = score
+            best = v
+    # exigir un mínimo de calidad (>0.5 Jaccard) para evitar descripciones disparatadas
+    return best if best_score >= 0.5 else ""
+
+
 def parse_carta_descripciones(wb):
     """Lee las 3 cartas y devuelve {plato_normalizado: descripcion}."""
     descripciones = {}
-    for sheet, ncol in [("Carta CCA1948", 3), ("Carta Menu CCA1948", 2),
-                         ("Carta Entrehoras CCA1948", 2)]:
+    for sheet in ["Carta CCA1948", "Carta Menu CCA1948", "Carta Entrehoras CCA1948"]:
         if sheet not in wb.sheetnames:
             continue
         ws = wb[sheet]
         for row in ws.iter_rows(values_only=True):
             if not row:
                 continue
-            # buscar columna con 'Plato' y la siguiente con descripción
-            # estructura varía: principal=4 cols (sec,plato,desc,precio), otras pueden variar
-            for j in range(len(row) - 1):
-                cell = row[j]
-                if isinstance(cell, str) and len(cell) > 5 and j + 1 < len(row):
-                    nxt = row[j + 1]
-                    if isinstance(nxt, str) and len(nxt) > 15:
-                        descripciones[normalize_text(cell)] = nxt.strip()
-                        break
+            # Las filas válidas de plato terminan en un número (precio)
+            has_price = any(isinstance(v, (int, float)) for v in row)
+            if not has_price:
+                continue
+            strs = [str(v).strip() for v in row if isinstance(v, str) and v.strip()]
+            if len(strs) < 2:
+                continue
+            # Plato = penúltimo texto, descripción = último texto.
+            # (Si sólo hay 2 textos, primero es plato y segundo descripción.)
+            plato = strs[-2]
+            desc = strs[-1]
+            # Filtrar encabezados de sección (todo mayúsculas y muy cortos)
+            if plato.isupper() and len(plato) < 25:
+                continue
+            if len(desc) > 15:
+                descripciones[normalize_text(plato)] = desc
     return descripciones
 
 
@@ -419,7 +466,16 @@ def main():
             print(f"  ERROR parseando {sheet_name}: {e}")
             continue
         # cruzar con índice carta
-        match = best_match(sheet_name, r["nombre"], indice)
+        match = None
+        if sheet_name in OVERRIDES:
+            target = OVERRIDES[sheet_name]
+            target_norm = normalize_text(target)
+            for c in indice:
+                if normalize_text(c["plato"]) == target_norm:
+                    match = c
+                    break
+        if match is None:
+            match = best_match(sheet_name, r["nombre"], indice)
         if match:
             r["nombre_carta"] = match["plato"]
             r["seccion"] = match["seccion"]
@@ -429,7 +485,7 @@ def main():
             r["seccion"] = ""
             r["cartas"] = []
         # descripción comercial si existe
-        desc = descripciones.get(normalize_text(r["nombre_carta"]), "")
+        desc = find_description(r["nombre_carta"], descripciones)
         r["descripcion"] = desc
         recetas.append(r)
         ico = "[F]" if r["foto"] else "[ ]"
