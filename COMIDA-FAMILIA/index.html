@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#1f2a44" />
+<title>Comida de Familia · Casa Amparo 1948</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f2a44'/%3E%3Ctext x='50%25' y='62%25' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='28' fill='%23d4a373'%3E1948%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <h1 class="brand">
+      <span class="brand-name">Casa Amparo</span>
+      <span class="brand-year">1948</span>
+    </h1>
+    <span class="brand-tag">Comida de Familia</span>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="calendario" role="tab">📅 Calendario</button>
+    <button class="tab" data-tab="recetas" role="tab">📖 Recetario</button>
+    <button class="tab" data-tab="normas" role="tab">📋 Normas</button>
+    <button class="tab" data-tab="compra" role="tab">🛒 Compra mes</button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- CALENDARIO -->
+  <section id="tab-calendario" class="tab-panel active">
+    <div class="weeks" id="weeks-grid"></div>
+  </section>
+
+  <!-- RECETARIO -->
+  <section id="tab-recetas" class="tab-panel">
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Buscar plato, ingrediente, día..." autocomplete="off" />
+    </div>
+    <div id="recetas-grid" class="recetas-grid"></div>
+    <p id="empty" class="empty hidden">Sin resultados.</p>
+  </section>
+
+  <!-- NORMAS -->
+  <section id="tab-normas" class="tab-panel">
+    <div class="normas-card">
+      <h2>Normas de la Comida de Familia</h2>
+      <p class="subtitle">Convivencia, descanso y disciplina</p>
+      <ol id="normas-list" class="normas-list"></ol>
+
+      <div class="horarios">
+        <h3>Horario comida de personal</h3>
+        <div class="horario-row">
+          <span class="horario-label">Mañana</span>
+          <span class="horario-value">11:30 – 13:00</span>
+        </div>
+        <div class="horario-row">
+          <span class="horario-label">Tarde</span>
+          <span class="horario-value">16:30 – 19:30</span>
+        </div>
+        <p class="horario-note">Si en tu día libre quieres venir a comer: avisa al jefe de cocina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPRA MES -->
+  <section id="tab-compra" class="tab-panel">
+    <div class="compra-info">
+      <p>Productos que hay que comprar en el mes para alimentar al equipo (24 días, <span id="personas-info">10 personas</span>). Agrupado por proveedor.</p>
+    </div>
+    <div id="compra-grid" class="compra-grid"></div>
+  </section>
+
+</main>
+
+<!-- DETALLE RECETA -->
+<div id="detail" class="detail hidden">
+  <button id="back" class="back" aria-label="Volver">←</button>
+  <div id="detail-content" class="detail-content"></div>
+</div>
+
+<footer class="footer">
+  <span id="footer-fecha"></span> · Casa Amparo 1948 · El Método 360
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

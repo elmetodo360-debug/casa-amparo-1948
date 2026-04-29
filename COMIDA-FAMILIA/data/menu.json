@@ -1,0 +1,3495 @@
+{
+  "actualizado": "2026-04-29",
+  "personas": 10,
+  "normas": [
+    {
+      "numero": 1,
+      "titulo": "Una sola comida al día",
+      "detalle": "Cada miembro del equipo come UNA vez al día. No hay segunda ronda."
+    },
+    {
+      "numero": 2,
+      "titulo": "Siempre en el comedor de familia",
+      "detalle": "La comida de familia se hace exclusivamente en el comedor de familia. No se come en zona de trabajo, ni en la barra, ni en la sala."
+    },
+    {
+      "numero": 3,
+      "titulo": "Bebida — refresco",
+      "detalle": "1 refresco al día por turno, siempre formato 2 L (compartido). No hay refrescos individuales."
+    },
+    {
+      "numero": 4,
+      "titulo": "Bebida — agua",
+      "detalle": "El resto de momentos del día se bebe agua del grifo."
+    },
+    {
+      "numero": 5,
+      "titulo": "Bebida — al cierre",
+      "detalle": "Al cierre del turno, cada persona puede tomar UNA cerveza o UN tinto de verano. Siempre de tirador (no botella, no lata)."
+    },
+    {
+      "numero": 6,
+      "titulo": "Recoger el comedor",
+      "detalle": "El comedor de familia se deja recogido y limpio después de cada uso. Cada uno se ocupa de su sitio y mesa."
+    },
+    {
+      "numero": 7,
+      "titulo": "Tiempo de comida — 30 min",
+      "detalle": "El tiempo de comida es de 30 minutos. Sin excepciones."
+    },
+    {
+      "numero": 8,
+      "titulo": "Horario lo marca el responsable",
+      "detalle": "El horario concreto en el que cada persona come lo destina el responsable de turno. No es elegible."
+    },
+    {
+      "numero": 9,
+      "titulo": "Día libre — avisar al jefe de cocina",
+      "detalle": "Si en tu día libre quieres venir a comer, AVISA al jefe de cocina con antelación. Solo en horario de comida de personal: 11:30–13:00 y 16:30–19:30."
+    },
+    {
+      "numero": 10,
+      "titulo": "Descanso — 30 min incluye fumar",
+      "detalle": "El tiempo de descanso es de 30 minutos. Ese tiempo INCLUYE salir a fumar; no hay tiempo adicional para eso."
+    }
+  ],
+  "horarios": [
+    {
+      "nombre": "Mañana",
+      "rango": "11:30 – 13:00"
+    },
+    {
+      "nombre": "Tarde",
+      "rango": "16:30 – 19:30"
+    }
+  ],
+  "calendario": [
+    {
+      "semana": 1,
+      "dia": "Lunes",
+      "plato": "Cinta de cerdo a la plancha",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 1,
+      "dia": "Martes",
+      "plato": "Pollo al ajillo",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 1,
+      "dia": "Miércoles",
+      "plato": "Aguja de cerdo guisada",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 1,
+      "dia": "Jueves",
+      "plato": "Albóndigas de cerdo en salsa",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 1,
+      "dia": "Viernes",
+      "plato": "Merluza tronquito al horno",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 1,
+      "dia": "Sábado",
+      "plato": "Pollo jamoncito asado al limón",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 2,
+      "dia": "Lunes",
+      "plato": "Filetes de pechuga de pollo",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 2,
+      "dia": "Martes",
+      "plato": "Costillares de cerdo adobados",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 2,
+      "dia": "Miércoles",
+      "plato": "Ragout de ternera estofado",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 2,
+      "dia": "Jueves",
+      "plato": "Alas de pollo al horno",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 2,
+      "dia": "Viernes",
+      "plato": "Panga al horno con limón",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 2,
+      "dia": "Sábado",
+      "plato": "Tapa de cerdo estofada",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 3,
+      "dia": "Lunes",
+      "plato": "Hamburguesas caseras",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 3,
+      "dia": "Martes",
+      "plato": "Pollo en pepitoria (contramuslo)",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 3,
+      "dia": "Miércoles",
+      "plato": "Magro de cerdo en salsa",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 3,
+      "dia": "Jueves",
+      "plato": "Pavo redondo al horno",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 3,
+      "dia": "Viernes",
+      "plato": "Sardinas al horno",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 3,
+      "dia": "Sábado",
+      "plato": "Pollo troceado al curry",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 4,
+      "dia": "Lunes",
+      "plato": "Cinta de cerdo en salsa mostaza",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 4,
+      "dia": "Martes",
+      "plato": "Jamoncitos de pavo guisados",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 4,
+      "dia": "Miércoles",
+      "plato": "Aguja de cerdo a la cazuela",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    },
+    {
+      "semana": 4,
+      "dia": "Jueves",
+      "plato": "Pollo empanado",
+      "guarnicion": "Ensalada mixta",
+      "esPescado": false
+    },
+    {
+      "semana": 4,
+      "dia": "Viernes",
+      "plato": "Caella en salsa de tomate",
+      "guarnicion": "Arroz blanco",
+      "esPescado": false
+    },
+    {
+      "semana": 4,
+      "dia": "Sábado",
+      "plato": "Albóndigas mixtas con guarnición",
+      "guarnicion": "Patatas fritas",
+      "esPescado": false
+    }
+  ],
+  "recetas": [
+    {
+      "semana": 1,
+      "dia": "Lunes",
+      "plato": "Cinta de cerdo a la plancha",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Cinta de cerdo a la plancha",
+          "proveedor": "Norteños",
+          "codigo": "330020",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Cortar la cinta en filetes de 1 cm.",
+        "Sazonar con sal y pimienta.",
+        "Calentar la plancha con un hilo de aceite.",
+        "Sellar 2 min por cada lado, hasta dorar.",
+        "Reposar 3 min antes de servir.",
+        "Acompañar con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 1,
+      "dia": "Martes",
+      "plato": "Pollo al ajillo",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Pollo al ajillo",
+          "proveedor": "Norteños",
+          "codigo": "360011",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 120
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PEREJIL",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "83",
+          "udm": "GR",
+          "cantidad": 20
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "proveedor": "PRODESCO",
+          "codigo": "549",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Trocear el pollo en tacos pequeños y sazonar.",
+        "Laminar 12 dientes de ajo (por 10 raciones).",
+        "Dorar el pollo en aceite caliente; reservar.",
+        "En el mismo aceite, dorar los ajos sin quemar.",
+        "Devolver el pollo, añadir vino blanco y reducir.",
+        "Espolvorear pimentón dulce y perejil.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 1,
+      "dia": "Miércoles",
+      "plato": "Aguja de cerdo guisada",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Aguja de cerdo guisada",
+          "proveedor": "Norteños",
+          "codigo": "330009",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ZANAHORIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "26",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LAUREL SECO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "3892",
+          "udm": "GR",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Trocear la aguja en dados de 4 cm. Sazonar.",
+        "Dorar bien la carne en cazuela. Reservar.",
+        "Pochar cebolla y zanahoria a fuego medio.",
+        "Añadir tomate triturado, sofreír 5 min.",
+        "Mojar con vino blanco y dejar evaporar.",
+        "Devolver la carne, cubrir con caldo, añadir laurel.",
+        "Cocer tapado 90 min a fuego lento.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 1,
+      "dia": "Jueves",
+      "plato": "Albóndigas de cerdo en salsa",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Albóndigas de cerdo en salsa",
+          "proveedor": "Garcimar",
+          "codigo": "602000",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 500
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "HARINA TRIGO (cocina)",
+          "proveedor": "PRODESCO",
+          "codigo": "5050",
+          "udm": "GR",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Recibir albóndigas (Garcimar 602000) — ya formadas.",
+        "Pasarlas por harina y dorarlas en aceite. Reservar.",
+        "Pochar cebolla y ajo. Añadir tomate triturado.",
+        "Mojar con vino blanco, reducir 5 min.",
+        "Triturar la salsa si se quiere fina.",
+        "Devolver las albóndigas, cocer 15 min.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 1,
+      "dia": "Viernes",
+      "plato": "Merluza tronquito al horno",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Merluza tronquito al horno",
+          "proveedor": "Garcimar",
+          "codigo": "130205",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PEREJIL",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "83",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LIMÓN",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "limon",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Colocar los tronquitos en una bandeja con aceite.",
+        "Salar y regar con un majado de ajo, perejil y limón.",
+        "Añadir un chorrito de vino blanco.",
+        "Hornear 12-15 min a 180 ºC.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 1,
+      "dia": "Sábado",
+      "plato": "Pollo jamoncito asado al limón",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Pollo jamoncito asado al limón",
+          "proveedor": "Garcimar",
+          "codigo": "645510",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LIMÓN",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "limon",
+          "udm": "UND",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ROMERO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "77",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Marinar los jamoncitos con ajo, limón y romero (mínimo 1 h).",
+        "Colocar en bandeja con un chorro de aceite.",
+        "Hornear 35 min a 190 ºC, dándole vuelta a mitad.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 2,
+      "dia": "Lunes",
+      "plato": "Filetes de pechuga de pollo",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Filetes de pechuga de pollo",
+          "proveedor": "Norteños",
+          "codigo": "260003",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Sazonar las pechugas con sal y pimienta.",
+        "Plancha bien caliente con poco aceite.",
+        "Marcar 2-3 min por lado.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 2,
+      "dia": "Martes",
+      "plato": "Costillares de cerdo adobados",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Costillares de cerdo adobados",
+          "proveedor": "Norteños",
+          "codigo": "365029",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "proveedor": "PRODESCO",
+          "codigo": "549",
+          "udm": "GR",
+          "cantidad": 20
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LIMÓN",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "limon",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Recibir adobados (Norteños 365029) — ya marinados.",
+        "Colocar en bandeja con limón y un chorro de aceite.",
+        "Hornear 40 min a 180 ºC.",
+        "Subir a 220 ºC los últimos 5 min para dorar.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 2,
+      "dia": "Miércoles",
+      "plato": "Ragout de ternera estofado",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Ragout de ternera estofado",
+          "proveedor": "Norteños",
+          "codigo": "210049",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 500
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ZANAHORIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "26",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO TINTO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "529",
+          "udm": "ML",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LAUREL SECO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "3892",
+          "udm": "GR",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "HARINA TRIGO (cocina)",
+          "proveedor": "PRODESCO",
+          "codigo": "5050",
+          "udm": "GR",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Trocear y enharinar la ternera. Dorar bien.",
+        "Pochar cebolla y zanahoria.",
+        "Añadir tomate triturado y vino tinto. Reducir.",
+        "Devolver la carne, añadir laurel y cubrir con caldo.",
+        "Cocer tapado 2 horas a fuego muy lento.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 2,
+      "dia": "Jueves",
+      "plato": "Alas de pollo al horno",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Alas de pollo al horno",
+          "proveedor": "Garcimar",
+          "codigo": "645340",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LIMÓN",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "limon",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "proveedor": "PRODESCO",
+          "codigo": "549",
+          "udm": "GR",
+          "cantidad": 20
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Marinar las alas con ajo machacado, pimentón y limón (30 min).",
+        "Colocar en bandeja con aceite.",
+        "Hornear 30 min a 200 ºC, voltear a mitad.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 2,
+      "dia": "Viernes",
+      "plato": "Panga al horno con limón",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Panga al horno con limón",
+          "proveedor": "Garcimar",
+          "codigo": "109537",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LIMÓN",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "limon",
+          "udm": "UND",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PEREJIL",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "83",
+          "udm": "GR",
+          "cantidad": 20
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Colocar los lomos en bandeja, salar.",
+        "Cubrir con rodajas de limón y majado de ajo y perejil.",
+        "Aceite por encima.",
+        "Hornear 12 min a 180 ºC.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 2,
+      "dia": "Sábado",
+      "plato": "Tapa de cerdo estofada",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Tapa de cerdo estofada",
+          "proveedor": "Norteños",
+          "codigo": "330034",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 500
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ZANAHORIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "26",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO TINTO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "529",
+          "udm": "ML",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LAUREL SECO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "3892",
+          "udm": "GR",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Trocear la tapa en dados grandes. Sazonar y dorar.",
+        "Pochar cebolla y zanahoria.",
+        "Añadir tomate triturado y vino tinto.",
+        "Devolver la carne, añadir laurel y caldo.",
+        "Cocer 90 min a fuego suave.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 3,
+      "dia": "Lunes",
+      "plato": "Hamburguesas caseras",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Hamburguesas caseras",
+          "proveedor": "Garcimar",
+          "codigo": "635134",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Recibir hamburguesas (Garcimar 635134).",
+        "Sazonar ligeramente.",
+        "Plancha caliente, marcar 3 min por lado al punto.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 3,
+      "dia": "Martes",
+      "plato": "Pollo en pepitoria (contramuslo)",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Pollo en pepitoria (contramuslo)",
+          "proveedor": "Garcimar",
+          "codigo": "645356",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ALMENDRA GRANILLO",
+          "proveedor": "PRODESCO",
+          "codigo": "4807",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "HUEVOS CAMPEROS",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "2581",
+          "udm": "UND",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CALDO CARNE",
+          "proveedor": "PRODESCO",
+          "codigo": "6206",
+          "udm": "ML",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AZAFRAN HEBRA",
+          "proveedor": "PRODESCO",
+          "codigo": "541",
+          "udm": "GR",
+          "cantidad": 0.5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PEREJIL",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "83",
+          "udm": "GR",
+          "cantidad": 20
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Salpimentar y dorar los contramuslos. Reservar.",
+        "Pochar cebolla y ajos. Añadir almendra granillo y dorar.",
+        "Mojar con vino blanco, reducir.",
+        "Añadir caldo de carne, hebras de azafrán y perejil.",
+        "Devolver el pollo y cocer 30 min.",
+        "Triturar parte de la salsa con yema de huevo cocido (pepitoria).",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 3,
+      "dia": "Miércoles",
+      "plato": "Magro de cerdo en salsa",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Magro de cerdo en salsa",
+          "proveedor": "Norteños",
+          "codigo": "330048",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PIMENTON DULCE DE LA VERA",
+          "proveedor": "PRODESCO",
+          "codigo": "549",
+          "udm": "GR",
+          "cantidad": 20
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Trocear y dorar el magro.",
+        "Pochar cebolla y ajo.",
+        "Añadir tomate y pimentón dulce. Sofreír.",
+        "Mojar con vino blanco, reducir.",
+        "Cocer 30 min hasta que la salsa ligue.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 3,
+      "dia": "Jueves",
+      "plato": "Pavo redondo al horno",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Pavo redondo al horno",
+          "proveedor": "Garcimar",
+          "codigo": "645200",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ZANAHORIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "26",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ROMERO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "77",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Bridar y salpimentar el redondo de pavo.",
+        "Marcar en cazuela hasta dorar todos los lados.",
+        "Pasar a bandeja con cebolla, zanahoria y romero.",
+        "Mojar con vino blanco. Hornear 50 min a 180 ºC.",
+        "Reposar 10 min y trinchar.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 3,
+      "dia": "Viernes",
+      "plato": "Sardinas al horno",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Sardinas al horno",
+          "proveedor": "Garcimar",
+          "codigo": "155240",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PEREJIL",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "83",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LIMÓN",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "limon",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Limpiar las sardinas.",
+        "Bandeja con aceite, sal gruesa, ajo picado, perejil y limón.",
+        "Hornear 8-10 min a 200 ºC.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 3,
+      "dia": "Sábado",
+      "plato": "Pollo troceado al curry",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Pollo troceado al curry",
+          "proveedor": "Norteños",
+          "codigo": "360011",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CURRY MOLIDO",
+          "proveedor": "PRODESCO",
+          "codigo": "1604",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LECHE DE COCO",
+          "proveedor": "PRODESCO",
+          "codigo": "559",
+          "udm": "ML",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Trocear y dorar el pollo. Reservar.",
+        "Pochar cebolla y ajo.",
+        "Añadir curry en polvo, sofreír 30 seg.",
+        "Mojar con leche de coco. Cocer 5 min.",
+        "Devolver el pollo y cocer 20 min.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 4,
+      "dia": "Lunes",
+      "plato": "Cinta de cerdo en salsa mostaza",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Cinta de cerdo en salsa mostaza",
+          "proveedor": "Norteños",
+          "codigo": "330020",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "MOSTAZA ORIGINAL DIJON",
+          "proveedor": "PRODESCO",
+          "codigo": "1426",
+          "udm": "GR",
+          "cantidad": 120
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "NATA COCINA",
+          "proveedor": "PRODESCO",
+          "codigo": "6288",
+          "udm": "ML",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Marcar la cinta en filetes gruesos. Reservar.",
+        "Pochar cebolla en mantequilla/aceite.",
+        "Añadir mostaza Dijon y vino blanco. Reducir.",
+        "Incorporar nata, ligar la salsa.",
+        "Devolver la cinta, calentar 3 min.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 4,
+      "dia": "Martes",
+      "plato": "Jamoncitos de pavo guisados",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Jamoncitos de pavo guisados",
+          "proveedor": "Norteños",
+          "codigo": "360056",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ZANAHORIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "26",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Salpimentar y dorar los jamoncitos.",
+        "Pochar cebolla, zanahoria y ajo.",
+        "Añadir tomate triturado y vino blanco.",
+        "Cubrir con caldo. Cocer tapado 60 min.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 4,
+      "dia": "Miércoles",
+      "plato": "Aguja de cerdo a la cazuela",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Aguja de cerdo a la cazuela",
+          "proveedor": "Norteños",
+          "codigo": "330009",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO TINTO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "529",
+          "udm": "ML",
+          "cantidad": 250
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "LAUREL SECO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "3892",
+          "udm": "GR",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Trocear y dorar la aguja. Reservar.",
+        "Pochar cebolla y ajo.",
+        "Añadir tomate, vino tinto y laurel.",
+        "Devolver la carne, cubrir con caldo. Cocer 90 min.",
+        "Servir con patatas fritas."
+      ]
+    },
+    {
+      "semana": 4,
+      "dia": "Jueves",
+      "plato": "Pollo empanado",
+      "esPescado": false,
+      "guarnicion": "Ensalada mixta",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Pollo empanado",
+          "proveedor": "Garcimar",
+          "codigo": "745592",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "HARINA TRIGO (cocina)",
+          "proveedor": "PRODESCO",
+          "codigo": "5050",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "HUEVOS CAMPEROS",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "2581",
+          "udm": "UND",
+          "cantidad": 5
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "PAN RALLADO",
+          "proveedor": "PRODESCO",
+          "codigo": "579",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "LECHUGA ICEBERG",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1003",
+          "udm": "UND",
+          "cantidad": 2.5
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "TOMATE CHERRY (ensalada)",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "1587",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ATUN CLARO EN ACEITE",
+          "proveedor": "PRODESCO",
+          "codigo": "5596",
+          "udm": "GR",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "MAIZ DULCE CONS",
+          "proveedor": "PRODESCO",
+          "codigo": "504",
+          "udm": "GR",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "VINAGRE DE VINO BLANCO",
+          "proveedor": "PRODESCO",
+          "codigo": "495",
+          "udm": "ML",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 20
+        }
+      ],
+      "pasos": [
+        "Filetear el pollo y salpimentar.",
+        "Pasar por harina, huevo batido y pan rallado.",
+        "Freír en aceite de girasol caliente hasta dorar.",
+        "Escurrir sobre papel.",
+        "Servir con ensalada mixta."
+      ]
+    },
+    {
+      "semana": 4,
+      "dia": "Viernes",
+      "plato": "Caella en salsa de tomate",
+      "esPescado": false,
+      "guarnicion": "Arroz blanco",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Caella en salsa de tomate",
+          "proveedor": "Garcimar",
+          "codigo": "142490",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 300
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 600
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 150
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ARROZ EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "994",
+          "udm": "GR",
+          "cantidad": 800
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Limpiar y trocear la caella.",
+        "Pochar cebolla y ajo. Añadir tomate triturado.",
+        "Mojar con vino blanco. Cocer 10 min.",
+        "Incorporar la caella, cocer 15 min.",
+        "Servir con arroz blanco."
+      ]
+    },
+    {
+      "semana": 4,
+      "dia": "Sábado",
+      "plato": "Albóndigas mixtas con guarnición",
+      "esPescado": false,
+      "guarnicion": "Patatas fritas",
+      "ingredientes": [
+        {
+          "tipo": "Proteína",
+          "nombre": "Albóndigas mixtas con guarnición",
+          "proveedor": "Garcimar",
+          "codigo": "602012",
+          "udm": "GR",
+          "cantidad": 2000
+        },
+        {
+          "tipo": "Base",
+          "nombre": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+          "proveedor": "PRODESCO",
+          "codigo": "7394",
+          "udm": "ML",
+          "cantidad": 100
+        },
+        {
+          "tipo": "Base",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        },
+        {
+          "tipo": "Base",
+          "nombre": "PIMIENTA NEGRA MOLIDA",
+          "proveedor": "PRODESCO",
+          "codigo": "535",
+          "udm": "GR",
+          "cantidad": 10
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "CEBOLLA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "122",
+          "udm": "GR",
+          "cantidad": 400
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "AJO PELADO",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "80",
+          "udm": "GR",
+          "cantidad": 50
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "TOMATE TRITURADO EXTRA",
+          "proveedor": "PRODESCO",
+          "codigo": "6482",
+          "udm": "GR",
+          "cantidad": 500
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "VINO BLANCO (BRICK)",
+          "proveedor": "PRODESCO",
+          "codigo": "528",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Extra",
+          "nombre": "HARINA TRIGO (cocina)",
+          "proveedor": "PRODESCO",
+          "codigo": "5050",
+          "udm": "GR",
+          "cantidad": 80
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "PATATA AGRIA",
+          "proveedor": "SERVIFRUTA",
+          "codigo": "28",
+          "udm": "GR",
+          "cantidad": 2500
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "ACEITE GIRASOL",
+          "proveedor": "PRODESCO",
+          "codigo": "2381",
+          "udm": "ML",
+          "cantidad": 200
+        },
+        {
+          "tipo": "Guarnición",
+          "nombre": "SAL FINA",
+          "proveedor": "PRODESCO",
+          "codigo": "524",
+          "udm": "GR",
+          "cantidad": 30
+        }
+      ],
+      "pasos": [
+        "Recibir albóndigas (Garcimar 602012).",
+        "Enharinar y dorar.",
+        "Pochar cebolla y ajo. Añadir tomate y vino.",
+        "Cocer la salsa 10 min, devolver albóndigas.",
+        "Cocer 15 min más.",
+        "Servir con patatas fritas."
+      ]
+    }
+  ],
+  "compraTotal": [
+    {
+      "proveedor": "Garcimar",
+      "codigo": "645340",
+      "producto": "Alas de pollo al horno",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "602000",
+      "producto": "Albóndigas de cerdo en salsa",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "602012",
+      "producto": "Albóndigas mixtas con guarnición",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "142490",
+      "producto": "Caella en salsa de tomate",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "635134",
+      "producto": "Hamburguesas caseras",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "130205",
+      "producto": "Merluza tronquito al horno",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "109537",
+      "producto": "Panga al horno con limón",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "645200",
+      "producto": "Pavo redondo al horno",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "745592",
+      "producto": "Pollo empanado",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "645356",
+      "producto": "Pollo en pepitoria (contramuslo)",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "645510",
+      "producto": "Pollo jamoncito asado al limón",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Garcimar",
+      "codigo": "155240",
+      "producto": "Sardinas al horno",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "330009",
+      "producto": "Aguja de cerdo a la cazuela",
+      "udm": "GR",
+      "cantidad": 4000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "330020",
+      "producto": "Cinta de cerdo en salsa mostaza",
+      "udm": "GR",
+      "cantidad": 4000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "365029",
+      "producto": "Costillares de cerdo adobados",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "260003",
+      "producto": "Filetes de pechuga de pollo",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "360056",
+      "producto": "Jamoncitos de pavo guisados",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "330048",
+      "producto": "Magro de cerdo en salsa",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "360011",
+      "producto": "Pollo troceado al curry",
+      "udm": "GR",
+      "cantidad": 4000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "210049",
+      "producto": "Ragout de ternera estofado",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "Norteños",
+      "codigo": "330034",
+      "producto": "Tapa de cerdo estofada",
+      "udm": "GR",
+      "cantidad": 2000
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "2381",
+      "producto": "ACEITE GIRASOL",
+      "udm": "ML",
+      "cantidad": 1750
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "7394",
+      "producto": "ACEITE OLIVA VIRGEN EXTRA 500ML",
+      "udm": "ML",
+      "cantidad": 3840
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "4807",
+      "producto": "ALMENDRA GRANILLO",
+      "udm": "GR",
+      "cantidad": 200
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "994",
+      "producto": "ARROZ EXTRA",
+      "udm": "GR",
+      "cantidad": 6400
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "5596",
+      "producto": "ATUN CLARO EN ACEITE",
+      "udm": "GR",
+      "cantidad": 1200
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "541",
+      "producto": "AZAFRAN HEBRA",
+      "udm": "GR",
+      "cantidad": 0.5
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "6206",
+      "producto": "CALDO CARNE",
+      "udm": "ML",
+      "cantidad": 600
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "1604",
+      "producto": "CURRY MOLIDO",
+      "udm": "GR",
+      "cantidad": 50
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "5050",
+      "producto": "HARINA TRIGO (cocina)",
+      "udm": "GR",
+      "cantidad": 410
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "559",
+      "producto": "LECHE DE COCO",
+      "udm": "ML",
+      "cantidad": 600
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "504",
+      "producto": "MAIZ DULCE CONS",
+      "udm": "GR",
+      "cantidad": 1600
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "1426",
+      "producto": "MOSTAZA ORIGINAL DIJON",
+      "udm": "GR",
+      "cantidad": 120
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "6288",
+      "producto": "NATA COCINA",
+      "udm": "ML",
+      "cantidad": 400
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "579",
+      "producto": "PAN RALLADO",
+      "udm": "GR",
+      "cantidad": 300
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "549",
+      "producto": "PIMENTON DULCE DE LA VERA",
+      "udm": "GR",
+      "cantidad": 70
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "535",
+      "producto": "PIMIENTA NEGRA MOLIDA",
+      "udm": "GR",
+      "cantidad": 240
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "524",
+      "producto": "SAL FINA",
+      "udm": "GR",
+      "cantidad": 1360
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "6482",
+      "producto": "TOMATE TRITURADO EXTRA",
+      "udm": "GR",
+      "cantidad": 3900
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "495",
+      "producto": "VINAGRE DE VINO BLANCO",
+      "udm": "ML",
+      "cantidad": 400
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "528",
+      "producto": "VINO BLANCO (BRICK)",
+      "udm": "ML",
+      "cantidad": 2250
+    },
+    {
+      "proveedor": "PRODESCO",
+      "codigo": "529",
+      "producto": "VINO TINTO (BRICK)",
+      "udm": "ML",
+      "cantidad": 850
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "80",
+      "producto": "AJO PELADO",
+      "udm": "GR",
+      "cantidad": 1240
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "122",
+      "producto": "CEBOLLA",
+      "udm": "GR",
+      "cantidad": 6300
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "2581",
+      "producto": "HUEVOS CAMPEROS",
+      "udm": "UND",
+      "cantidad": 10
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "3892",
+      "producto": "LAUREL SECO",
+      "udm": "GR",
+      "cantidad": 20
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "1003",
+      "producto": "LECHUGA ICEBERG",
+      "udm": "UND",
+      "cantidad": 20
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "limon",
+      "producto": "LIMÓN",
+      "udm": "UND",
+      "cantidad": 20
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "28",
+      "producto": "PATATA AGRIA",
+      "udm": "GR",
+      "cantidad": 20000
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "83",
+      "producto": "PEREJIL",
+      "udm": "GR",
+      "cantidad": 120
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "77",
+      "producto": "ROMERO",
+      "udm": "GR",
+      "cantidad": 20
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "1587",
+      "producto": "TOMATE CHERRY (ensalada)",
+      "udm": "GR",
+      "cantidad": 4800
+    },
+    {
+      "proveedor": "SERVIFRUTA",
+      "codigo": "26",
+      "producto": "ZANAHORIA",
+      "udm": "GR",
+      "cantidad": 1500
+    }
+  ]
+}
