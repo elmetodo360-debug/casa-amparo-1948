@@ -1,0 +1,15 @@
+{
+  "_comentario": "URLs de las 8 pestañas del Sheet App_Eventos_CasaAmparo_DATOS publicadas como CSV. Configurado 2026-05-09.",
+  "sheet_id": "19afBt9sumS9MJ0OJ0pN7eLW_eJKzzn8qihN9NyP1yFQ",
+  "sheet_url": "https://docs.google.com/spreadsheets/d/19afBt9sumS9MJ0OJ0pN7eLW_eJKzzn8qihN9NyP1yFQ/edit",
+  "tabs": {
+    "Canapes_Coctel":         "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=443635553&single=true&output=csv",
+    "Menus_Sentados":         "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=1734708812&single=true&output=csv",
+    "Coffee_Breaks":          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=1058822745&single=true&output=csv",
+    "Estaciones_Showcooking": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=236174680&single=true&output=csv",
+    "Ratios_Personal":        "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=1026766267&single=true&output=csv",
+    "Tarifas_Personal":       "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=1480326738&single=true&output=csv",
+    "Bebida":                 "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=1128901377&single=true&output=csv",
+    "Globales":               "https://docs.google.com/spreadsheets/d/e/2PACX-1vTefN3wQhtwiwhAaDzKIrt-6cv-wJ_8VuD5TAf4agnzJJ3xTvOl_-J3XfMB-0HFQU3Yhg65Vji1MUs_/pub?gid=1094285778&single=true&output=csv"
+  }
+}

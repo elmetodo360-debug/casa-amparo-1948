@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Eventos · Casa Amparo 1948</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased">
+
+  <!-- Header -->
+  <header class="bg-[#870120] text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
+      <div>
+        <h1 class="text-lg font-semibold">App Eventos</h1>
+        <p class="text-xs opacity-80">Casa Amparo 1948 · Calculadora de eventos</p>
+      </div>
+      <nav class="flex gap-1 text-sm">
+        <a href="#wizard" class="nav-link px-3 py-1 rounded hover:bg-white/10">Nuevo evento</a>
+        <a href="#eventos" class="nav-link px-3 py-1 rounded hover:bg-white/10">Eventos guardados</a>
+        <a href="#datos" class="nav-link px-3 py-1 rounded hover:bg-white/10">Verificar datos</a>
+      </nav>
+      <div id="status" class="text-xs">
+        <span id="status-badge" class="px-2 py-1 rounded bg-white/10">Cargando…</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+
+    <!-- WIZARD: nuevo evento -->
+    <section id="view-wizard" class="view bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-1">Nuevo evento</h2>
+      <p class="text-sm text-stone-600 mb-6">Configura los parámetros del evento. La app calculará personal, bebida, comida y escandallo en los siguientes sprints.</p>
+
+      <form id="wizard-form" class="space-y-6">
+
+        <!-- Bloque: identificación -->
+        <fieldset class="border border-stone-200 rounded p-4">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Identificación</legend>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Nombre del evento</span>
+              <input type="text" name="nombre" required
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm"
+                placeholder="Ej: Cóctel Inmobiliaria López">
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Cliente</span>
+              <input type="text" name="cliente"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm"
+                placeholder="Empresa o particular">
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Fecha del evento</span>
+              <input type="date" name="fecha" required
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Bloque: tipo y pax -->
+        <fieldset class="border border-stone-200 rounded p-4">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Tipo y volumen</legend>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Tipo de evento</span>
+              <select name="tipo_evento" id="tipo_evento" required
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="coctel">Cóctel</option>
+                <option value="menu_sentado">Menú sentado</option>
+                <option value="coffee_break">Coffee break</option>
+                <option value="brasas">Menú brasas</option>
+                <option value="arroces">Menú arroces</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Nº comensales (pax)</span>
+              <input type="number" name="pax" required min="10" value="50"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+              <span id="pax-warning" class="text-xs text-amber-600 hidden mt-1"></span>
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Duración servicio (minutos)</span>
+              <input type="number" name="duracion_min" required min="30" max="240" step="15" value="75"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Bloque: configuración menú sentado -->
+        <fieldset id="block-menu_sentado" class="block-tipo border border-stone-200 rounded p-4 hidden">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Configuración menú sentado</legend>
+          <label class="block">
+            <span class="text-xs font-medium text-stone-600">Pack</span>
+            <select name="pack_menu_sentado" class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+              <option value="casa">Casa — 39 €/pax — entrantes 4 pax + principal a elegir + tarta árabe</option>
+              <option value="mercado">Mercado — 45 €/pax — entrantes 4 pax + principal a elegir + tarta árabe</option>
+              <option value="especial">Especial — 52 €/pax — entrantes 4 pax + principal a elegir + tarta árabe</option>
+            </select>
+          </label>
+          <p class="text-xs text-amber-600 mt-3">Comida: escandallos pendientes de cerrar por cocina. Personal y PVP cliente sí calculan correctamente.</p>
+        </fieldset>
+
+        <!-- Bloque: configuración coffee break -->
+        <fieldset id="block-coffee_break" class="block-tipo border border-stone-200 rounded p-4 hidden">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Configuración coffee break</legend>
+          <label class="block">
+            <span class="text-xs font-medium text-stone-600">Pack</span>
+            <select name="pack_coffee" class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+              <option value="wellcome">Wellcome — 9 €/pax — 30 min</option>
+              <option value="basico">Básico — 12 €/pax — 30 min</option>
+              <option value="break" selected>Break — 15 €/pax — 30 min</option>
+              <option value="espanol">Español — 18 €/pax — 30 min</option>
+              <option value="frances">Francés — 18 €/pax — 45 min</option>
+            </select>
+          </label>
+          <p class="text-xs text-amber-600 mt-3">Comida: escandallos pendientes (17 componentes). Personal y PVP sí calculan.</p>
+        </fieldset>
+
+        <!-- Bloque: configuración brasas -->
+        <fieldset id="block-brasas" class="block-tipo border border-stone-200 rounded p-4 hidden">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Configuración menú brasas</legend>
+          <p class="text-sm text-stone-600">Pack único: 29 €/pax · 120 min · mínimo 20 pax.</p>
+          <p class="text-xs text-stone-500 mt-1">3 entrantes individuales + principal a elegir + 3 guarniciones.</p>
+          <p class="text-xs text-amber-600 mt-3">Comida: escandallos pendientes. Personal y PVP sí calculan.</p>
+        </fieldset>
+
+        <!-- Bloque: configuración arroces -->
+        <fieldset id="block-arroces" class="block-tipo border border-stone-200 rounded p-4 hidden">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Configuración menú arroces</legend>
+          <p class="text-sm text-stone-600">Pack único: 29 €/pax · 120 min · mínimo 20 pax.</p>
+          <label class="block mt-3">
+            <span class="text-xs font-medium text-stone-600">Arroz showcooking a elegir</span>
+            <select name="arroz_eleccion" class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+              <option value="senoret">Del señoret de gamba roja y sepia</option>
+              <option value="pollo_corral">De pollo de corral y verduras de temporada</option>
+            </select>
+          </label>
+          <p class="text-xs text-amber-600 mt-3">Comida: escandallos pendientes. Personal y PVP sí calculan.</p>
+        </fieldset>
+
+        <!-- Bloque: configuración cóctel -->
+        <fieldset id="block-coctel" class="block-tipo border border-stone-200 rounded p-4">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Configuración cóctel</legend>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Pack base</span>
+              <select name="pack_coctel" id="pack_coctel" required
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="basic">Basic — 4F+3C — 60 min — 29 €/pax</option>
+                <option value="standard" selected>Standard — 6F+4C — 75 min — 35 €/pax</option>
+                <option value="premium">Premium — 8F+6C — 90 min — 42 €/pax</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Tipo de cóctel</span>
+              <select name="tipo_coctel"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="volante">Volante puro (todo en bandeja)</option>
+                <option value="mixto" selected>Mixto (bandeja + estaciones)</option>
+                <option value="estatico">Estático (estaciones + buffet)</option>
+                <option value="premium">Premium / Boda / VIP</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Tipo de barra</span>
+              <select name="tipo_barra"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="basica">Básica (vino, cerveza, refrescos)</option>
+                <option value="estandar" selected>Estándar (+ destilados)</option>
+                <option value="silver">Silver +21 €/pax/2h</option>
+                <option value="gold">Gold +30 €/pax/2h</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Signatures -->
+          <div class="mb-4">
+            <span class="text-xs font-medium text-stone-600">Piezas Signature (sustituyen pieza base, +2 €/pza)</span>
+            <p class="text-xs text-stone-500 mb-2">Marca las que el cliente quiere. Cada una sustituye 1 pieza del pack base.</p>
+            <div id="signatures-list" class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm"></div>
+            <p id="signatures-warning" class="text-xs text-amber-600 hidden mt-2"></p>
+          </div>
+
+          <!-- Estaciones showcooking -->
+          <div>
+            <span class="text-xs font-medium text-stone-600">Estaciones showcooking (add-on, restan 1 pieza/pax del pack base por cada una)</span>
+            <div id="estaciones-list" class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm mt-2"></div>
+          </div>
+        </fieldset>
+
+        <!-- Bloque: contexto -->
+        <fieldset class="border border-stone-200 rounded p-4">
+          <legend class="text-sm font-semibold text-stone-700 px-2">Contexto operativo</legend>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Nivel de servicio</span>
+              <select name="nivel_servicio"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="minimo">Mínimo viable</option>
+                <option value="estandar" selected>Estándar</option>
+                <option value="premium">Premium</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Espacio</span>
+              <select name="espacio"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="interior">Interior (Salón / Cristal)</option>
+                <option value="terraza">Terraza Golf / Prácticas</option>
+                <option value="mixto">Mixto interior + terraza</option>
+                <option value="multinivel">Multi-nivel / varias salas</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Tipo de cliente</span>
+              <select name="tipo_cliente"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm">
+                <option value="privado">Privado</option>
+                <option value="corporate" selected>Corporate</option>
+                <option value="boda">Boda</option>
+                <option value="vip">VIP / Alto nivel</option>
+              </select>
+            </label>
+          </div>
+          <div class="mt-4">
+            <label class="block">
+              <span class="text-xs font-medium text-stone-600">Notas internas</span>
+              <textarea name="notas" rows="2"
+                class="mt-1 block w-full rounded border-stone-300 shadow-sm text-sm"
+                placeholder="Alergias, preferencias del cliente, montajes especiales…"></textarea>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Acciones -->
+        <div class="flex justify-end gap-3 pt-2">
+          <button type="reset" class="px-4 py-2 text-sm border border-stone-300 rounded hover:bg-stone-100">Limpiar</button>
+          <button type="submit" class="px-4 py-2 text-sm bg-[#870120] text-white rounded hover:bg-[#6e0019]">Guardar evento</button>
+        </div>
+      </form>
+
+      <div id="wizard-result" class="hidden mt-6 bg-green-50 border border-green-200 rounded p-4">
+        <h3 class="font-semibold text-green-800 mb-2">Evento guardado</h3>
+        <pre id="wizard-result-data" class="text-xs whitespace-pre-wrap text-stone-700"></pre>
+        <p class="text-xs text-stone-600 mt-2">En los siguientes sprints, este evento se usará para calcular personal, bebida, comida y escandallo.</p>
+      </div>
+    </section>
+
+    <!-- EVENTOS GUARDADOS -->
+    <section id="view-eventos" class="view bg-white rounded-lg shadow p-6 hidden">
+      <h2 class="text-xl font-semibold mb-1">Eventos guardados</h2>
+      <p class="text-sm text-stone-600 mb-4">Configuraciones almacenadas localmente (localStorage). Se mantienen entre sesiones en este navegador.</p>
+      <div id="eventos-list"></div>
+    </section>
+
+    <!-- CÁLCULO del evento -->
+    <section id="view-calculo" class="view bg-white rounded-lg shadow p-6 hidden">
+      <div class="flex items-baseline justify-between flex-wrap gap-2 mb-4">
+        <div>
+          <h2 class="text-xl font-semibold mb-1">Cálculo del evento</h2>
+          <p id="calculo-info" class="text-sm text-stone-600"></p>
+        </div>
+        <a href="#eventos" class="text-xs text-blue-600 hover:underline">← volver a eventos</a>
+      </div>
+
+      <div id="calculo-sections" class="hidden">
+        <nav id="calculo-tabs" class="flex flex-wrap gap-1 border-b border-stone-200 mb-4 print:hidden"></nav>
+        <div id="calculo-content"></div>
+      </div>
+    </section>
+
+    <!-- DATOS: verificación -->
+    <section id="view-datos" class="view bg-white rounded-lg shadow p-6 hidden">
+      <h2 class="text-xl font-semibold mb-1">Verificación capa de datos</h2>
+      <p class="text-sm text-stone-600 mb-6">Estado de las 8 pestañas del Sheet publicado. Si alguna sale roja, revisa <code>data/sheet-config.json</code>.</p>
+
+      <div id="data-status" class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6"></div>
+
+      <div id="error-box" class="hidden bg-red-50 border border-red-200 text-red-800 rounded p-4 mb-4">
+        <h3 class="font-semibold mb-1">Error al cargar datos</h3>
+        <pre id="error-message" class="text-xs whitespace-pre-wrap"></pre>
+      </div>
+
+      <div id="data-preview" class="hidden">
+        <h3 class="font-semibold mt-6 mb-2">Vista previa rápida</h3>
+        <p class="text-xs text-stone-500 mb-4">Primeras 5 filas de cada pestaña.</p>
+        <div id="previews" class="space-y-4"></div>
+      </div>
+
+      <div id="loading" class="text-center py-8 text-stone-500">
+        <p class="text-sm">Cargando 8 pestañas del Sheet…</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="max-w-7xl mx-auto px-4 py-6 text-center text-xs text-stone-400">
+    App Eventos Casa Amparo 1948 · v1.1 (Sprints 1-9 + 2.1)
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/utils.js"></script>
+  <script src="js/csv-parser.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/wizard.js"></script>
+  <script src="js/eventos.js"></script>
+  <script src="js/calc-personal.js"></script>
+  <script src="js/calc-bebida.js"></script>
+  <script src="js/calc-comida.js"></script>
+  <script src="js/calc-escandallo.js"></script>
+  <script src="js/gen-orden-servicio.js"></script>
+  <script src="js/gen-orden-compra.js"></script>
+  <script src="js/calculo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
