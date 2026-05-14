@@ -26,8 +26,8 @@ App web (SPA) interna del **menú del personal** (también llamado "comida de fa
 
 | Qué | Dónde |
 |---|---|
-| **App pública** | https://elmetodo360-debug.github.io/casa-amparo-1948/COMIDA-FAMILIA/ |
-| **Repo GitHub** | https://github.com/elmetodo360-debug/casa-amparo-1948 (subcarpeta `/COMIDA-FAMILIA/`) |
+| **App pública** | https://elmetodo360.github.io/casa-amparo-1948/COMIDA-FAMILIA/ |
+| **Repo GitHub** | https://github.com/elmetodo360/casa-amparo-1948 (subcarpeta `/COMIDA-FAMILIA/`) |
 | **Excel maestro** | `H:\Mi unidad\02_Operaciones\Comida de Familia\Comida de Familia.xlsx` |
 | **Script generador del Excel** | `H:\Mi unidad\02_Operaciones\Comida de Familia\generar_excel_comida_familia.py` |
 | **Carpeta del repo local** | `C:\Users\jmgon\OneDrive - El metodo 360 consultoria Integral S.l\Claude Code\Casa Amparo 1948\COMIDA-FAMILIA\` |

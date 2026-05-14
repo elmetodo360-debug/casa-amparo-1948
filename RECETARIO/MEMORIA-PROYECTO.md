@@ -29,8 +29,8 @@ App web (SPA) interna del recetario de **Casa Amparo 1948** para el equipo de **
 
 | Qué | Dónde |
 |---|---|
-| **App desplegada (producción)** | https://elmetodo360-debug.github.io/casa-amparo-1948/RECETARIO/ |
-| **Repositorio GitHub (código)** | https://github.com/elmetodo360-debug/casa-amparo-1948 |
+| **App desplegada (producción)** | https://elmetodo360.github.io/casa-amparo-1948/RECETARIO/ |
+| **Repositorio GitHub (código)** | https://github.com/elmetodo360/casa-amparo-1948 |
 | **Excel maestro (fuente de verdad)** | `H:\Mi unidad\02_Operaciones\FT Casa Amparo v2.xlsx` (Google Drive sincronizado) |
 | Hosting | GitHub Pages, rama `master`, servido desde raíz del repo |
 | Contraseña del equipo | `CasaAmparo1948` (definida en `app.js`) |
@@ -213,7 +213,7 @@ git push
 ## 11. Despliegue (GitHub Pages)
 
 **Configuración** (ya activa, no hay que tocar):
-- Repo: `elmetodo360-debug/casa-amparo-1948`
+- Repo: `elmetodo360/casa-amparo-1948`
 - Source: rama `master`, raíz `/`
 - HTTPS forzado
 - Build legacy
@@ -222,7 +222,7 @@ Cada `git push` a `master` dispara una recompilación automática de Pages. La a
 
 Para verificar el estado del despliegue:
 ```bash
-gh api repos/elmetodo360-debug/casa-amparo-1948/pages/builds/latest --jq '.status'
+gh api repos/elmetodo360/casa-amparo-1948/pages/builds/latest --jq '.status'
 ```
 
 ---

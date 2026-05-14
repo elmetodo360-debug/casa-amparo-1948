@@ -89,7 +89,7 @@ Abrir `http://localhost:8000` (no abrir con `file://`, fetch() no funciona).
 
 ## Deploy a GitHub Pages
 
-El monorepo está en `github.com/elmetodo360-debug/casa-amparo-1948.git`. Para deploy:
+El monorepo está en `github.com/elmetodo360/casa-amparo-1948.git`. Para deploy:
 
 ```bash
 cd "C:\Users\jmgon\OneDrive - El metodo 360 consultoria Integral S.l\Claude Code\Casa Amparo 1948"
@@ -98,7 +98,7 @@ git commit -m "App Eventos: scaffolding completo Sprints 1-9"
 git push
 ```
 
-Después, en GitHub → Settings → Pages → asegurar que sirve la rama `master` desde `/` o configurar custom action si ya hay otra app en pages. URL final: `https://elmetodo360-debug.github.io/casa-amparo-1948/EVENTOS/APP/src/`.
+Después, en GitHub → Settings → Pages → asegurar que sirve la rama `master` desde `/` o configurar custom action si ya hay otra app en pages. URL final: `https://elmetodo360.github.io/casa-amparo-1948/EVENTOS/APP/src/`.
 
 ## Limitaciones conocidas (v1.0)
 

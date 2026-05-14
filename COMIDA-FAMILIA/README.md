@@ -2,7 +2,7 @@
 
 App web (SPA) interna del **menú del personal** de Casa Amparo 1948. Pensada para móvil/tablet, sin frameworks, sirve calendario mensual, recetario, normas y lista de compra del mes.
 
-🌐 **URL pública**: https://elmetodo360-debug.github.io/casa-amparo-1948/COMIDA-FAMILIA/
+🌐 **URL pública**: https://elmetodo360.github.io/casa-amparo-1948/COMIDA-FAMILIA/
 
 📁 **Excel maestro**: `H:\Mi unidad\02_Operaciones\Comida de Familia\Comida de Familia.xlsx`
 
@@ -38,7 +38,7 @@ COMIDA-FAMILIA/
 
 ## Dependencias
 - Python 3 con `openpyxl` (`pip install openpyxl`).
-- Git instalado y configurado para el repo `elmetodo360-debug/casa-amparo-1948`.
+- Git instalado y configurado para el repo `elmetodo360/casa-amparo-1948`.
 
 ## Sin datos económicos
 La app NO muestra €/coste/PVP. Está diseñada para personal/cocina. Los costes están en el Excel maestro y otras herramientas internas.

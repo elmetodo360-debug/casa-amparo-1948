@@ -52,7 +52,7 @@ if errorlevel 1 (
 echo.
 echo ============================================================
 echo   LISTO. La app estara actualizada en 1-2 minutos en:
-echo   https://elmetodo360-debug.github.io/casa-amparo-1948/COMIDA-FAMILIA/
+echo   https://elmetodo360.github.io/casa-amparo-1948/COMIDA-FAMILIA/
 echo ============================================================
 echo.
 pause

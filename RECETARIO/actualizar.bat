@@ -82,7 +82,7 @@ echo    LISTO. Recetario actualizado.
 echo  ============================================================
 echo.
 echo    URL publica:
-echo    https://elmetodo360-debug.github.io/casa-amparo-1948/RECETARIO/
+echo    https://elmetodo360.github.io/casa-amparo-1948/RECETARIO/
 echo.
 echo    Los cambios estaran visibles en 1-2 minutos.
 echo    (GitHub Pages tarda un poco en republicar)
